@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+
+<StackPane alignment="TOP_LEFT" prefHeight="550.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" lineSpacing="5.0" text="Welcome to Resume Generator" textAlignment="CENTER" textFill="#3b89ff" textOverrun="CLIP" StackPane.alignment="TOP_CENTER">
+         <font>
+            <Font name="Elephant Italic" size="24.0" />
+         </font>
+         <StackPane.margin>
+            <Insets top="20.0" />
+         </StackPane.margin>
+      </Label>
+      <Label lineSpacing="5.0" text="Get Started" textFill="#141414" StackPane.alignment="TOP_CENTER">
+         <StackPane.margin>
+            <Insets top="62.0" />
+         </StackPane.margin>
+         <font>
+            <Font name="Elephant" size="18.0" />
+         </font>
+      </Label>
+      <Label text="Name:" StackPane.alignment="TOP_LEFT">
+         <StackPane.margin>
+            <Insets left="50.0" top="125.0" />
+         </StackPane.margin>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="420.0" promptText="Enter Your Full Name" StackPane.alignment="TOP_CENTER">
+         <StackPane.margin>
+            <Insets left="65.0" top="125.0" />
+         </StackPane.margin>
+      </TextField>
+      <Label text="Contact Information" underline="true" StackPane.alignment="TOP_LEFT">
+         <StackPane.margin>
+            <Insets left="50.0" top="190.0" />
+         </StackPane.margin>
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label text="Address:" StackPane.alignment="TOP_LEFT">
+         <StackPane.margin>
+            <Insets left="50.0" top="240.0" />
+         </StackPane.margin>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="420.0">
+         <StackPane.margin>
+            <Insets left="120.0" top="240.0" />
+         </StackPane.margin>
+      </TextField>
+      <Label text="Email:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <StackPane.margin>
+            <Insets left="50.0" top="280.0" />
+         </StackPane.margin>
+      </Label>
+      <TextField layoutX="130.0" layoutY="250.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="420.0" StackPane.alignment="TOP_LEFT">
+         <StackPane.margin>
+            <Insets left="120.0" top="280.0" />
+         </StackPane.margin>
+      </TextField>
+      <Label text="Phone:">
+         <padding>
+            <Insets left="50.0" top="320.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField layoutX="130.0" layoutY="290.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="420.0">
+         <StackPane.margin>
+            <Insets left="120.0" top="320.0" />
+         </StackPane.margin>
+      </TextField>
+      <Button mnemonicParsing="false" text="Next" StackPane.alignment="BOTTOM_RIGHT">
+         <StackPane.margin>
+            <Insets bottom="60.0" right="65.0" />
+         </StackPane.margin>
+      </Button>
+      <Button layoutX="504.0" layoutY="475.0" mnemonicParsing="false" text="Cancel" StackPane.alignment="BOTTOM_RIGHT">
+         <StackPane.margin>
+            <Insets bottom="60.0" right="115.0" />
+         </StackPane.margin>
+      </Button>
+      <Button layoutX="504.0" layoutY="475.0" mnemonicParsing="false" text="Add More Field" StackPane.alignment="BOTTOM_RIGHT">
+         <StackPane.margin>
+            <Insets bottom="60.0" right="176.0" />
+         </StackPane.margin>
+      </Button>
+   </children>
+</StackPane>
