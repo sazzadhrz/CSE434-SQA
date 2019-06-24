@@ -39,29 +39,31 @@ public class Main extends Application {
 		primaryStage.show();
 	}
 	
-	public static void baal() throws IOException {
+	public static void overwriteTemplateAndGenerateCV() throws IOException {
 		File htmlTemplateFile = new File("html/template.html");
 		String htmlString = FileUtils.readFileToString(htmlTemplateFile);
-		System.out.println(htmlString);
+//		System.out.println(htmlString);
 		String title = "New Page";
 		String body = "This is Body";
 		htmlString = htmlString.replace("$title", title);
 		htmlString = htmlString.replace("$body", body);
-		System.out.println(htmlString);
+//		System.out.println(htmlString);
 		
+		generateCVinHTML(htmlString);
+		
+	}
+	
+	// create a new html file and overwrite the template.html
+	public static void generateCVinHTML (String htmlString) throws IOException {
 		File outfile = new File("html/output.html");
 		BufferedWriter bw = new BufferedWriter(new FileWriter(outfile));
 		bw.write(htmlString);
 		bw.close();
 	}
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		launch(args);
-		try {
-			baal();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		
+		overwriteTemplateAndGenerateCV();
 	}
 }
