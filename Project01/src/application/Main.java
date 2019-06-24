@@ -39,6 +39,7 @@ public class Main extends Application {
 		primaryStage.show();
 	}
 	
+	
 	public static void overwriteTemplateAndGenerateCV() throws IOException {
 		File htmlTemplateFile = new File("html/template.html");
 		String htmlString = FileUtils.readFileToString(htmlTemplateFile);
