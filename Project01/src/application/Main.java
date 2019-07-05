@@ -40,7 +40,7 @@ public class Main extends Application {
 	}
 	
 	
-	public static void overwriteTemplateAndGenerateCV() throws IOException {
+	/*public static void overwriteTemplateAndGenerateCV() throws IOException {
 		File htmlTemplateFile = new File("html/template.html");
 		String htmlString = FileUtils.readFileToString(htmlTemplateFile);
 //		System.out.println(htmlString);
@@ -66,5 +66,5 @@ public class Main extends Application {
 		launch(args);
 		
 		overwriteTemplateAndGenerateCV();
-	}
+	} */
 }
