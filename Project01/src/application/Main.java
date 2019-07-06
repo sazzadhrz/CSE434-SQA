@@ -40,6 +40,20 @@ public class Main extends Application {
 	}
 	
 	
+	private static void generateHeader() throws IOException {
+		String head = "<head>"
+				+ "<title>Resume</title>"
+				+ "</head>";
+		
+		File outfile = new File("html/output.html");
+		BufferedWriter bw = new BufferedWriter(new FileWriter(outfile));
+		bw.write(head);
+		bw.append("appended");
+		bw.close();
+	}
+	
+	
+	
 	/*public static void overwriteTemplateAndGenerateCV() throws IOException {
 		File htmlTemplateFile = new File("html/template.html");
 		String htmlString = FileUtils.readFileToString(htmlTemplateFile);
@@ -60,11 +74,13 @@ public class Main extends Application {
 		BufferedWriter bw = new BufferedWriter(new FileWriter(outfile));
 		bw.write(htmlString);
 		bw.close();
-	}
+	} */
 	
 	public static void main(String[] args) throws IOException {
-		launch(args);
+//		launch(args);
 		
-		overwriteTemplateAndGenerateCV();
-	} */
+		generateHeader();
+		
+//		overwriteTemplateAndGenerateCV();
+	} 
 }
