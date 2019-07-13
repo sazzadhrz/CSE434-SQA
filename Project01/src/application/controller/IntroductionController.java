@@ -7,12 +7,9 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
 public class IntroductionController {
-	@FXML Button button;
-	@FXML Label label;
-	@FXML TextField textField;
+	@FXML Button introductionNextBtn;
 	
-	public void buttonActionController() {
-		String text = textField.getText();
-		label.setText(text);
+	public void introductionNextBtnActionController() {
+		System.out.println("next btn pressed");
 	}
 }
