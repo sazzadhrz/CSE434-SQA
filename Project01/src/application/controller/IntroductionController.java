@@ -32,10 +32,12 @@ public class IntroductionController {
 	
 	private String generateIntroHtml() {
 		return 
+		"<div class=\"introduction\">" + "\n" +
 		h2(nameTF.getText()) +
 		h5(addressTF.getText()) +
 		h5(emailTF.getText()) +
-		h5(phoneTF.getText());
+		h5(phoneTF.getText()) +
+		"</div>";
 	}
 	
 	private String generateHeader() {
