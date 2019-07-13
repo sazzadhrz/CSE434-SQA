@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -80,16 +81,10 @@ public class Main extends Application {
 	public static void main(String[] args) throws IOException {
 		launch(args);
 		
-		generateHTML();
+//		generateHTML();
 		
 //		overwriteTemplateAndGenerateCV();
 	} 
 	
-	public static void generateHTML() {
-		try {
-			generateHeader();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
+	
 }

@@ -16,7 +16,12 @@ public class IntroductionController {
 	public void introductionNextBtnActionController() {
 		System.out.println("next btn pressed");
 //		Main.arraylist.add(generateIntroHtml());
-		System.out.println(generateIntroHtml());
+//		System.out.println(generateIntroHtml());
+//		System.out.println(GenerateHeader());
+		
+		Main.arraylist.add(GenerateHeader());
+		Main.arraylist.add(generateIntroHtml());
+		System.out.println(Main.arraylist);
 
 	}
 	
@@ -28,13 +33,19 @@ public class IntroductionController {
 		return "<h2>" + info + "</h2>" + "\n";
 	}
 	
-	@SuppressWarnings("unused")
 	private String generateIntroHtml() {
 		return 
 		h2(nameTF.getText()) +
 		h5(addressTF.getText()) +
 		h5(emailTF.getText()) +
 		h5(phoneTF.getText());
+	}
+	
+	private String GenerateHeader() {
+		String head = "<head>" + "\n"  
+				+ "<title>Resume of "+ nameTF.getText() + "</title>" + "\n"
+				+ "</head>";
+		return head;
 	}
 	
 	
