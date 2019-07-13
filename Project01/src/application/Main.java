@@ -4,8 +4,7 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-
-import org.apache.commons.io.FileUtils;
+import java.util.ArrayList;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -15,6 +14,8 @@ import javafx.stage.Stage;
 
 
 public class Main extends Application {
+	public static ArrayList<String> arraylist = new ArrayList<String>();
+	
 	private StackPane mainlayout;
 	private Stage primaryStage;
 	

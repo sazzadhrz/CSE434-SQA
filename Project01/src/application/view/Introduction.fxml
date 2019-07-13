@@ -33,7 +33,7 @@
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <TextField maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="420.0" promptText="Enter Your Full Name" StackPane.alignment="TOP_CENTER">
+      <TextField fx:id="nameTF" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="420.0" promptText="Enter Your Full Name" StackPane.alignment="TOP_CENTER">
          <StackPane.margin>
             <Insets left="65.0" top="125.0" />
          </StackPane.margin>
@@ -54,7 +54,7 @@
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <TextField maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="420.0">
+      <TextField fx:id="addressTF" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="420.0">
          <StackPane.margin>
             <Insets left="120.0" top="240.0" />
          </StackPane.margin>
@@ -67,7 +67,7 @@
             <Insets left="50.0" top="280.0" />
          </StackPane.margin>
       </Label>
-      <TextField layoutX="130.0" layoutY="250.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="420.0" StackPane.alignment="TOP_LEFT">
+      <TextField fx:id="emailTF" layoutX="130.0" layoutY="250.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="420.0" StackPane.alignment="TOP_LEFT">
          <StackPane.margin>
             <Insets left="120.0" top="280.0" />
          </StackPane.margin>
@@ -80,7 +80,7 @@
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <TextField layoutX="130.0" layoutY="290.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="420.0">
+      <TextField fx:id="phoneTF" layoutX="130.0" layoutY="290.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="420.0">
          <StackPane.margin>
             <Insets left="120.0" top="320.0" />
          </StackPane.margin>
