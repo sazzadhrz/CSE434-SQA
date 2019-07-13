@@ -41,7 +41,7 @@ public class Main extends Application {
 	}
 	
 	
-	private static void generateHeader() throws IOException {
+	/*private static void generateHeader() throws IOException {
 		String head = "<head>"
 				+ "<title>Resume</title>"
 				+ "</head>";
@@ -55,7 +55,7 @@ public class Main extends Application {
 	
 	
 	
-	/*public static void overwriteTemplateAndGenerateCV() throws IOException {
+	public static void overwriteTemplateAndGenerateCV() throws IOException {
 		File htmlTemplateFile = new File("html/template.html");
 		String htmlString = FileUtils.readFileToString(htmlTemplateFile);
 //		System.out.println(htmlString);
@@ -86,6 +86,8 @@ public class Main extends Application {
 	} 
 	
 	public static void generateHTML() throws IOException {
+		arraylist.add(bodyClose());
+		
 		File outfile = new File("html/output.html");
 		BufferedWriter bw = new BufferedWriter(new FileWriter(outfile));
 		
@@ -96,5 +98,9 @@ public class Main extends Application {
 		
 		bw.close();
 	}
+	
+	private static String bodyClose() {
+		return "</body>";	
+	} 
 	
 }

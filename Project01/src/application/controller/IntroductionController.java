@@ -15,14 +15,11 @@ public class IntroductionController {
 	
 	public void introductionNextBtnActionController() {
 		System.out.println("next btn pressed");
-//		Main.arraylist.add(generateIntroHtml());
-//		System.out.println(generateIntroHtml());
-//		System.out.println(GenerateHeader());
 		
-		Main.arraylist.add(GenerateHeader());
+		Main.arraylist.add(generateHeader());
+		Main.arraylist.add(bodyOpen());
 		Main.arraylist.add(generateIntroHtml());
-		System.out.println(Main.arraylist);
-
+//		System.out.println(Main.arraylist);
 	}
 	
 	private String h5(String info) {
@@ -41,11 +38,15 @@ public class IntroductionController {
 		h5(phoneTF.getText());
 	}
 	
-	private String GenerateHeader() {
+	private String generateHeader() {
 		String head = "<head>" + "\n"  
 				+ "<title>Resume of "+ nameTF.getText() + "</title>" + "\n"
 				+ "</head>";
 		return head;
+	}
+	
+	private String bodyOpen() {
+		return "<body>";	
 	}
 	
 	
