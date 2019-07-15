@@ -17,7 +17,7 @@ public class Main extends Application {
 	public static ArrayList<String> arraylist = new ArrayList<String>();
 	
 	private StackPane mainlayout;
-	private Stage primaryStage;
+	Stage primaryStage;
 	
 	@Override
 	public void start(Stage primaryStage) {

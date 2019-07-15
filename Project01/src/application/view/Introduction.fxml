@@ -89,16 +89,17 @@
          <StackPane.margin>
             <Insets bottom="60.0" right="65.0" />
          </StackPane.margin>
+         <padding>
+            <Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
+         </padding>
       </Button>
       <Button fx:id="introductionCancelBtn" layoutX="504.0" layoutY="475.0" mnemonicParsing="false" onAction="#introductionCancelBtnActionController" text="Cancel" StackPane.alignment="BOTTOM_RIGHT">
          <StackPane.margin>
-            <Insets bottom="60.0" right="115.0" />
+            <Insets bottom="60.0" right="150.0" />
          </StackPane.margin>
-      </Button>
-      <Button layoutX="504.0" layoutY="475.0" mnemonicParsing="false" text="Add More Field" StackPane.alignment="BOTTOM_RIGHT">
-         <StackPane.margin>
-            <Insets bottom="60.0" right="176.0" />
-         </StackPane.margin>
+         <padding>
+            <Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
+         </padding>
       </Button>
    </children>
 </StackPane>
