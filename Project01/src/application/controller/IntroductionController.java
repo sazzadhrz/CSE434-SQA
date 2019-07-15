@@ -1,6 +1,7 @@
 package application.controller;
 
 import application.Main;
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
@@ -8,11 +9,13 @@ import javafx.scene.control.TextField;
 
 public class IntroductionController {
 	@FXML Button introductionNextBtn;
+	@FXML Button introductionCancelBtn;
 	@FXML TextField nameTF;
 	@FXML TextField addressTF;
 	@FXML TextField emailTF;
 	@FXML TextField phoneTF;
 	
+	//Next button controller
 	public void introductionNextBtnActionController() {
 		System.out.println("next btn pressed");
 		
@@ -22,10 +25,20 @@ public class IntroductionController {
 //		System.out.println(Main.arraylist);
 	}
 	
+	//Cancel button controller
+	public void introductionCancelBtnActionController() {
+		System.out.println("Cancel btn pressed");
+		
+		Platform.exit();
+        System.exit(0);
+	}
+	
+	// HTML tags as method
 	private String h5(String info) {
 		return "<h5>" + info + "</h5>" + "\n";
 	}
 	
+	// HTML tags as method
 	private String h2(String info) {
 		return "<h2>" + info + "</h2>" + "\n";
 	}

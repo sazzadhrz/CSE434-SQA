@@ -90,7 +90,7 @@
             <Insets bottom="60.0" right="65.0" />
          </StackPane.margin>
       </Button>
-      <Button layoutX="504.0" layoutY="475.0" mnemonicParsing="false" text="Cancel" StackPane.alignment="BOTTOM_RIGHT">
+      <Button fx:id="introductionCancelBtn" layoutX="504.0" layoutY="475.0" mnemonicParsing="false" onAction="#introductionCancelBtnActionController" text="Cancel" StackPane.alignment="BOTTOM_RIGHT">
          <StackPane.margin>
             <Insets bottom="60.0" right="115.0" />
          </StackPane.margin>
