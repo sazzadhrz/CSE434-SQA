@@ -40,20 +40,27 @@ public class IntroductionController {
 		Main.arraylist.add(generateIntroHtml());
 		// System.out.println(Main.arraylist);
 
+		fieldValidation();
+	}
+	
+	public void fieldValidation() {
 		nameFieldValidation();
+		addressFieldValidation();
+		emailFieldValidation();
+		phoneFieldValidation();
 	}
 
 	// if null return false and raise warning on UI
 	public boolean nameFieldValidation() {
 		if (nameTF.getText() == "null" || nameTF.getText().trim().isEmpty()) {
 			warningLabel.setText("*Warning! All of the fields must be filled up");
-			System.out.println("False");
+			System.out.println("False, name null");
 			return false;
 		}
 
 		else {
 			System.out.println(nameTF.getText());
-			System.out.println("True; not null");
+			System.out.println("True, name not null");
 			return true;
 		}
 
@@ -63,13 +70,13 @@ public class IntroductionController {
 	public boolean addressFieldValidation() {
 		if (addressTF.getText() == "null" || addressTF.getText().trim().isEmpty()) {
 			warningLabel.setText("*Warning! All of the fields must be filled up");
-			System.out.println("False");
+			System.out.println("False, address null");
 			return false;
 		}
 
 		else {
 			System.out.println(addressTF.getText());
-			System.out.println("True; not null");
+			System.out.println("True, address not null");
 			return true;
 		}
 
@@ -79,13 +86,13 @@ public class IntroductionController {
 	public boolean emailFieldValidation() {
 		if (emailTF.getText() == "null" || emailTF.getText().trim().isEmpty()) {
 			warningLabel.setText("*Warning! All of the fields must be filled up");
-			System.out.println("False");
+			System.out.println("False, email null");
 			return false;
 		}
 
 		else {
 			System.out.println(emailTF.getText());
-			System.out.println("True; not null");
+			System.out.println("True, email not null");
 			return true;
 		}
 
@@ -95,13 +102,13 @@ public class IntroductionController {
 	public boolean phoneFieldValidation() {
 		if (phoneTF.getText() == "null" || phoneTF.getText().trim().isEmpty()) {
 			warningLabel.setText("*Warning! All of the fields must be filled up");
-			System.out.println("False");
+			System.out.println("False, phone null");
 			return false;
 		}
 
 		else {
 			System.out.println(phoneTF.getText());
-			System.out.println("True; not null");
+			System.out.println("True, phone not null");
 			return true;
 		}
 
