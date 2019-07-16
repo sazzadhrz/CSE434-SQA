@@ -42,9 +42,10 @@ public class IntroductionController {
 
 		nameFieldValidation();
 	}
-
+	
+	//if null return false and raise warning on UI
 	public boolean nameFieldValidation() {
-		if (nameTF.getText() != "null") {
+		if (nameTF.getText() == "null" || nameTF.getText().trim().isEmpty()) {
 			warningLabel.setText("*Warning!");
 			System.out.println("False");
 			return false;
