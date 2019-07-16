@@ -75,6 +75,24 @@ public class IntroductionController {
 
 		}
 		
+		//if null return false and raise warning on UI
+				public boolean emailFieldValidation() {
+					if (emailTF.getText() == "null" || emailTF.getText().trim().isEmpty()) {
+						warningLabel.setText("*Warning! All of the fields must be filled up");
+						System.out.println("False");
+						return false;
+					}
+
+					else {
+						System.out.println(nameTF.getText());
+						System.out.println("True; not null");
+						return true;
+					}
+
+				}
+				
+				
+		
 		
 
 	// HTML tags as method
