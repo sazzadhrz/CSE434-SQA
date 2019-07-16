@@ -46,19 +46,36 @@ public class IntroductionController {
 	//if null return false and raise warning on UI
 	public boolean nameFieldValidation() {
 		if (nameTF.getText() == "null" || nameTF.getText().trim().isEmpty()) {
-			warningLabel.setText("*Warning!");
+			warningLabel.setText("*Warning! All of the fields must be filled up");
 			System.out.println("False");
 			return false;
 		}
 
 		else {
-			System.out.print(nameTF.getText());
-			System.out.println("a");
-			System.out.println("True");
+			System.out.println(nameTF.getText());
+			System.out.println("True; not null");
 			return true;
 		}
 
 	}
+	
+	//if null return false and raise warning on UI
+		public boolean addressFieldValidation() {
+			if (addressTF.getText() == "null" || addressTF.getText().trim().isEmpty()) {
+				warningLabel.setText("*Warning! All of the fields must be filled up");
+				System.out.println("False");
+				return false;
+			}
+
+			else {
+				System.out.println(nameTF.getText());
+				System.out.println("True; not null");
+				return true;
+			}
+
+		}
+		
+		
 
 	// HTML tags as method
 	private String h5(String info) {
