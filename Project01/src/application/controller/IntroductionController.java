@@ -68,7 +68,7 @@ public class IntroductionController {
 			}
 
 			else {
-				System.out.println(nameTF.getText());
+				System.out.println(addressTF.getText());
 				System.out.println("True; not null");
 				return true;
 			}
@@ -84,7 +84,23 @@ public class IntroductionController {
 					}
 
 					else {
-						System.out.println(nameTF.getText());
+						System.out.println(emailTF.getText());
+						System.out.println("True; not null");
+						return true;
+					}
+
+				}
+				
+				//if null return false and raise warning on UI
+				public boolean phoneFieldValidation() {
+					if (phoneTF.getText() == "null" || phoneTF.getText().trim().isEmpty()) {
+						warningLabel.setText("*Warning! All of the fields mus be filled up");
+						System.out.println("False");
+						return false;
+					}
+
+					else {
+						System.out.println(phoneTF.getText());
 						System.out.println("True; not null");
 						return true;
 					}
