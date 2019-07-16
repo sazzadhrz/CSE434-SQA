@@ -79,7 +79,7 @@ public class Main extends Application {
 	public static void generateHTML() throws IOException {
 		arraylist.add(bodyClose());
 
-		File outfile = new File("html/output.html");
+		File outfile = new File("html/resume.html");
 		BufferedWriter bw = new BufferedWriter(new FileWriter(outfile));
 
 		for (int i = 0; i < arraylist.size(); i++) {

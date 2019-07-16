@@ -42,8 +42,8 @@ public class IntroductionController {
 
 		nameFieldValidation();
 	}
-	
-	//if null return false and raise warning on UI
+
+	// if null return false and raise warning on UI
 	public boolean nameFieldValidation() {
 		if (nameTF.getText() == "null" || nameTF.getText().trim().isEmpty()) {
 			warningLabel.setText("*Warning! All of the fields must be filled up");
@@ -58,58 +58,54 @@ public class IntroductionController {
 		}
 
 	}
-	
-	//if null return false and raise warning on UI
-		public boolean addressFieldValidation() {
-			if (addressTF.getText() == "null" || addressTF.getText().trim().isEmpty()) {
-				warningLabel.setText("*Warning! All of the fields must be filled up");
-				System.out.println("False");
-				return false;
-			}
 
-			else {
-				System.out.println(addressTF.getText());
-				System.out.println("True; not null");
-				return true;
-			}
-
+	// if null return false and raise warning on UI
+	public boolean addressFieldValidation() {
+		if (addressTF.getText() == "null" || addressTF.getText().trim().isEmpty()) {
+			warningLabel.setText("*Warning! All of the fields must be filled up");
+			System.out.println("False");
+			return false;
 		}
-		
-		//if null return false and raise warning on UI
-				public boolean emailFieldValidation() {
-					if (emailTF.getText() == "null" || emailTF.getText().trim().isEmpty()) {
-						warningLabel.setText("*Warning! All of the fields must be filled up");
-						System.out.println("False");
-						return false;
-					}
 
-					else {
-						System.out.println(emailTF.getText());
-						System.out.println("True; not null");
-						return true;
-					}
+		else {
+			System.out.println(addressTF.getText());
+			System.out.println("True; not null");
+			return true;
+		}
 
-				}
-				
-				//if null return false and raise warning on UI
-				public boolean phoneFieldValidation() {
-					if (phoneTF.getText() == "null" || phoneTF.getText().trim().isEmpty()) {
-						warningLabel.setText("*Warning! All of the fields mus be filled up");
-						System.out.println("False");
-						return false;
-					}
+	}
 
-					else {
-						System.out.println(phoneTF.getText());
-						System.out.println("True; not null");
-						return true;
-					}
+	// if null return false and raise warning on UI
+	public boolean emailFieldValidation() {
+		if (emailTF.getText() == "null" || emailTF.getText().trim().isEmpty()) {
+			warningLabel.setText("*Warning! All of the fields must be filled up");
+			System.out.println("False");
+			return false;
+		}
 
-				}
-				
-				
-		
-		
+		else {
+			System.out.println(emailTF.getText());
+			System.out.println("True; not null");
+			return true;
+		}
+
+	}
+
+	// if null return false and raise warning on UI
+	public boolean phoneFieldValidation() {
+		if (phoneTF.getText() == "null" || phoneTF.getText().trim().isEmpty()) {
+			warningLabel.setText("*Warning! All of the fields must be filled up");
+			System.out.println("False");
+			return false;
+		}
+
+		else {
+			System.out.println(phoneTF.getText());
+			System.out.println("True; not null");
+			return true;
+		}
+
+	}
 
 	// HTML tags as method
 	private String h5(String info) {
