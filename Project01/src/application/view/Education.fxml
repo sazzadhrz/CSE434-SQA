@@ -97,7 +97,7 @@
       <HBox alignment="BOTTOM_RIGHT" prefHeight="31.0" prefWidth="471.0" spacing="15.0">
          <children>
             <Button fx:id="back" mnemonicParsing="false" text="Back" />
-            <Button fx:id="cancel" layoutX="307.0" layoutY="85.0" mnemonicParsing="false" text="Cancel" />
+            <Button fx:id="cancel" layoutX="307.0" layoutY="85.0" mnemonicParsing="false" onAction="#educationCancelBtnActionController" text="Cancel" />
             <Button fx:id="next" layoutX="307.0" layoutY="85.0" mnemonicParsing="false" text="Next" />
          </children>
       </HBox>

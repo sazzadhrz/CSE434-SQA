@@ -1,5 +1,6 @@
 package application.controller;
 
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 
 import javafx.scene.control.Button;
@@ -33,5 +34,12 @@ public class EducationController {
 	private Button cancel;
 	@FXML
 	private Button next;
+	
+	public void educationCancelBtnActionController() {
+		System.out.println("Cancel btn pressed");
+
+		Platform.exit();
+		System.exit(0);
+	}
 
 }
