@@ -11,6 +11,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 public class IntroductionController {
@@ -38,7 +40,7 @@ public class IntroductionController {
 	}
 
 	// Next button controller
-	public void introductionNextBtnActionController() {
+	public void introductionNextBtnActionController() throws IOException {
 		System.out.println("next btn pressed");
 
 		Main.arraylist.add(generateHeader());
@@ -48,8 +50,22 @@ public class IntroductionController {
 		// System.out.println(Main.arraylist);
 
 		fieldValidation();
-		//onBtnClick();
+		openRegister();
 	}
+	
+	private Stage stage;
+	
+	@FXML
+    private void openRegister() throws IOException{
+        stage = (Stage) introductionNextBtn.getScene().getWindow();
+        BorderPane root;
+        root = (BorderPane) FXMLLoader.load(getClass().getResource("/../Test.fxml"));
+        Scene scene = new Scene(root);
+        //scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+        stage.setScene(scene);
+        System.out.println("Register.fxml opened");
+    }
+
 	
 	public void onBtnClick(ActionEvent event) {
 	    try {

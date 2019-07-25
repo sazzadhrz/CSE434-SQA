@@ -30,9 +30,19 @@ public class Main extends Application {
 		}
 	}
 
+
 	public void showIntroductionView() throws IOException {
 		FXMLLoader loader = new FXMLLoader();
 		loader.setLocation(Main.class.getResource("view/Introduction.fxml"));
+		mainlayout = loader.load();
+		Scene scene = new Scene(mainlayout);
+		primaryStage.setScene(scene);
+		primaryStage.show();
+	}
+	
+	public void showEducationView() throws IOException {
+		FXMLLoader loader = new FXMLLoader();
+		loader.setLocation(Main.class.getResource("view/Education.fxml"));
 		mainlayout = loader.load();
 		Scene scene = new Scene(mainlayout);
 		primaryStage.setScene(scene);
