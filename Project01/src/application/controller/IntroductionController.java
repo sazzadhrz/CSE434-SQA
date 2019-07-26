@@ -43,13 +43,13 @@ public class IntroductionController {
 	private StackPane introductionlayout;
 
 	// Next button controller
-	public void introductionNextBtnActionController(ActionEvent event) {
+	public void introductionNextBtnActionController(ActionEvent event) throws IOException {
 		System.out.println("next btn pressed");
-//		if (fieldNullValidation())
-//			System.out.println("validation done");
-System.out.println(nameValidation());
-		
-		
+		if (fieldValidation()) {
+			System.out.println("validation done");
+			pushDataToNext();
+			goToEducation();
+		}
 	}
 	
 	public void goToEducation() throws IOException {
@@ -68,10 +68,10 @@ System.out.println(nameValidation());
 	}
 
 	
-	public void fieldValidation() {
-		fieldNullValidation();
-		nameValidation();
-		emailValidation();
+	public boolean fieldValidation() {
+		return fieldNullValidation() &&
+		nameValidation() &&
+		emailValidation() &&
 		phoneValidation();
 	}
 	
