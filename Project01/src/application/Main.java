@@ -8,6 +8,7 @@ import java.util.ArrayList;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
@@ -35,15 +36,7 @@ public class Main extends Application {
 		FXMLLoader loader = new FXMLLoader();
 		loader.setLocation(Main.class.getResource("view/Introduction.fxml"));
 		mainlayout = loader.load();
-		Scene scene = new Scene(mainlayout);
-		primaryStage.setScene(scene);
-		primaryStage.show();
-	}
-	
-	public void showEducationView() throws IOException {
-		FXMLLoader loader = new FXMLLoader();
-		loader.setLocation(Main.class.getResource("view/Education.fxml"));
-		mainlayout = loader.load();
+		//mainlayout.setMargin(mainlayout, new Insets(50,50,50,50));
 		Scene scene = new Scene(mainlayout);
 		primaryStage.setScene(scene);
 		primaryStage.show();

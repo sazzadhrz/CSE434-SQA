@@ -5,6 +5,7 @@ import java.io.IOException;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Insets;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -49,7 +50,10 @@ public class EducationController {
 		System.exit(0);
 	}
 	
-	public void educationNextBtnActionController() {
+	public void educationNextBtnActionController() throws IOException {
+		System.out.println("edu next btn pressed");
+		VBox pane = FXMLLoader.load(getClass().getResource("../view/Work.fxml"));
+		educationlayout.getChildren().setAll(pane);
 		
 	}
 	
@@ -57,6 +61,7 @@ public class EducationController {
 		System.out.println("edu back btn pressed");
 		StackPane pane = FXMLLoader.load(getClass().getResource("../view/Introduction.fxml"));
 		educationlayout.getChildren().setAll(pane);
+		educationlayout.setMargin(pane, new Insets(-50,-50,-50,-50));
 	}
 
 }

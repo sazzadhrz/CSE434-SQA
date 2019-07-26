@@ -7,6 +7,7 @@ import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Insets;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -48,6 +49,7 @@ public class IntroductionController {
 		
 		VBox pane = FXMLLoader.load(getClass().getResource("../view/Education.fxml"));
 		introductionlayout.getChildren().setAll(pane);
+		introductionlayout.setMargin(pane, new Insets(50,50,50,50));
 		
 	}
 	
