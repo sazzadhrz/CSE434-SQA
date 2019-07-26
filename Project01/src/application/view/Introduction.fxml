@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-<StackPane alignment="TOP_LEFT" prefHeight="550.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.IntroductionController">
+<StackPane fx:id="mainlayout" alignment="TOP_LEFT" prefHeight="550.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.IntroductionController">
 	<children>
 		<Label alignment="CENTER" contentDisplay="CENTER" lineSpacing="5.0" text="Welcome to Resume Generator" textAlignment="CENTER" textFill="#3b89ff" textOverrun="CLIP" StackPane.alignment="TOP_CENTER">
 			<font>
