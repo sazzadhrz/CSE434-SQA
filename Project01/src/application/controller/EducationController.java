@@ -67,6 +67,19 @@ public class EducationController {
 	}
 	
 	
+	public void fieldValidation() {
+		name1FieldValidation();
+		degree1FieldValidation();
+		year1FieldValidation();
+		cgpa1FieldValidation();
+		
+		name2FieldValidation();
+		degree2FieldValidation();
+		year2FieldValidation();
+		cgpa2FieldValidation();
+	}
+	
+	
 	public boolean name1FieldValidation() {
 		if (name1.getText() == "null" || name1.getText().trim().isEmpty()) {
 			warningLabel.setText("*Warning! All of the fields must be filled up");
@@ -112,7 +125,7 @@ public class EducationController {
 
 	}
 	
-	public boolean degre2FieldValidation() {
+	public boolean degree2FieldValidation() {
 		if (degree2.getText() == "null" || degree2.getText().trim().isEmpty()) {
 			warningLabel.setText("*Warning! All of the fields must be filled up");
 			System.out.println("False, name null");
