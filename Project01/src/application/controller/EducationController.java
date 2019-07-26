@@ -42,20 +42,7 @@ public class EducationController {
 	@FXML
 	private VBox educationlayout;
 	
-	public boolean name1FieldValidation() {
-		if (name1.getText() == "null" || name1.getText().trim().isEmpty()) {
-			warningLabel.setText("*Warning! All of the fields must be filled up");
-			System.out.println("False, name null");
-			return false;
-		}
-
-		else {
-			System.out.println(name1.getText());
-			System.out.println("True, name not null");
-			return true;
-		}
-
-	}
+	
 	
 	
 	public void educationCancelBtnActionController() {
@@ -78,5 +65,70 @@ public class EducationController {
 		educationlayout.getChildren().setAll(pane);
 		educationlayout.setMargin(pane, new Insets(-50,-50,-50,-50));
 	}
+	
+	
+	public boolean name1FieldValidation() {
+		if (name1.getText() == "null" || name1.getText().trim().isEmpty()) {
+			warningLabel.setText("*Warning! All of the fields must be filled up");
+			System.out.println("False, name null");
+			return false;
+		}
+
+		else {
+			System.out.println(name1.getText());
+			System.out.println("True, name not null");
+			return true;
+		}
+
+	}
+	
+	public boolean name2FieldValidation() {
+		if (name2.getText() == "null" || name2.getText().trim().isEmpty()) {
+			warningLabel.setText("*Warning! All of the fields must be filled up");
+			System.out.println("False, name null");
+			return false;
+		}
+
+		else {
+			System.out.println(name2.getText());
+			System.out.println("True, name not null");
+			return true;
+		}
+
+	}
+	
+	public boolean degree1FieldValidation() {
+		if (degree1.getText() == "null" || degree1.getText().trim().isEmpty()) {
+			warningLabel.setText("*Warning! All of the fields must be filled up");
+			System.out.println("False, name null");
+			return false;
+		}
+
+		else {
+			System.out.println(degree1.getText());
+			System.out.println("True, name not null");
+			return true;
+		}
+
+	}
+	
+	public boolean degre2FieldValidation() {
+		if (degree2.getText() == "null" || degree2.getText().trim().isEmpty()) {
+			warningLabel.setText("*Warning! All of the fields must be filled up");
+			System.out.println("False, name null");
+			return false;
+		}
+
+		else {
+			System.out.println(degree2.getText());
+			System.out.println("True, name not null");
+			return true;
+		}
+
+	}
+	
+	
+	
+	
 
 }
