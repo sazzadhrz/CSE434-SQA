@@ -45,9 +45,10 @@ public class IntroductionController {
 
 	// Next button controller
 	public void introductionNextBtnActionController(ActionEvent event) {
-		//pushDataToNext();
-		if (fieldValidation())
+		System.out.println("next btn pressed");
+		if (fieldNullValidation())
 			System.out.println("validation done");
+			
 		
 		
 	}
@@ -59,8 +60,6 @@ public class IntroductionController {
 	}
 	
 	private void pushDataToNext() {
-		System.out.println("next btn pressed");
-
 		Main.arraylist.add(generateHeader());
 		Main.arraylist.add(bodyOpen());
 		
@@ -76,16 +75,31 @@ public class IntroductionController {
 		
 	}
 	
+	public void fieldValidation() {
+		fieldNullValidation();
+		emailFieldValidation();
+	}
 	
-	public boolean fieldValidation() {
-		if(nameFieldValidation() && addressFieldValidation() && emailFieldValidation() && phoneFieldValidation())
+	public boolean emailFieldValidation() {
+		if(emailTF.getText().contains("@") && emailTF.getText().contains(".")) {
+			return true;
+		}
+		else{
+			warningLabel.setText("Email Must contain @ and .");
+			return false;
+		}
+	}
+	
+	
+	public boolean fieldNullValidation() {
+		if(nameFieldNullValidation() && addressFieldNullValidation() && emailFieldNullValidation() && phoneFieldNullValidation())
 			return true;
 		else
 			return false;
 	}
 
 	// if null return false and raise warning on UI
-	public boolean nameFieldValidation() {
+	public boolean nameFieldNullValidation() {
 		if (nameTF.getText() == "null" || nameTF.getText().trim().isEmpty()) {
 			warningLabel.setText("*Warning! All of the fields must be filled up");
 			System.out.println("False, name null");
@@ -101,7 +115,7 @@ public class IntroductionController {
 	}
 
 	// if null return false and raise warning on UI
-	public boolean addressFieldValidation() {
+	public boolean addressFieldNullValidation() {
 		if (addressTF.getText() == "null" || addressTF.getText().trim().isEmpty()) {
 			warningLabel.setText("*Warning! All of the fields must be filled up");
 			System.out.println("False, address null");
@@ -117,7 +131,7 @@ public class IntroductionController {
 	}
 
 	// if null return false and raise warning on UI
-	public boolean emailFieldValidation() {
+	public boolean emailFieldNullValidation() {
 		if (emailTF.getText() == "null" || emailTF.getText().trim().isEmpty()) {
 			warningLabel.setText("*Warning! All of the fields must be filled up");
 			System.out.println("False, email null");
@@ -133,7 +147,7 @@ public class IntroductionController {
 	}
 
 	// if null return false and raise warning on UI
-	public boolean phoneFieldValidation() {
+	public boolean phoneFieldNullValidation() {
 		if (phoneTF.getText() == "null" || phoneTF.getText().trim().isEmpty()) {
 			warningLabel.setText("*Warning! All of the fields must be filled up");
 			System.out.println("False, phone null");
