@@ -44,13 +44,18 @@ public class IntroductionController {
 	private StackPane introductionlayout;
 
 	// Next button controller
-	public void introductionNextBtnActionController(ActionEvent event) throws IOException {
+	public void introductionNextBtnActionController(ActionEvent event) {
 		//pushDataToNext();
+		if (fieldValidation())
+			System.out.println("validation done");
 		
+		
+	}
+	
+	public void goToEducation() throws IOException {
 		VBox pane = FXMLLoader.load(getClass().getResource("../view/Education.fxml"));
 		introductionlayout.getChildren().setAll(pane);
 		introductionlayout.setMargin(pane, new Insets(50,50,50,50));
-		
 	}
 	
 	private void pushDataToNext() {
@@ -62,7 +67,6 @@ public class IntroductionController {
 		Main.arraylist.add(generateIntroHtml());
 		// System.out.println(Main.arraylist);
 
-		fieldValidation();
 	}
 	
 	@FXML
@@ -73,11 +77,11 @@ public class IntroductionController {
 	}
 	
 	
-	public void fieldValidation() {
-		nameFieldValidation();
-		addressFieldValidation();
-		emailFieldValidation();
-		phoneFieldValidation();
+	public boolean fieldValidation() {
+		if(nameFieldValidation() && addressFieldValidation() && emailFieldValidation() && phoneFieldValidation())
+			return true;
+		else
+			return false;
 	}
 
 	// if null return false and raise warning on UI
