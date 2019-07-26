@@ -12,7 +12,6 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
-import javafx.stage.Stage;
 
 public class IntroductionController {
 	@FXML
@@ -41,14 +40,14 @@ public class IntroductionController {
 	//scene change variables
 	//private Stage stage;
 	@FXML
-	private StackPane mainlayout;
+	private StackPane introductionlayout;
 
 	// Next button controller
 	public void introductionNextBtnActionController(ActionEvent event) throws IOException {
-		pushDataToNext();
+		//pushDataToNext();
 		
 		VBox pane = FXMLLoader.load(getClass().getResource("../view/Education.fxml"));
-		mainlayout.getChildren().setAll(pane);
+		introductionlayout.getChildren().setAll(pane);
 		
 	}
 	
@@ -67,7 +66,7 @@ public class IntroductionController {
 	@FXML
 	private void loadScene(ActionEvent event) throws IOException {
 		VBox pane = FXMLLoader.load(getClass().getClassLoader().getResource("../application.view/Test.fxml"));
-		mainlayout.getChildren().setAll(pane);
+		introductionlayout.getChildren().setAll(pane);
 		
 	}
 	

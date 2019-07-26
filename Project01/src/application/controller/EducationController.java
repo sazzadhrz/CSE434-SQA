@@ -4,9 +4,12 @@ import java.io.IOException;
 
 import javafx.application.Platform;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.StackPane;
+import javafx.scene.layout.VBox;
 
 
 public class EducationController {
@@ -35,6 +38,9 @@ public class EducationController {
 	@FXML
 	private Button next;
 	
+	@FXML
+	private VBox educationlayout;
+	
 	
 	public void educationCancelBtnActionController() {
 		System.out.println("Cancel btn pressed");
@@ -48,7 +54,9 @@ public class EducationController {
 	}
 	
 	public void educationBackBtnActionController() throws IOException {
-		
+		System.out.println("edu back btn pressed");
+		StackPane pane = FXMLLoader.load(getClass().getResource("../view/Introduction.fxml"));
+		educationlayout.getChildren().setAll(pane);
 	}
 
 }
