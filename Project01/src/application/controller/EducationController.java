@@ -42,6 +42,21 @@ public class EducationController {
 	@FXML
 	private VBox educationlayout;
 	
+	public boolean name1FieldValidation() {
+		if (name1.getText() == "null" || name1.getText().trim().isEmpty()) {
+			warningLabel.setText("*Warning! All of the fields must be filled up");
+			System.out.println("False, name null");
+			return false;
+		}
+
+		else {
+			System.out.println(name1.getText());
+			System.out.println("True, name not null");
+			return true;
+		}
+
+	}
+	
 	
 	public void educationCancelBtnActionController() {
 		System.out.println("Cancel btn pressed");
