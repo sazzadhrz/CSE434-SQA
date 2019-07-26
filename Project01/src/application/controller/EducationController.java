@@ -127,7 +127,35 @@ public class EducationController {
 
 	}
 	
+	public boolean year1FieldValidation() {
+		if (year1.getText() == "null" || year1.getText().trim().isEmpty()) {
+			warningLabel.setText("*Warning! All of the fields must be filled up");
+			System.out.println("False, name null");
+			return false;
+		}
+
+		else {
+			System.out.println(year1.getText());
+			System.out.println("True, name not null");
+			return true;
+		}
+
+	}
 	
+	public boolean year2FieldValidation() {
+		if (year2.getText() == "null" || year2.getText().trim().isEmpty()) {
+			warningLabel.setText("*Warning! All of the fields must be filled up");
+			System.out.println("False, name null");
+			return false;
+		}
+
+		else {
+			System.out.println(year2.getText());
+			System.out.println("True, name not null");
+			return true;
+		}
+
+	}
 	
 	
 
