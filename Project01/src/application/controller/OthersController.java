@@ -68,5 +68,18 @@ public class OthersController {
 
 	}
 	
-	
+	public boolean interestsTAFieldValidation() {
+		if (interestsTA.getText() == "null" || interestsTA.getText().trim().isEmpty()) {
+			warningLabel.setText("*Warning! All of the fields must be filled up");
+			System.out.println("False, name null");
+			return false;
+		}
+
+		else {
+			System.out.println(interestsTA.getText());
+			System.out.println("True, name not null");
+			return true;
+		}
+
+	}
 }
