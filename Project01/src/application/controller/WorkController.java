@@ -1,20 +1,15 @@
 package application.controller;
 
-import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.control.Button;
-
-import javafx.scene.control.TextField;
-
 import java.io.IOException;
 
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
-
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-
 import javafx.scene.control.TextArea;
-import javafx.scene.layout.StackPane;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 
 public class WorkController {
@@ -45,7 +40,7 @@ public class WorkController {
 	// Event Listener on Button[#back].onAction
 	@FXML
 	public void workBackBtnActionController(ActionEvent event) throws IOException {
-		System.out.println("edu back btn pressed");
+		System.out.println("work back btn pressed");
 		VBox pane = FXMLLoader.load(getClass().getResource("../view/Education.fxml"));
 		worklayout.getChildren().setAll(pane);
 	}
@@ -60,6 +55,8 @@ public class WorkController {
 	// Event Listener on Button[#next].onAction
 	@FXML
 	public void workNextBtnActionController(ActionEvent event) throws IOException {
-		
+		System.out.println("work next btn pressed");
+		VBox pane = FXMLLoader.load(getClass().getResource("../view/Others.fxml"));
+		worklayout.getChildren().setAll(pane);
 	}
 }
