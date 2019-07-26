@@ -172,6 +172,21 @@ public class EducationController {
 
 	}
 	
+	public boolean cgpa2FieldValidation() {
+		if (cgpa2.getText() == "null" || cgpa2.getText().trim().isEmpty()) {
+			warningLabel.setText("*Warning! All of the fields must be filled up");
+			System.out.println("False, name null");
+			return false;
+		}
+
+		else {
+			System.out.println(cgpa2.getText());
+			System.out.println("True, name not null");
+			return true;
+		}
+
+	}
+	
 	
 
 }
