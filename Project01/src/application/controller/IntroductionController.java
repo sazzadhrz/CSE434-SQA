@@ -105,7 +105,14 @@ public class IntroductionController {
 	
 	public boolean phoneValidation() {
 	      String regex = "^[0-9+#*\\[\\]]+$";
-	      return phoneTF.getText().matches(regex);
+	      if(phoneTF.getText().matches(regex)) {
+	    	  warningLabel.setText("");
+	    	  return true;
+	      }
+	      else {
+	    	  warningLabel.setText("Invalid Phone Number, please enter correct phone number");
+	    	  return false;
+	      }
 	   }
 	
 	
