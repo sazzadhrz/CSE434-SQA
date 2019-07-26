@@ -90,4 +90,34 @@ public class WorkController {
 		}
 
 	}
+	
+	public boolean position1FieldValidation() {
+		if (position1.getText() == "null" || position1.getText().trim().isEmpty()) {
+			warningLabel.setText("*Warning! All of the fields must be filled up");
+			System.out.println("False, name null");
+			return false;
+		}
+
+		else {
+			System.out.println(position1.getText());
+			System.out.println("True, name not null");
+			return true;
+		}
+
+	}
+	
+	public boolean position2FieldValidation() {
+		if (position2.getText() == "null" || position2.getText().trim().isEmpty()) {
+			warningLabel.setText("*Warning! All of the fields must be filled up");
+			System.out.println("False, name null");
+			return false;
+		}
+
+		else {
+			System.out.println(position2.getText());
+			System.out.println("True, name not null");
+			return true;
+		}
+
+	}
 }
