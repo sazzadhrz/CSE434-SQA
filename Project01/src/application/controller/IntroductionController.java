@@ -47,7 +47,7 @@ public class IntroductionController {
 		System.out.println("next btn pressed");
 //		if (fieldNullValidation())
 //			System.out.println("validation done");
-System.out.println(aaa());
+System.out.println(nameValidation());
 		
 		
 	}
@@ -70,26 +70,38 @@ System.out.println(aaa());
 	
 	public void fieldValidation() {
 		fieldNullValidation();
-		emailFieldValidation();
+		nameValidation();
+		emailValidation();
 		phoneValidation();
 	}
 	
-	public boolean aaa() {
-		if(nameTF.getText().contains("^[0-9]"))
-			return false;
-		else 
-			return true;
-	}
 	
-	public boolean emailFieldValidation() {
-		return isEmailValid(emailTF.getText());
-	}
+	// https://stackoverflow.com/questions/15805555/java-regex-to-validate-full-name-allow-only-spaces-and-letters
+	public boolean nameValidation() {
+		String regx = "^[\\p{L} .'-]+$";
+		if(nameTF.getText().matches(regx)) {
+			warningLabel.setText("");
+			return true;
+		}
+		else {
+			warningLabel.setText("*Warning! Please Enter name correctly");
+			return false;
+		}
+	}	
 	
 	// https://www.tutorialspoint.com/validate-email-address-in-java
-	public boolean isEmailValid(String email) {
-	      String regex = "^[\\w-_\\.+]*[\\w-_\\.]\\@([\\w]+\\.)+[\\w]+[\\w]$";
-	      return email.matches(regex);
-	   }
+	public boolean emailValidation() {
+		String regex = "^[\\w-_\\.+]*[\\w-_\\.]\\@([\\w]+\\.)+[\\w]+[\\w]$";
+	      if(emailTF.getText().matches(regex)) {
+	    	  warningLabel.setText("");
+	    	  return true;
+	      }
+	      else {
+	    	  warningLabel.setText("Invalid Email, please enter correct Email address");
+	    	  return false;
+	      }
+	}
+	
 	
 	public boolean phoneValidation() {
 	      String regex = "^[0-9+#*\\[\\]]+$";
@@ -98,8 +110,10 @@ System.out.println(aaa());
 	
 	
 	public boolean fieldNullValidation() {
-		if(nameFieldNullValidation() && addressFieldNullValidation() && emailFieldNullValidation() && phoneFieldNullValidation())
+		if(nameFieldNullValidation() && addressFieldNullValidation() && emailFieldNullValidation() && phoneFieldNullValidation()) {
+			warningLabel.setText("");
 			return true;
+		}
 		else
 			return false;
 	}
