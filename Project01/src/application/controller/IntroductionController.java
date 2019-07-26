@@ -7,12 +7,11 @@ import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.StackPane;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 public class IntroductionController {
@@ -38,9 +37,22 @@ public class IntroductionController {
 		Platform.exit();
 		System.exit(0);
 	}
+	
+	//scene change variables
+	//private Stage stage;
+	@FXML
+	private StackPane mainlayout;
 
 	// Next button controller
 	public void introductionNextBtnActionController(ActionEvent event) throws IOException {
+		pushDataToNext();
+		
+		VBox pane = FXMLLoader.load(getClass().getResource("../view/Education.fxml"));
+		mainlayout.getChildren().setAll(pane);
+		
+	}
+	
+	private void pushDataToNext() {
 		System.out.println("next btn pressed");
 
 		Main.arraylist.add(generateHeader());
@@ -50,64 +62,15 @@ public class IntroductionController {
 		// System.out.println(Main.arraylist);
 
 		fieldValidation();
-//		openRegister();
-//		loadScene(null);
-		
-		BorderPane pane = FXMLLoader.load(getClass().getResource("../view/Test.fxml"));
-		mainlayout.getChildren().setAll(pane);
-		
 	}
-	
-	private Stage stage;
-	@FXML
-	private StackPane mainlayout;
 	
 	@FXML
 	private void loadScene(ActionEvent event) throws IOException {
-		BorderPane pane = FXMLLoader.load(getClass().getClassLoader().getResource("../application.view/Test.fxml"));
+		VBox pane = FXMLLoader.load(getClass().getClassLoader().getResource("../application.view/Test.fxml"));
 		mainlayout.getChildren().setAll(pane);
 		
 	}
 	
-	@FXML
-    private void openRegister() throws IOException{
-        stage = (Stage) introductionNextBtn.getScene().getWindow();
-        //BorderPane root;
-        FXMLLoader loader = new FXMLLoader();
-        mainlayout = loader.load();
-		loader.setLocation(IntroductionController.class.getClassLoader().getResource("/view/Test.fxml")); //problem is in this line
-		
-		
-        //root = (BorderPane) FXMLLoader.load(getClass().getClassLoader().getResource("Test.fxml"));
-        Scene scene = new Scene(mainlayout);
-        //scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
-        stage.setScene(scene);
-        stage.show();
-        System.out.println("Test.fxml opened");
-    }
-	
-//	 @FXML
-//	    private void openRegister() throws IOException{
-//	        stage = (Stage) introductionNextBtn.getScene().getWindow();
-//	        BorderPane root;
-//	        root = (BorderPane) FXMLLoader.load(getClass().getClassLoader().getResource("view/Test.fxml"));
-//	        Scene scene = new Scene(root);
-//	        stage.setScene(scene);
-//	        System.out.println("Register.fxml opened");
-//	    }
-
-	
-	public void onBtnClick(ActionEvent event) {
-	    try {
-	        FXMLLoader loader = new FXMLLoader(getClass().getResource("application/view/Education.fxml"));
-	        Stage stage = (Stage) introductionNextBtn.getScene().getWindow();
-	        Scene scene = new Scene(loader.load());
-	        stage.setScene(scene);
-	    }catch (IOException io){
-	        io.printStackTrace();
-	    }
-
-	}
 	
 	public void fieldValidation() {
 		nameFieldValidation();
