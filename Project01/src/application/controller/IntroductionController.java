@@ -33,7 +33,6 @@ public class IntroductionController {
 	// Cancel button controller
 	public void introductionCancelBtnActionController() {
 		System.out.println("Cancel btn pressed");
-
 		Platform.exit();
 		System.exit(0);
 	}
@@ -46,9 +45,9 @@ public class IntroductionController {
 	// Next button controller
 	public void introductionNextBtnActionController(ActionEvent event) {
 		System.out.println("next btn pressed");
-		if (fieldNullValidation())
-			System.out.println("validation done");
-			
+//		if (fieldNullValidation())
+//			System.out.println("validation done");
+System.out.println(aaa());
 		
 		
 	}
@@ -67,28 +66,35 @@ public class IntroductionController {
 		// System.out.println(Main.arraylist);
 
 	}
-	
-	@FXML
-	private void loadScene(ActionEvent event) throws IOException {
-		VBox pane = FXMLLoader.load(getClass().getClassLoader().getResource("../application.view/Test.fxml"));
-		introductionlayout.getChildren().setAll(pane);
-		
-	}
+
 	
 	public void fieldValidation() {
 		fieldNullValidation();
 		emailFieldValidation();
+		phoneValidation();
+	}
+	
+	public boolean aaa() {
+		if(nameTF.getText().contains("^[0-9]"))
+			return false;
+		else 
+			return true;
 	}
 	
 	public boolean emailFieldValidation() {
-		if(emailTF.getText().contains("@") && emailTF.getText().contains(".")) {
-			return true;
-		}
-		else{
-			warningLabel.setText("Email Must contain @ and .");
-			return false;
-		}
+		return isEmailValid(emailTF.getText());
 	}
+	
+	// https://www.tutorialspoint.com/validate-email-address-in-java
+	public boolean isEmailValid(String email) {
+	      String regex = "^[\\w-_\\.+]*[\\w-_\\.]\\@([\\w]+\\.)+[\\w]+[\\w]$";
+	      return email.matches(regex);
+	   }
+	
+	public boolean phoneValidation() {
+	      String regex = "^[0-9+#*\\[\\]]+$";
+	      return phoneTF.getText().matches(regex);
+	   }
 	
 	
 	public boolean fieldNullValidation() {
