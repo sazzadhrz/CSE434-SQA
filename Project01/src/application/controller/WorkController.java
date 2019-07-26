@@ -60,6 +60,15 @@ public class WorkController {
 		worklayout.getChildren().setAll(pane);
 	}
 	
+	public void fieldValidation() {
+		name1FieldValidation();
+		position1FieldValidation();
+		description1FieldValidation();
+		name2FieldValidation();
+		position2FieldValidation();
+		description2FieldValidation();
+	}
+	
 	
 	public boolean name1FieldValidation() {
 		if (name1.getText() == "null" || name1.getText().trim().isEmpty()) {
