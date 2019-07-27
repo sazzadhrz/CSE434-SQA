@@ -46,6 +46,8 @@ public class IntroductionControllerTest {
 		
 		assertTrue("valid", ic.isEmailValid("sazzadhrz@gmail.com"));
 		assertFalse(ic.isEmailValid("dfsaf5"));
+		assertTrue("valid", ic.isEmailValid("sazzad_5136@hotmail.com"));
+		assertFalse(ic.isEmailValid("sazzad.com"));
 	}
 	
 
@@ -53,6 +55,8 @@ public class IntroductionControllerTest {
 	public void isPhoneValidTest() {
 		assertEquals(true, ic.isPhoneValid("01613645555"));
 		assertFalse(ic.isPhoneValid("1234"));
+		assertTrue(ic.isPhoneValid("+8801613645555"));
+		assertTrue(ic.isPhoneValid("9125698"));
 //		fail("NI");
 	}
 	
