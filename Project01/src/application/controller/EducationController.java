@@ -51,7 +51,8 @@ public class EducationController {
 		System.out.println("edu next btn pressed");
 		// goToWork();
 		// fieldValidation();
-		cgpaValidation();
+//		cgpaValidation();
+System.out.println(generateToHTML());
 	}
 
 	public void educationBackBtnActionController() throws IOException {
@@ -296,12 +297,23 @@ public class EducationController {
 			return "<h4>" + info + "</h4>" + "\n";
 		}
 		
-		private void generateToHTML() {
+		private String generateToHTML() {
+			String title = "<h1><i>Educational Background</i></h1>" + "\n";
+			String edu1 = 
+					  h3(name1.getText()) 
+					+ h4(degree1.getText())
+					+ h5(year1.getText())
+					+ h5(cgpa1.getText());
 			
+			String edu2 = 
+					  h3(name2.getText()) 
+					+ h4(degree2.getText())
+					+ h5(year2.getText())
+					+ h5(cgpa2.getText());
+			
+			String educationHTML = title + edu1 + edu2;
+			return educationHTML;
 		}
-	
-	
-	
-	
+		
 
 }
