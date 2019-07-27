@@ -1,6 +1,7 @@
 package application.controller;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import javafx.application.Platform;
 import javafx.fxml.FXML;
@@ -40,6 +41,8 @@ public class EducationController {
 
 	@FXML
 	private VBox educationlayout;
+	
+	public ArrayList<String> educationList = new ArrayList<String>();
 
 
 	public void educationCancelBtnActionController() {
@@ -52,13 +55,15 @@ public class EducationController {
 		// goToWork();
 		// fieldValidation();
 //		cgpaValidation();
-System.out.println(generateToHTML());
+		educationList.add(generateToHTML());
+
 	}
 
 	public void educationBackBtnActionController() throws IOException {
 		System.out.println("edu back btn pressed");
 		goToIntroduction();
 	}
+	
 
 	public void exit() {
 		Platform.exit();
