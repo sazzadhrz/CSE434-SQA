@@ -103,7 +103,7 @@ public class EducationController {
 			return true;
 		}
 		else {
-			warningLabel.setText("*Warning! Please Enter name correctly");
+			warningLabel.setText("*Warning! Please Enter degree name correctly");
 			return false;
 		}
 	}	
@@ -112,6 +112,23 @@ public class EducationController {
 		String regex = "^[a-zA-Z]+$";
 		return DegreeName.matches(regex);
 	}
+	
+	public boolean yearValidation() {
+		if(isNameValid(year1.getText()) && isNameValid(year2.getText())) {
+			warningLabel.setText("");
+			return true;
+		}
+		else {
+			warningLabel.setText("*Warning! Please Enter year correctly");
+			return false;
+		}
+	}	
+	
+	public boolean isYearValid(String year) {
+		String regex = "^[a-zA-Z0-9_.-]*$";
+		return year.matches(regex);
+	}
+	
 	
 	
 	public void fieldNullValidation() {
