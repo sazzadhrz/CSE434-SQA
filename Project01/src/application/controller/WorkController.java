@@ -89,6 +89,22 @@ public class WorkController {
 		return name.matches(regex);
 	}
 	
+	public boolean positionValidation() {
+		if(isPositionValid(position1.getText()) && isPositionValid(position2.getText())) {
+			warningLabel.setText("");
+			return true;
+		}
+		else {
+			warningLabel.setText("*Warning! Please Enter position name correctly");
+			return false;
+		}
+	}	
+	
+	public boolean isPositionValid(String positionName) {
+		String regex = "^[a-zA-Z]+$";
+		return positionName.matches(regex);
+	}
+	
 	
 	
 	public void fieldNullValidation() {
