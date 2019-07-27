@@ -141,11 +141,20 @@ public class EducationController {
 			warningLabel.setText("*Warning! Please Enter cgpa correctly");
 			return false;
 		}
+		
 	}	
 	
 	public boolean isCgpaValid(String cgpa) {
-		float cg = Float.parseFloat(cgpa);
-		return cg > 0 && cg <= 5;
+		String regex = "^[0-5][.][0-9][0-9]$";
+		
+		if(cgpa.matches(regex)){
+			if(Float.parseFloat(cgpa) <=5)
+				return true;
+			else
+				return false;
+		}
+		else
+			return false;
 	}
 	
 	
