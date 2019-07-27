@@ -41,10 +41,6 @@ public class EducationController {
 	@FXML
 	private VBox educationlayout;
 
-	public void exit() {
-		Platform.exit();
-		System.exit(0);
-	}
 
 	public void educationCancelBtnActionController() {
 		System.out.println("Cancel btn pressed");
@@ -61,6 +57,11 @@ public class EducationController {
 	public void educationBackBtnActionController() throws IOException {
 		System.out.println("edu back btn pressed");
 		goToIntroduction();
+	}
+
+	public void exit() {
+		Platform.exit();
+		System.exit(0);
 	}
 
 	public void goToIntroduction() throws IOException {
@@ -281,5 +282,26 @@ public class EducationController {
 		}
 
 	}
+	
+	// HTML tags as method
+		public String h5(String info) {
+			return "<h5>" + info + "</h5>" + "\n";
+		}
+
+		public String h3(String info) {
+			return "<h3>" + info + "</h3>" + "\n";
+		}
+		
+		public String h4(String info) {
+			return "<h4>" + info + "</h4>" + "\n";
+		}
+		
+		private void generateToHTML() {
+			
+		}
+	
+	
+	
+	
 
 }

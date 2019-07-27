@@ -197,12 +197,11 @@ public class IntroductionController {
 	}
 
 	// HTML tags as method
-	private String h5(String info) {
+	public String h5(String info) {
 		return "<h5>" + info + "</h5>" + "\n";
 	}
 
-	// HTML tags as method
-	private String h2(String info) {
+	public String h2(String info) {
 		return "<h2>" + info + "</h2>" + "\n";
 	}
 
