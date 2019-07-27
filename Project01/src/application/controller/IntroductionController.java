@@ -45,11 +45,12 @@ public class IntroductionController {
 	// Next button controller
 	public void introductionNextBtnActionController(ActionEvent event) throws IOException {
 		System.out.println("next btn pressed");
-		if (fieldValidation()) {
-			System.out.println("validation done");
-			pushDataToNext();
-			goToEducation();
-		}
+//		if (fieldValidation()) {
+//			System.out.println("validation done");
+//			pushDataToNext();
+//			goToEducation();
+//		}
+		goToEducation();
 	}
 	
 	public void goToEducation() throws IOException {

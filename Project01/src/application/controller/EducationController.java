@@ -66,8 +66,29 @@ public class EducationController {
 		educationlayout.setMargin(pane, new Insets(-50,-50,-50,-50));
 	}
 	
-	
 	public void fieldValidation() {
+		fieldNullValidation();
+		nameValidation();
+	}
+	
+	public boolean nameValidation() {
+		if(isNameValid(name1.getText()) && isNameValid(name2.getText())) {
+			warningLabel.setText("");
+			return true;
+		}
+		else {
+			warningLabel.setText("*Warning! Please Enter name correctly");
+			return false;
+		}
+	}	
+	
+	public boolean isNameValid(String name) {
+		String regex = "^[\\p{L} .'-]+$";
+		return name.matches(regex);
+	}
+	
+	
+	public void fieldNullValidation() {
 		name1FieldValidation();
 		degree1FieldValidation();
 		year1FieldValidation();
