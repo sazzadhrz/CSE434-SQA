@@ -129,6 +129,21 @@ public class EducationController {
 		return year.matches(regex);
 	}
 	
+	public boolean cgpaValidation() {
+		if(isNameValid(cgpa1.getText()) && isNameValid(cgpa2.getText())) {
+			warningLabel.setText("");
+			return true;
+		}
+		else {
+			warningLabel.setText("*Warning! Please Enter year correctly");
+			return false;
+		}
+	}	
+	
+	public boolean isCgpaValid(String cgpa) {
+		
+	}
+	
 	
 	
 	public void fieldNullValidation() {
