@@ -54,16 +54,23 @@ public class EducationController {
 	
 	public void educationNextBtnActionController() throws IOException {
 		System.out.println("edu next btn pressed");
-		VBox pane = FXMLLoader.load(getClass().getResource("../view/Work.fxml"));
-		educationlayout.getChildren().setAll(pane);
-		
+		goToWork();
 	}
 	
 	public void educationBackBtnActionController() throws IOException {
 		System.out.println("edu back btn pressed");
+		
+	}
+	
+	public void goToIntroduction() throws IOException {
 		StackPane pane = FXMLLoader.load(getClass().getResource("../view/Introduction.fxml"));
 		educationlayout.getChildren().setAll(pane);
 		educationlayout.setMargin(pane, new Insets(-50,-50,-50,-50));
+	}
+	
+	public void goToWork() throws IOException {
+		VBox pane = FXMLLoader.load(getClass().getResource("../view/Work.fxml"));
+		educationlayout.getChildren().setAll(pane);
 	}
 	
 	public void fieldValidation() {
