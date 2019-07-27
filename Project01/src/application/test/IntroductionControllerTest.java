@@ -2,7 +2,6 @@ package application.test;
 
 import static org.junit.Assert.*;
 
-
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -15,7 +14,7 @@ import application.controller.IntroductionController;
  */
 public class IntroductionControllerTest {
 	private IntroductionController ic;
-	
+
 	/**
 	 * @throws java.lang.Exception
 	 */
@@ -31,25 +30,24 @@ public class IntroductionControllerTest {
 	public void tearDown() throws Exception {
 		ic = null;
 	}
-	
+
 	@Test
 	public void isNameValidTest() {
-//		fail("Not yet implemented");
-		
+		// fail("Not yet implemented");
+
 		assertTrue("valid", ic.isNameValid("Sazzad"));
 		assertFalse(ic.isNameValid("456"));
 	}
 
 	@Test
 	public void isEmailValidTest() {
-//		fail("Not yet implemented");
-		
+		// fail("Not yet implemented");
+
 		assertTrue("valid", ic.isEmailValid("sazzadhrz@gmail.com"));
 		assertFalse(ic.isEmailValid("dfsaf5"));
 		assertTrue("valid", ic.isEmailValid("sazzad_5136@hotmail.com"));
 		assertFalse(ic.isEmailValid("sazzad.com"));
 	}
-	
 
 	@Test
 	public void isPhoneValidTest() {
@@ -57,21 +55,7 @@ public class IntroductionControllerTest {
 		assertFalse(ic.isPhoneValid("1234"));
 		assertTrue(ic.isPhoneValid("+8801613645555"));
 		assertTrue(ic.isPhoneValid("9125698"));
-//		fail("NI");
+		// fail("NI");
 	}
-	
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 
 }

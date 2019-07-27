@@ -36,88 +36,82 @@ public class WorkController {
 	@FXML
 	private Button next;
 
-
 	// Event Listener on Button[#back].onAction
 	@FXML
 	public void workBackBtnActionController(ActionEvent event) throws IOException {
 		System.out.println("work back btn pressed");
 		goToEducation();
 	}
+
 	// Event Listener on Button[#cancel].onAction
 	@FXML
 	public void workCancelBtnActionController(ActionEvent event) throws IOException {
 		System.out.println("Cancel btn pressed");
 		exit();
 	}
+
 	// Event Listener on Button[#next].onAction
 	@FXML
 	public void workNextBtnActionController(ActionEvent event) throws IOException {
 		System.out.println("work next btn pressed");
 		goToOthers();
 	}
-	
+
 	public void exit() {
 		Platform.exit();
 		System.exit(0);
 	}
-	
+
 	public void goToOthers() throws IOException {
 		VBox pane = FXMLLoader.load(getClass().getResource("../view/Others.fxml"));
 		worklayout.getChildren().setAll(pane);
 	}
-	
+
 	public void goToEducation() throws IOException {
 		VBox pane = FXMLLoader.load(getClass().getResource("../view/Education.fxml"));
 		worklayout.getChildren().setAll(pane);
 	}
-	
-	
-	
+
 	public boolean nameValidation() {
-		if(isNameValid(name1.getText()) && isNameValid(name2.getText())) {
+		if (isNameValid(name1.getText()) && isNameValid(name2.getText())) {
 			warningLabel.setText("");
 			return true;
-		}
-		else {
+		} else {
 			warningLabel.setText("*Warning! Please Enter name correctly");
 			return false;
 		}
-	}	
-	
+	}
+
 	public boolean isNameValid(String name) {
 		String regex = "^[\\p{L} .'-]+$";
 		return name.matches(regex);
 	}
-	
+
 	public boolean positionValidation() {
-		if(isPositionValid(position1.getText()) && isPositionValid(position2.getText())) {
+		if (isPositionValid(position1.getText()) && isPositionValid(position2.getText())) {
 			warningLabel.setText("");
 			return true;
-		}
-		else {
+		} else {
 			warningLabel.setText("*Warning! Please Enter position name correctly");
 			return false;
 		}
-	}	
-	
+	}
+
 	public boolean isPositionValid(String positionName) {
 		String regex = "^[a-zA-Z]+$";
 		return positionName.matches(regex);
 	}
-	
-	
-	
+
 	public void fieldNullValidation() {
 		name1FieldValidation();
 		position1FieldValidation();
 		description1FieldValidation();
-		
+
 		name2FieldValidation();
 		position2FieldValidation();
 		description2FieldValidation();
 	}
-	
-	
+
 	public boolean name1FieldValidation() {
 		if (name1.getText() == "null" || name1.getText().trim().isEmpty()) {
 			warningLabel.setText("*Warning! All of the fields must be filled up");
@@ -132,7 +126,7 @@ public class WorkController {
 		}
 
 	}
-	
+
 	public boolean name2FieldValidation() {
 		if (name2.getText() == "null" || name2.getText().trim().isEmpty()) {
 			warningLabel.setText("*Warning! All of the fields must be filled up");
@@ -147,7 +141,7 @@ public class WorkController {
 		}
 
 	}
-	
+
 	public boolean position1FieldValidation() {
 		if (position1.getText() == "null" || position1.getText().trim().isEmpty()) {
 			warningLabel.setText("*Warning! All of the fields must be filled up");
@@ -162,7 +156,7 @@ public class WorkController {
 		}
 
 	}
-	
+
 	public boolean position2FieldValidation() {
 		if (position2.getText() == "null" || position2.getText().trim().isEmpty()) {
 			warningLabel.setText("*Warning! All of the fields must be filled up");
@@ -177,7 +171,7 @@ public class WorkController {
 		}
 
 	}
-	
+
 	public boolean description1FieldValidation() {
 		if (description1.getText() == "null" || description1.getText().trim().isEmpty()) {
 			warningLabel.setText("*Warning! All of the fields must be filled up");
@@ -192,7 +186,7 @@ public class WorkController {
 		}
 
 	}
-	
+
 	public boolean description2FieldValidation() {
 		if (description2.getText() == "null" || description2.getText().trim().isEmpty()) {
 			warningLabel.setText("*Warning! All of the fields must be filled up");

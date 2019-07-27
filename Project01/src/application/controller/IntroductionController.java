@@ -35,111 +35,100 @@ public class IntroductionController {
 		System.out.println("Cancel btn pressed");
 		exit();
 	}
-	
+
 	public void exit() {
 		Platform.exit();
 		System.exit(0);
 	}
-	
-	//scene change variables
-	//private Stage stage;
+
+	// scene change variables
+	// private Stage stage;
 	@FXML
 	private StackPane introductionlayout;
 
 	// Next button controller
 	public void introductionNextBtnActionController(ActionEvent event) throws IOException {
 		System.out.println("next btn pressed");
-//		if (fieldValidation()) {
-//			System.out.println("validation done");
-//			pushDataToNext();
-//			goToEducation();
-//		}
+		// if (fieldValidation()) {
+		// System.out.println("validation done");
+		// pushDataToNext();
+		// goToEducation();
+		// }
 		goToEducation();
 	}
-	
+
 	public void goToEducation() throws IOException {
 		VBox pane = FXMLLoader.load(getClass().getResource("../view/Education.fxml"));
 		introductionlayout.getChildren().setAll(pane);
-		introductionlayout.setMargin(pane, new Insets(50,50,50,50));
+		introductionlayout.setMargin(pane, new Insets(50, 50, 50, 50));
 	}
-	
+
 	private void pushDataToNext() {
 		Main.arraylist.add(generateHeader());
 		Main.arraylist.add(bodyOpen());
-		
+
 		Main.arraylist.add(generateIntroHtml());
 		// System.out.println(Main.arraylist);
 
 	}
 
-	
 	public boolean fieldValidation() {
-		return fieldNullValidation() &&
-		nameValidation() &&
-		emailValidation() &&
-		phoneValidation();
+		return fieldNullValidation() && nameValidation() && emailValidation() && phoneValidation();
 	}
-	
-	
+
 	// https://stackoverflow.com/questions/15805555/java-regex-to-validate-full-name-allow-only-spaces-and-letters
 	public boolean nameValidation() {
-		if(isNameValid(nameTF.getText())) {
+		if (isNameValid(nameTF.getText())) {
 			warningLabel.setText("");
 			return true;
-		}
-		else {
+		} else {
 			warningLabel.setText("*Warning! Please Enter name correctly");
 			return false;
 		}
-	}	
-	
+	}
+
 	public boolean isNameValid(String name) {
 		String regex = "^[\\p{L} .'-]+$";
 		return name.matches(regex);
 	}
-	
-	
+
 	public boolean emailValidation() {
 		if (isEmailValid(emailTF.getText())) {
 			warningLabel.setText("");
 			return true;
+		} else {
+			warningLabel.setText("Invalid Email, please enter correct Email address");
+			return false;
 		}
-		else {
-	    	  warningLabel.setText("Invalid Email, please enter correct Email address");
-	    	  return false;
-	      }
 	}
-	
+
 	// https://www.tutorialspoint.com/validate-email-address-in-java
 	public boolean isEmailValid(String email) {
 		String regex = "^[\\w-_\\.+]*[\\w-_\\.]\\@([\\w]+\\.)+[\\w]+[\\w]$";
 		return email.matches(regex);
 	}
-	
-	
-	public boolean phoneValidation() {	      
-	      if(isPhoneValid(phoneTF.getText())) {
-	    	  warningLabel.setText("");
-	    	  return true;
-	      }
-	      else {
-	    	  warningLabel.setText("Invalid Phone Number, please enter correct phone number");
-	    	  return false;
-	      }
-	   }
-	
-	public boolean isPhoneValid(String phone) {
-		String regex = "^[0-9+#*\\[\\]]+$";
-		return phone.matches(regex)  && phone.length() > 4;
-	}
-	
-	
-	public boolean fieldNullValidation() {
-		if(nameFieldNullValidation() && addressFieldNullValidation() && emailFieldNullValidation() && phoneFieldNullValidation()) {
+
+	public boolean phoneValidation() {
+		if (isPhoneValid(phoneTF.getText())) {
 			warningLabel.setText("");
 			return true;
+		} else {
+			warningLabel.setText("Invalid Phone Number, please enter correct phone number");
+			return false;
 		}
-		else
+	}
+
+	public boolean isPhoneValid(String phone) {
+		String regex = "^[0-9+#*\\[\\]]+$";
+		return phone.matches(regex) && phone.length() > 4;
+	}
+
+	public boolean fieldNullValidation() {
+		if (nameFieldNullValidation() && addressFieldNullValidation() && emailFieldNullValidation()
+				&& phoneFieldNullValidation()) {
+			warningLabel.setText("");
+			return true;
+		} else
 			return false;
 	}
 
