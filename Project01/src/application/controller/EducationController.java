@@ -54,7 +54,8 @@ public class EducationController {
 	
 	public void educationNextBtnActionController() throws IOException {
 		System.out.println("edu next btn pressed");
-		goToWork();
+//		goToWork();
+		fieldValidation();
 	}
 	
 	public void educationBackBtnActionController() throws IOException {
@@ -74,9 +75,11 @@ public class EducationController {
 	}
 	
 	public void fieldValidation() {
-		fieldNullValidation();
+//		fieldNullValidation();
 		nameValidation();
+		degreeValidation();
 	}
+	
 	
 	public boolean nameValidation() {
 		if(isNameValid(name1.getText()) && isNameValid(name2.getText())) {
@@ -92,6 +95,22 @@ public class EducationController {
 	public boolean isNameValid(String name) {
 		String regex = "^[\\p{L} .'-]+$";
 		return name.matches(regex);
+	}
+	
+	public boolean degreeValidation() {
+		if(isNameValid(degree1.getText()) && isNameValid(degree2.getText())) {
+			warningLabel.setText("");
+			return true;
+		}
+		else {
+			warningLabel.setText("*Warning! Please Enter name correctly");
+			return false;
+		}
+	}	
+	
+	public boolean isDegreeValid(String DegreeName) {
+		String regex = "^[a-zA-Z]+$";
+		return DegreeName.matches(regex);
 	}
 	
 	
