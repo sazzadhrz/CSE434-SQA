@@ -55,7 +55,7 @@ public class EducationController {
 		// goToWork();
 		// fieldValidation();
 //		cgpaValidation();
-		educationList.add(generateToHTML());
+		educationList.add(generateHTML());
 
 	}
 
@@ -302,7 +302,7 @@ public class EducationController {
 			return "<h4>" + info + "</h4>" + "\n";
 		}
 		
-		private String generateToHTML() {
+		private String generateHTML() {
 			String title = "<h1><i>Educational Background</i></h1>" + "\n";
 			String edu1 = 
 					  h3(name1.getText()) 
@@ -316,7 +316,7 @@ public class EducationController {
 					+ h5(year2.getText())
 					+ h5(cgpa2.getText());
 			
-			String educationHTML = title + edu1 + edu2;
+			String educationHTML = "<div class=\"education\">" + "\n" + title + edu1 + edu2 + "</div>";
 			return educationHTML;
 		}
 		

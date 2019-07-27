@@ -1,6 +1,7 @@
 package application.controller;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import application.Main;
 import javafx.application.Platform;
@@ -29,6 +30,8 @@ public class IntroductionController {
 	TextField phoneTF;
 	@FXML
 	Label warningLabel;
+	
+	public static ArrayList<String> introductionList = new ArrayList<String>();
 
 	// Cancel button controller
 	public void introductionCancelBtnActionController() {
@@ -71,6 +74,17 @@ public class IntroductionController {
 		// System.out.println(Main.arraylist);
 
 	}
+	
+	/*
+	  private void pushDataToNext() {
+		introductionList.add(generateHeader());
+		introductionList.add(bodyOpen());
+
+		introductionList.add(generateIntroHtml());
+		// System.out.println(Main.arraylist);
+
+	}
+	 */
 
 	public boolean fieldValidation() {
 		return fieldNullValidation() && nameValidation() && emailValidation() && phoneValidation();

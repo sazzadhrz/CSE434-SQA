@@ -45,11 +45,11 @@ public class Main extends Application {
 	public static void main(String[] args) throws IOException {
 		launch(args);
 
-		generateHTML();
+		generateResume();
 
 	}
 
-	public static void generateHTML() throws IOException {
+	public static void generateResume() throws IOException {
 		arraylist.add(bodyClose());
 
 		File outfile = new File("html/resume.html");
