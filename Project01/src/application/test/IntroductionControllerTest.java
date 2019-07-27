@@ -1,7 +1,7 @@
 package application.test;
 
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
+
 
 import org.junit.After;
 import org.junit.Before;
@@ -32,12 +32,30 @@ public class IntroductionControllerTest {
 		ic = null;
 	}
 
-	@Test
+/*	@Test
 	public void isEmailValidTest() {
 //		fail("Not yet implemented");
 		
 		assertTrue("valid", ic.isEmailValid("sazzadhrz@gmail.com"));
 		assertFalse(ic.isEmailValid("dfsaf5"));
 	}
+	
+*/
+	@Test
+	public void isPhoneValidTest() {
+		assertEquals(true, ic.isPhoneValid("01613645555"));
+		assertFalse(ic.isPhoneValid("1234"));
+//		fail("NI");
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 }

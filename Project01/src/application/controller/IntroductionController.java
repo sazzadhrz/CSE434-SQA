@@ -121,7 +121,7 @@ public class IntroductionController {
 	
 	public boolean isPhoneValid(String phone) {
 		String regex = "^[0-9+#*\\[\\]]+$";
-		return phoneTF.getText().matches(regex) && phoneTF.getText().length() > 4;
+		return phone.matches(regex)  && phone.length() > 4;
 	}
 	
 	
