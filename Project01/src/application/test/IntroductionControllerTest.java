@@ -31,6 +31,14 @@ public class IntroductionControllerTest {
 	public void tearDown() throws Exception {
 		ic = null;
 	}
+	
+	@Test
+	public void isNameValidTest() {
+//		fail("Not yet implemented");
+		
+		assertTrue("valid", ic.isNameValid("Sazzad"));
+		assertFalse(ic.isNameValid("456"));
+	}
 
 	@Test
 	public void isEmailValidTest() {
@@ -47,6 +55,8 @@ public class IntroductionControllerTest {
 		assertFalse(ic.isPhoneValid("1234"));
 //		fail("NI");
 	}
+	
+	
 	
 	
 	
