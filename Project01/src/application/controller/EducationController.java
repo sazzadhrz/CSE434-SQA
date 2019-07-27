@@ -42,14 +42,14 @@ public class EducationController {
 	@FXML
 	private VBox educationlayout;
 	
-	
-	
+	public void exit() {
+		Platform.exit();
+		System.exit(0);
+	}
 	
 	public void educationCancelBtnActionController() {
 		System.out.println("Cancel btn pressed");
-
-		Platform.exit();
-		System.exit(0);
+		exit();
 	}
 	
 	public void educationNextBtnActionController() throws IOException {
@@ -59,7 +59,7 @@ public class EducationController {
 	
 	public void educationBackBtnActionController() throws IOException {
 		System.out.println("edu back btn pressed");
-		
+		goToIntroduction();
 	}
 	
 	public void goToIntroduction() throws IOException {

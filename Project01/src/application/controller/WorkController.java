@@ -41,22 +41,33 @@ public class WorkController {
 	@FXML
 	public void workBackBtnActionController(ActionEvent event) throws IOException {
 		System.out.println("work back btn pressed");
-		VBox pane = FXMLLoader.load(getClass().getResource("../view/Education.fxml"));
-		worklayout.getChildren().setAll(pane);
+		goToEducation();
 	}
 	// Event Listener on Button[#cancel].onAction
 	@FXML
 	public void workCancelBtnActionController(ActionEvent event) throws IOException {
 		System.out.println("Cancel btn pressed");
-
-		Platform.exit();
-		System.exit(0);
+		exit();
 	}
 	// Event Listener on Button[#next].onAction
 	@FXML
 	public void workNextBtnActionController(ActionEvent event) throws IOException {
 		System.out.println("work next btn pressed");
+		goToOthers();
+	}
+	
+	public void exit() {
+		Platform.exit();
+		System.exit(0);
+	}
+	
+	public void goToOthers() throws IOException {
 		VBox pane = FXMLLoader.load(getClass().getResource("../view/Others.fxml"));
+		worklayout.getChildren().setAll(pane);
+	}
+	
+	public void goToEducation() throws IOException {
+		VBox pane = FXMLLoader.load(getClass().getResource("../view/Education.fxml"));
 		worklayout.getChildren().setAll(pane);
 	}
 	

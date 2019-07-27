@@ -33,6 +33,10 @@ public class IntroductionController {
 	// Cancel button controller
 	public void introductionCancelBtnActionController() {
 		System.out.println("Cancel btn pressed");
+		exit();
+	}
+	
+	public void exit() {
 		Platform.exit();
 		System.exit(0);
 	}
