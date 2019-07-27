@@ -55,7 +55,8 @@ public class EducationController {
 	public void educationNextBtnActionController() throws IOException {
 		System.out.println("edu next btn pressed");
 //		goToWork();
-		fieldValidation();
+//		fieldValidation();
+		cgpaValidation();
 	}
 	
 	public void educationBackBtnActionController() throws IOException {
@@ -78,6 +79,8 @@ public class EducationController {
 //		fieldNullValidation();
 		nameValidation();
 		degreeValidation();
+		yearValidation();
+		cgpaValidation();
 	}
 	
 	
@@ -98,7 +101,7 @@ public class EducationController {
 	}
 	
 	public boolean degreeValidation() {
-		if(isNameValid(degree1.getText()) && isNameValid(degree2.getText())) {
+		if(isDegreeValid(degree1.getText()) && isDegreeValid(degree2.getText())) {
 			warningLabel.setText("");
 			return true;
 		}
@@ -114,7 +117,7 @@ public class EducationController {
 	}
 	
 	public boolean yearValidation() {
-		if(isNameValid(year1.getText()) && isNameValid(year2.getText())) {
+		if(isYearValid(year1.getText()) && isYearValid(year2.getText())) {
 			warningLabel.setText("");
 			return true;
 		}
@@ -130,18 +133,19 @@ public class EducationController {
 	}
 	
 	public boolean cgpaValidation() {
-		if(isNameValid(cgpa1.getText()) && isNameValid(cgpa2.getText())) {
+		if(isCgpaValid(cgpa1.getText()) && isCgpaValid(cgpa2.getText())) {
 			warningLabel.setText("");
 			return true;
 		}
 		else {
-			warningLabel.setText("*Warning! Please Enter year correctly");
+			warningLabel.setText("*Warning! Please Enter cgpa correctly");
 			return false;
 		}
 	}	
 	
 	public boolean isCgpaValid(String cgpa) {
-		
+		float cg = Float.parseFloat(cgpa);
+		return cg > 0 && cg <= 5;
 	}
 	
 	
