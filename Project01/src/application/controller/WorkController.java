@@ -40,6 +40,7 @@ public class WorkController {
 	@FXML
 	public void workBackBtnActionController(ActionEvent event) throws IOException {
 		System.out.println("work back btn pressed");
+		EducationController.educationList.clear();
 		goToEducation();
 	}
 

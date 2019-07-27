@@ -42,7 +42,7 @@ public class EducationController {
 	@FXML
 	private VBox educationlayout;
 	
-	public ArrayList<String> educationList = new ArrayList<String>();
+	public static ArrayList<String> educationList = new ArrayList<String>();
 
 
 	public void educationCancelBtnActionController() {
