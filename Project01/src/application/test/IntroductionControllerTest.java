@@ -32,7 +32,7 @@ public class IntroductionControllerTest {
 		ic = null;
 	}
 
-/*	@Test
+	@Test
 	public void isEmailValidTest() {
 //		fail("Not yet implemented");
 		
@@ -40,7 +40,7 @@ public class IntroductionControllerTest {
 		assertFalse(ic.isEmailValid("dfsaf5"));
 	}
 	
-*/
+
 	@Test
 	public void isPhoneValidTest() {
 		assertEquals(true, ic.isPhoneValid("01613645555"));

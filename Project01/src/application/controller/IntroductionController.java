@@ -78,8 +78,7 @@ public class IntroductionController {
 	
 	// https://stackoverflow.com/questions/15805555/java-regex-to-validate-full-name-allow-only-spaces-and-letters
 	public boolean nameValidation() {
-		String regx = "^[\\p{L} .'-]+$";
-		if(nameTF.getText().matches(regx)) {
+		if(isNameValid(nameTF.getText())) {
 			warningLabel.setText("");
 			return true;
 		}
@@ -88,6 +87,11 @@ public class IntroductionController {
 			return false;
 		}
 	}	
+	
+	public boolean isNameValid(String name) {
+		String regex = "^[\\p{L} .'-]+$";
+		return name.matches(regex);
+	}
 	
 	
 	public boolean emailValidation() {
