@@ -71,10 +71,31 @@ public class WorkController {
 		worklayout.getChildren().setAll(pane);
 	}
 	
-	public void fieldValidation() {
+	
+	
+	public boolean nameValidation() {
+		if(isNameValid(name1.getText()) && isNameValid(name2.getText())) {
+			warningLabel.setText("");
+			return true;
+		}
+		else {
+			warningLabel.setText("*Warning! Please Enter name correctly");
+			return false;
+		}
+	}	
+	
+	public boolean isNameValid(String name) {
+		String regex = "^[\\p{L} .'-]+$";
+		return name.matches(regex);
+	}
+	
+	
+	
+	public void fieldNullValidation() {
 		name1FieldValidation();
 		position1FieldValidation();
 		description1FieldValidation();
+		
 		name2FieldValidation();
 		position2FieldValidation();
 		description2FieldValidation();
