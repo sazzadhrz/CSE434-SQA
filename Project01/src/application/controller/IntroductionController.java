@@ -89,19 +89,7 @@ public class IntroductionController {
 		}
 	}	
 	
-	// https://www.tutorialspoint.com/validate-email-address-in-java
-//	public boolean emailValidation() {
-//		String regex = "^[\\w-_\\.+]*[\\w-_\\.]\\@([\\w]+\\.)+[\\w]+[\\w]$";
-//	      if(emailTF.getText().matches(regex)) {
-//	    	  warningLabel.setText("");
-//	    	  return true;
-//	      }
-//	      else {
-//	    	  warningLabel.setText("Invalid Email, please enter correct Email address");
-//	    	  return false;
-//	      }
-//	}
-
+	
 	public boolean emailValidation() {
 		if (isEmailValid(emailTF.getText())) {
 			warningLabel.setText("");
@@ -113,15 +101,15 @@ public class IntroductionController {
 	      }
 	}
 	
+	// https://www.tutorialspoint.com/validate-email-address-in-java
 	public boolean isEmailValid(String email) {
 		String regex = "^[\\w-_\\.+]*[\\w-_\\.]\\@([\\w]+\\.)+[\\w]+[\\w]$";
 		return email.matches(regex);
 	}
 	
 	
-	public boolean phoneValidation() {
-	      String regex = "^[0-9+#*\\[\\]]+$";
-	      if(phoneTF.getText().matches(regex)) {
+	public boolean phoneValidation() {	      
+	      if(isPhoneValid(phoneTF.getText())) {
 	    	  warningLabel.setText("");
 	    	  return true;
 	      }
@@ -130,6 +118,11 @@ public class IntroductionController {
 	    	  return false;
 	      }
 	   }
+	
+	public boolean isPhoneValid(String phone) {
+		String regex = "^[0-9+#*\\[\\]]+$";
+		return phoneTF.getText().matches(regex) && phoneTF.getText().length() > 4;
+	}
 	
 	
 	public boolean fieldNullValidation() {
