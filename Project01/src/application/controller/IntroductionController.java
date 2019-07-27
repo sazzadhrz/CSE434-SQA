@@ -90,16 +90,32 @@ public class IntroductionController {
 	}	
 	
 	// https://www.tutorialspoint.com/validate-email-address-in-java
+//	public boolean emailValidation() {
+//		String regex = "^[\\w-_\\.+]*[\\w-_\\.]\\@([\\w]+\\.)+[\\w]+[\\w]$";
+//	      if(emailTF.getText().matches(regex)) {
+//	    	  warningLabel.setText("");
+//	    	  return true;
+//	      }
+//	      else {
+//	    	  warningLabel.setText("Invalid Email, please enter correct Email address");
+//	    	  return false;
+//	      }
+//	}
+
 	public boolean emailValidation() {
-		String regex = "^[\\w-_\\.+]*[\\w-_\\.]\\@([\\w]+\\.)+[\\w]+[\\w]$";
-	      if(emailTF.getText().matches(regex)) {
-	    	  warningLabel.setText("");
-	    	  return true;
-	      }
-	      else {
+		if (isEmailValid(emailTF.getText())) {
+			warningLabel.setText("");
+			return true;
+		}
+		else {
 	    	  warningLabel.setText("Invalid Email, please enter correct Email address");
 	    	  return false;
 	      }
+	}
+	
+	public boolean isEmailValid(String email) {
+		String regex = "^[\\w-_\\.+]*[\\w-_\\.]\\@([\\w]+\\.)+[\\w]+[\\w]$";
+		return email.matches(regex);
 	}
 	
 	
