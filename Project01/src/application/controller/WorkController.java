@@ -225,4 +225,22 @@ public class WorkController {
 		}
 
 	}
+	
+	
+	
+	// HTML tags as method
+			public String h5(String info) {
+				return "<h5>" + info + "</h5>" + "\n";
+			}
+
+			public String h3(String info) {
+				return "<h3>" + info + "</h3>" + "\n";
+			}
+			
+			public String p(String info) {
+				return "<p>" + info + "</p>" + "\n";
+			}
+	
+	
+	
 }
