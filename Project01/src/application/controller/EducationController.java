@@ -180,9 +180,13 @@ public class EducationController {
 		year2FieldValidation() &&
 		cgpa2FieldValidation();
 	}
+	
+	public boolean isNull (String string) {
+		return (string == "null" || string.trim().isEmpty());
+	}
 
 	public boolean name1FieldValidation() {
-		if (name1.getText() == "null" || name1.getText().trim().isEmpty()) {
+		if (isNull(name1.getText())) {
 			warningLabel.setText("*Warning! All of the fields must be filled up");
 			System.out.println("False, name1 null");
 			return false;
@@ -196,7 +200,7 @@ public class EducationController {
 	}
 
 	public boolean name2FieldValidation() {
-		if (name2.getText() == "null" || name2.getText().trim().isEmpty()) {
+		if (isNull(name2.getText())) {
 			warningLabel.setText("*Warning! All of the fields must be filled up");
 			System.out.println("False, name2 null");
 			return false;
@@ -210,7 +214,7 @@ public class EducationController {
 	}
 
 	public boolean degree1FieldValidation() {
-		if (degree1.getText() == "null" || degree1.getText().trim().isEmpty()) {
+		if (isNull(degree1.getText())) {
 			warningLabel.setText("*Warning! All of the fields must be filled up");
 			System.out.println("False, degree1 null");
 			return false;
@@ -224,7 +228,7 @@ public class EducationController {
 	}
 
 	public boolean degree2FieldValidation() {
-		if (degree2.getText() == "null" || degree2.getText().trim().isEmpty()) {
+		if (isNull(degree2.getText())) {
 			warningLabel.setText("*Warning! All of the fields must be filled up");
 			System.out.println("False, degree2 null");
 			return false;
@@ -238,7 +242,7 @@ public class EducationController {
 	}
 
 	public boolean year1FieldValidation() {
-		if (year1.getText() == "null" || year1.getText().trim().isEmpty()) {
+		if (isNull(year1.getText())) {
 			warningLabel.setText("*Warning! All of the fields must be filled up");
 			System.out.println("False, year1 null");
 			return false;
@@ -252,7 +256,7 @@ public class EducationController {
 	}
 
 	public boolean year2FieldValidation() {
-		if (year2.getText() == "null" || year2.getText().trim().isEmpty()) {
+		if (isNull(year2.getText())) {
 			warningLabel.setText("*Warning! All of the fields must be filled up");
 			System.out.println("False, year2 null");
 			return false;
@@ -266,7 +270,7 @@ public class EducationController {
 	}
 
 	public boolean cgpa1FieldValidation() {
-		if (cgpa1.getText() == "null" || cgpa1.getText().trim().isEmpty()) {
+		if (isNull(cgpa1.getText())) {
 			warningLabel.setText("*Warning! All of the fields must be filled up");
 			System.out.println("False, cgpa1 null");
 			return false;
@@ -280,7 +284,7 @@ public class EducationController {
 	}
 
 	public boolean cgpa2FieldValidation() {
-		if (cgpa2.getText() == "null" || cgpa2.getText().trim().isEmpty()) {
+		if (isNull(cgpa2.getText())) {
 			warningLabel.setText("*Warning! All of the fields must be filled up");
 			System.out.println("False, cgpa2 null");
 			return false;
