@@ -59,6 +59,7 @@ public class OthersController {
 		 if (fieldValidation()) {
 			 System.out.println("validation done");
 			 storeData();
+			 addToMainList();
 			 generateResume();
 			 }
 	}
