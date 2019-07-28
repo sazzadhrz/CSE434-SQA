@@ -57,7 +57,7 @@ public class WorkController {
 	@FXML
 	public void workNextBtnActionController(ActionEvent event) throws IOException {
 		System.out.println("work next btn pressed");
-		goToOthers();
+		next();
 	}
 
 	public void exit() {
@@ -74,7 +74,7 @@ public class WorkController {
 	}
 	
 	public void storeData() {
-		//workHTML = generateWorkHTML();
+		workHTML = generateWorkHTML();
 		//Main.arraylist.add(workHTML);
 	}
 	
