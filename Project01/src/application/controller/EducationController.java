@@ -43,7 +43,7 @@ public class EducationController {
 	@FXML
 	private VBox educationlayout;
 	
-	public static ArrayList<String> educationList = new ArrayList<String>();
+	public static String educationHtml;
 
 
 	public void educationCancelBtnActionController() {
@@ -53,10 +53,7 @@ public class EducationController {
 
 	public void educationNextBtnActionController() throws IOException {
 		System.out.println("edu next btn pressed");
-		// goToWork();
-		// fieldValidation();
-//		cgpaValidation();
-		educationList.add(generateHTML());
+		
 
 	}
 
@@ -66,6 +63,18 @@ public class EducationController {
 		goToIntroduction();
 	}
 	
+	public void next() throws IOException {
+		 if (fieldValidation()) {
+			 System.out.println("validation done");
+			 storeData();
+			 goToWork();
+			 }
+	}
+	
+	public void storeData() {
+		educationHtml = generateEducationHTML();
+		//Main.arraylist.add(educationHtml);
+	}
 
 	public void exit() {
 		Platform.exit();
@@ -83,11 +92,12 @@ public class EducationController {
 		educationlayout.getChildren().setAll(pane);
 	}
 
-	public void fieldValidation() {
-		// fieldNullValidation();
-		nameValidation();
-		degreeValidation();
-		yearValidation();
+	public boolean fieldValidation() {
+		return 
+		fieldNullValidation() &&
+		nameValidation() &&
+		degreeValidation() &&
+		yearValidation() &&
 		cgpaValidation();
 	}
 
@@ -159,15 +169,16 @@ public class EducationController {
 			return false;
 	}
 
-	public void fieldNullValidation() {
-		name1FieldValidation();
-		degree1FieldValidation();
-		year1FieldValidation();
-		cgpa1FieldValidation();
+	public boolean fieldNullValidation() {
+		return
+		name1FieldValidation() &&
+		degree1FieldValidation() &&
+		year1FieldValidation() &&
+		cgpa1FieldValidation() &&
 
-		name2FieldValidation();
-		degree2FieldValidation();
-		year2FieldValidation();
+		name2FieldValidation() &&
+		degree2FieldValidation() &&
+		year2FieldValidation() &&
 		cgpa2FieldValidation();
 	}
 
@@ -304,7 +315,7 @@ public class EducationController {
 			return "<h4>" + info + "</h4>" + "\n";
 		}
 		
-		private String generateHTML() {
+		private String generateEducationHTML() {
 			String title = "<h1><i>Educational Background</i></h1>" + "\n";
 			String edu1 = 
 					  h3(name1.getText()) 

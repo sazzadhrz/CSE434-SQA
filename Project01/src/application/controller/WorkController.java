@@ -35,12 +35,14 @@ public class WorkController {
 	private Button cancel;
 	@FXML
 	private Button next;
+	
+	public static String workHTML;
 
 	// Event Listener on Button[#back].onAction
 	@FXML
 	public void workBackBtnActionController(ActionEvent event) throws IOException {
 		System.out.println("work back btn pressed");
-		EducationController.educationList.clear();
+		EducationController.educationHtml = null;
 		goToEducation();
 	}
 
@@ -61,6 +63,26 @@ public class WorkController {
 	public void exit() {
 		Platform.exit();
 		System.exit(0);
+	}
+	
+	public void next() throws IOException {
+		 if (fieldValidation()) {
+			 System.out.println("validation done");
+			 storeData();
+			 goToOthers();
+			 }
+	}
+	
+	public void storeData() {
+		//workHTML = generateWorkHTML();
+		//Main.arraylist.add(workHTML);
+	}
+	
+	public boolean fieldValidation() {
+		return 
+		fieldNullValidation() &&
+		nameValidation() &&
+		positionValidation();
 	}
 
 	public void goToOthers() throws IOException {
@@ -103,13 +125,14 @@ public class WorkController {
 		return positionName.matches(regex);
 	}
 
-	public void fieldNullValidation() {
-		name1FieldValidation();
-		position1FieldValidation();
-		description1FieldValidation();
+	public boolean fieldNullValidation() {
+		return
+		name1FieldValidation() &&
+		position1FieldValidation() &&
+		description1FieldValidation() &&
 
-		name2FieldValidation();
-		position2FieldValidation();
+		name2FieldValidation() &&
+		position2FieldValidation() &&
 		description2FieldValidation();
 	}
 

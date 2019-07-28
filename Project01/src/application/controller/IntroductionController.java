@@ -50,13 +50,16 @@ public class IntroductionController {
 	// Next button controller
 	public void introductionNextBtnActionController(ActionEvent event) throws IOException {
 		System.out.println("next btn pressed");
-//		 if (fieldValidation()) {
-//		 System.out.println("validation done");
-//		 addToMainList();
-//		 goToEducation();
-//		 }
-		addToMainList();
+		//next();
 		goToEducation();
+	}
+	
+	public void next() throws IOException {
+		 if (fieldValidation()) {
+			 System.out.println("validation done");
+			 addToMainList();
+			 goToEducation();
+			 }
 	}
 
 	public void goToEducation() throws IOException {
