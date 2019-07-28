@@ -77,6 +77,7 @@ public class OthersController {
 		}
 
 		bw.close();
+		System.out.println("Resume Generated Successfully!!");
 	}
 	
 	private static String bodyClose() {
