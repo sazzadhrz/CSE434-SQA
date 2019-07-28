@@ -2,7 +2,6 @@ package application.test;
 
 import static org.junit.Assert.*;
 
-import org.hamcrest.core.IsNull;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
