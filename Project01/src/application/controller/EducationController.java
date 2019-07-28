@@ -126,7 +126,7 @@ public class EducationController {
 	}
 
 	public boolean isDegreeValid(String DegreeName) {
-		String regex = "^[a-zA-Z]+$";
+		String regex = "^[a-zA-Z ]+$";
 		return DegreeName.matches(regex);
 	}
 

@@ -50,8 +50,8 @@ public class IntroductionController {
 	// Next button controller
 	public void introductionNextBtnActionController(ActionEvent event) throws IOException {
 		System.out.println("next btn pressed");
-		//next();
-		goToEducation();
+		next();
+//		goToEducation();
 	}
 	
 	public void next() throws IOException {
@@ -147,7 +147,6 @@ public class IntroductionController {
 
 		else {
 			System.out.println(nameTF.getText());
-			System.out.println("True, name not null");
 			return true;
 		}
 
@@ -163,7 +162,7 @@ public class IntroductionController {
 
 		else {
 			System.out.println(addressTF.getText());
-			System.out.println("True, address not null");
+			//System.out.println("True, address not null");
 			return true;
 		}
 
@@ -179,7 +178,7 @@ public class IntroductionController {
 
 		else {
 			System.out.println(emailTF.getText());
-			System.out.println("True, email not null");
+			//System.out.println("True, email not null");
 			return true;
 		}
 
@@ -195,7 +194,7 @@ public class IntroductionController {
 
 		else {
 			System.out.println(phoneTF.getText());
-			System.out.println("True, phone not null");
+			//System.out.println("True, phone not null");
 			return true;
 		}
 

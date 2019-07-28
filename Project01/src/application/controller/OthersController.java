@@ -30,11 +30,14 @@ public class OthersController {
 	private Button cancel;
 	@FXML
 	private Button generateCV;
+	
+	public static String othersHTML;
 
 	// Event Listener on Button[#back].onAction
 	@FXML
 	public void othersBackBtnController(ActionEvent event) throws IOException {
 		System.out.println("others back btn pressed");
+		WorkController.workHTML = null;
 		goToWork();
 	}
 
