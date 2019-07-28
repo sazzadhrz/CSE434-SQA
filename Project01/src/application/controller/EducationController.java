@@ -53,8 +53,7 @@ public class EducationController {
 
 	public void educationNextBtnActionController() throws IOException {
 		System.out.println("edu next btn pressed");
-		
-
+		next();
 	}
 
 	public void educationBackBtnActionController() throws IOException {
@@ -185,13 +184,12 @@ public class EducationController {
 	public boolean name1FieldValidation() {
 		if (name1.getText() == "null" || name1.getText().trim().isEmpty()) {
 			warningLabel.setText("*Warning! All of the fields must be filled up");
-			System.out.println("False, name null");
+			System.out.println("False, name1 null");
 			return false;
 		}
 
 		else {
 			System.out.println(name1.getText());
-			System.out.println("True, name not null");
 			return true;
 		}
 
@@ -200,13 +198,12 @@ public class EducationController {
 	public boolean name2FieldValidation() {
 		if (name2.getText() == "null" || name2.getText().trim().isEmpty()) {
 			warningLabel.setText("*Warning! All of the fields must be filled up");
-			System.out.println("False, name null");
+			System.out.println("False, name2 null");
 			return false;
 		}
 
 		else {
 			System.out.println(name2.getText());
-			System.out.println("True, name not null");
 			return true;
 		}
 
@@ -215,13 +212,12 @@ public class EducationController {
 	public boolean degree1FieldValidation() {
 		if (degree1.getText() == "null" || degree1.getText().trim().isEmpty()) {
 			warningLabel.setText("*Warning! All of the fields must be filled up");
-			System.out.println("False, name null");
+			System.out.println("False, degree1 null");
 			return false;
 		}
 
 		else {
 			System.out.println(degree1.getText());
-			System.out.println("True, name not null");
 			return true;
 		}
 
@@ -230,13 +226,12 @@ public class EducationController {
 	public boolean degree2FieldValidation() {
 		if (degree2.getText() == "null" || degree2.getText().trim().isEmpty()) {
 			warningLabel.setText("*Warning! All of the fields must be filled up");
-			System.out.println("False, name null");
+			System.out.println("False, degree2 null");
 			return false;
 		}
 
 		else {
 			System.out.println(degree2.getText());
-			System.out.println("True, name not null");
 			return true;
 		}
 
@@ -245,13 +240,12 @@ public class EducationController {
 	public boolean year1FieldValidation() {
 		if (year1.getText() == "null" || year1.getText().trim().isEmpty()) {
 			warningLabel.setText("*Warning! All of the fields must be filled up");
-			System.out.println("False, name null");
+			System.out.println("False, year1 null");
 			return false;
 		}
 
 		else {
-			System.out.println(year1.getText());
-			System.out.println("True, name not null");
+			System.out.println(year1.getText());			
 			return true;
 		}
 
@@ -260,13 +254,12 @@ public class EducationController {
 	public boolean year2FieldValidation() {
 		if (year2.getText() == "null" || year2.getText().trim().isEmpty()) {
 			warningLabel.setText("*Warning! All of the fields must be filled up");
-			System.out.println("False, name null");
+			System.out.println("False, year2 null");
 			return false;
 		}
 
 		else {
-			System.out.println(year2.getText());
-			System.out.println("True, name not null");
+			System.out.println(year2.getText());			
 			return true;
 		}
 
@@ -275,13 +268,12 @@ public class EducationController {
 	public boolean cgpa1FieldValidation() {
 		if (cgpa1.getText() == "null" || cgpa1.getText().trim().isEmpty()) {
 			warningLabel.setText("*Warning! All of the fields must be filled up");
-			System.out.println("False, name null");
+			System.out.println("False, cgpa1 null");
 			return false;
 		}
 
 		else {
-			System.out.println(cgpa1.getText());
-			System.out.println("True, name not null");
+			System.out.println(cgpa1.getText());			
 			return true;
 		}
 
@@ -290,13 +282,12 @@ public class EducationController {
 	public boolean cgpa2FieldValidation() {
 		if (cgpa2.getText() == "null" || cgpa2.getText().trim().isEmpty()) {
 			warningLabel.setText("*Warning! All of the fields must be filled up");
-			System.out.println("False, name null");
+			System.out.println("False, cgpa2 null");
 			return false;
 		}
 
 		else {
-			System.out.println(cgpa2.getText());
-			System.out.println("True, name not null");
+			System.out.println(cgpa2.getText());			
 			return true;
 		}
 
