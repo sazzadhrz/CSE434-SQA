@@ -2,6 +2,7 @@ package application.test;
 
 import static org.junit.Assert.*;
 
+import org.hamcrest.core.IsNull;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -56,6 +57,12 @@ public class IntroductionControllerTest {
 		assertTrue(ic.isPhoneValid("+8801613645555"));
 		assertTrue(ic.isPhoneValid("9125698"));
 		// fail("NI");
+	}
+	
+	@Test
+	public void IsNullTest() {
+		assertTrue(ic.isNull(""));
+		assertFalse(ic.isNull("Supra"));
 	}
 	
 	@Test
