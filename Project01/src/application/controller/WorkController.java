@@ -139,13 +139,12 @@ public class WorkController {
 	public boolean name1FieldValidation() {
 		if (name1.getText() == "null" || name1.getText().trim().isEmpty()) {
 			warningLabel.setText("*Warning! All of the fields must be filled up");
-			System.out.println("False, name null");
+			System.out.println("False, name1 null");
 			return false;
 		}
 
 		else {
-			System.out.println(name1.getText());
-			System.out.println("True, name not null");
+			System.out.println(name1.getText());			
 			return true;
 		}
 
@@ -154,13 +153,12 @@ public class WorkController {
 	public boolean name2FieldValidation() {
 		if (name2.getText() == "null" || name2.getText().trim().isEmpty()) {
 			warningLabel.setText("*Warning! All of the fields must be filled up");
-			System.out.println("False, name null");
+			System.out.println("False, name2 null");
 			return false;
 		}
 
 		else {
-			System.out.println(name2.getText());
-			System.out.println("True, name not null");
+			System.out.println(name2.getText());			
 			return true;
 		}
 
@@ -169,13 +167,12 @@ public class WorkController {
 	public boolean position1FieldValidation() {
 		if (position1.getText() == "null" || position1.getText().trim().isEmpty()) {
 			warningLabel.setText("*Warning! All of the fields must be filled up");
-			System.out.println("False, name null");
+			System.out.println("False, position1 null");
 			return false;
 		}
 
 		else {
-			System.out.println(position1.getText());
-			System.out.println("True, name not null");
+			System.out.println(position1.getText());			
 			return true;
 		}
 
@@ -184,13 +181,12 @@ public class WorkController {
 	public boolean position2FieldValidation() {
 		if (position2.getText() == "null" || position2.getText().trim().isEmpty()) {
 			warningLabel.setText("*Warning! All of the fields must be filled up");
-			System.out.println("False, name null");
+			System.out.println("False, position2 null");
 			return false;
 		}
 
 		else {
-			System.out.println(position2.getText());
-			System.out.println("True, name not null");
+			System.out.println(position2.getText());			
 			return true;
 		}
 
@@ -199,13 +195,12 @@ public class WorkController {
 	public boolean description1FieldValidation() {
 		if (description1.getText() == "null" || description1.getText().trim().isEmpty()) {
 			warningLabel.setText("*Warning! All of the fields must be filled up");
-			System.out.println("False, name null");
+			System.out.println("False, description1 null");
 			return false;
 		}
 
 		else {
-			System.out.println(description1.getText());
-			System.out.println("True, name not null");
+			System.out.println(description1.getText());			
 			return true;
 		}
 
@@ -214,13 +209,12 @@ public class WorkController {
 	public boolean description2FieldValidation() {
 		if (description2.getText() == "null" || description2.getText().trim().isEmpty()) {
 			warningLabel.setText("*Warning! All of the fields must be filled up");
-			System.out.println("False, name null");
+			System.out.println("False, description2 null");
 			return false;
 		}
 
 		else {
-			System.out.println(description2.getText());
-			System.out.println("True, name not null");
+			System.out.println(description2.getText());			
 			return true;
 		}
 
