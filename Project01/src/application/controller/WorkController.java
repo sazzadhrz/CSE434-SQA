@@ -135,9 +135,13 @@ public class WorkController {
 		position2FieldValidation() &&
 		description2FieldValidation();
 	}
+	
+	public boolean isNull (String string) {
+		return (string == "null" || string.trim().isEmpty());
+	}
 
 	public boolean name1FieldValidation() {
-		if (name1.getText() == "null" || name1.getText().trim().isEmpty()) {
+		if (isNull(name1.getText())) {
 			warningLabel.setText("*Warning! All of the fields must be filled up");
 			System.out.println("False, name1 null");
 			return false;
@@ -151,7 +155,7 @@ public class WorkController {
 	}
 
 	public boolean name2FieldValidation() {
-		if (name2.getText() == "null" || name2.getText().trim().isEmpty()) {
+		if (isNull(name2.getText())) {
 			warningLabel.setText("*Warning! All of the fields must be filled up");
 			System.out.println("False, name2 null");
 			return false;
@@ -165,7 +169,7 @@ public class WorkController {
 	}
 
 	public boolean position1FieldValidation() {
-		if (position1.getText() == "null" || position1.getText().trim().isEmpty()) {
+		if (isNull(position1.getText())) {
 			warningLabel.setText("*Warning! All of the fields must be filled up");
 			System.out.println("False, position1 null");
 			return false;
@@ -179,7 +183,7 @@ public class WorkController {
 	}
 
 	public boolean position2FieldValidation() {
-		if (position2.getText() == "null" || position2.getText().trim().isEmpty()) {
+		if (isNull(position2.getText())) {
 			warningLabel.setText("*Warning! All of the fields must be filled up");
 			System.out.println("False, position2 null");
 			return false;
@@ -193,7 +197,7 @@ public class WorkController {
 	}
 
 	public boolean description1FieldValidation() {
-		if (description1.getText() == "null" || description1.getText().trim().isEmpty()) {
+		if (isNull(description1.getText())) {
 			warningLabel.setText("*Warning! All of the fields must be filled up");
 			System.out.println("False, description1 null");
 			return false;
@@ -207,7 +211,7 @@ public class WorkController {
 	}
 
 	public boolean description2FieldValidation() {
-		if (description2.getText() == "null" || description2.getText().trim().isEmpty()) {
+		if (isNull(description2.getText())) {
 			warningLabel.setText("*Warning! All of the fields must be filled up");
 			System.out.println("False, description2 null");
 			return false;
