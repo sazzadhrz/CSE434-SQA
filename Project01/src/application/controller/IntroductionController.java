@@ -129,17 +129,23 @@ public class IntroductionController {
 	}
 
 	public boolean fieldNullValidation() {
-		if (nameFieldNullValidation() && addressFieldNullValidation() && emailFieldNullValidation()
-				&& phoneFieldNullValidation()) {
+		if (nameFieldNullValidation() && 
+				addressFieldNullValidation() && 
+				emailFieldNullValidation()	&& 
+				phoneFieldNullValidation()) {
 			warningLabel.setText("");
 			return true;
 		} else
 			return false;
 	}
+	
+	public boolean isNull (String string) {
+		return (string == "null" || string.trim().isEmpty());
+	}
 
 	// if null return false and raise warning on UI
 	public boolean nameFieldNullValidation() {
-		if (nameTF.getText() == "null" || nameTF.getText().trim().isEmpty()) {
+		if (isNull(nameTF.getText())) {
 			warningLabel.setText("*Warning! All of the fields must be filled up");
 			System.out.println("False, name null");
 			return false;
@@ -154,7 +160,7 @@ public class IntroductionController {
 
 	// if null return false and raise warning on UI
 	public boolean addressFieldNullValidation() {
-		if (addressTF.getText() == "null" || addressTF.getText().trim().isEmpty()) {
+		if (isNull(addressTF.getText())) {
 			warningLabel.setText("*Warning! All of the fields must be filled up");
 			System.out.println("False, address null");
 			return false;
@@ -170,7 +176,7 @@ public class IntroductionController {
 
 	// if null return false and raise warning on UI
 	public boolean emailFieldNullValidation() {
-		if (emailTF.getText() == "null" || emailTF.getText().trim().isEmpty()) {
+		if (isNull(emailTF.getText())) {
 			warningLabel.setText("*Warning! All of the fields must be filled up");
 			System.out.println("False, email null");
 			return false;
@@ -186,7 +192,7 @@ public class IntroductionController {
 
 	// if null return false and raise warning on UI
 	public boolean phoneFieldNullValidation() {
-		if (phoneTF.getText() == "null" || phoneTF.getText().trim().isEmpty()) {
+		if (isNull(phoneTF.getText())) {
 			warningLabel.setText("*Warning! All of the fields must be filled up");
 			System.out.println("False, phone null");
 			return false;
