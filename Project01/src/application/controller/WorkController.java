@@ -121,7 +121,7 @@ public class WorkController {
 	}
 
 	public boolean isPositionValid(String positionName) {
-		String regex = "^[a-zA-Z]+$";
+		String regex = "^[a-zA-Z ]+$";
 		return positionName.matches(regex);
 	}
 
