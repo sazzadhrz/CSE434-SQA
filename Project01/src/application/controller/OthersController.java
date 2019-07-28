@@ -61,6 +61,7 @@ public class OthersController {
 			 storeData();
 			 addToMainList();
 			 generateResume();
+			 exit();
 			 }
 	}
 	
@@ -88,10 +89,14 @@ public class OthersController {
 	}
 	
 	public void addToMainList() {
+		Main.arraylist.add("<br>");
 		Main.arraylist.add(EducationController.educationHtml);
+		Main.arraylist.add("<br>");
 		Main.arraylist.add(WorkController.workHTML);
+		Main.arraylist.add("<br>");
 		Main.arraylist.add(OthersController.othersHTML);
 	}
+	
 
 	public void exit() {
 		Platform.exit();
@@ -147,14 +152,14 @@ public class OthersController {
 	}
 	
 	private String generateOthersHTML() {
-		String title = "<h1><i>Others</i></h1> <br>" + "\n";
+		String title = "<h2><i>Others</i></h2>" + "\n";
 		String skills = h4("Skills")
 				+ p(skillsTA.getText());
 		
 		String interests = h4("Interests")
 				+ p(interestsTA.getText());
 		
-		String othersHTML = "<div class=\"workExperience\">" + "\n" + title + skills + interests + "</div>";
+		String othersHTML = "<div class=\"others\">" + "\n" + title + skills + interests + "</div>";
 		return othersHTML;
 	}
 	

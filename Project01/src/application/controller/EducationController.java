@@ -307,7 +307,7 @@ public class EducationController {
 		}
 		
 		private String generateEducationHTML() {
-			String title = "<h1><i>Educational Background</i></h1>" + "\n";
+			String title = "<h2><i>Educational Background</i></h2>" + "\n";
 			String edu1 = 
 					  h3(name1.getText()) 
 					+ h4(degree1.getText())

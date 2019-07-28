@@ -201,17 +201,17 @@ public class IntroductionController {
 	}
 
 	// HTML tags as method
-	public String h5(String info) {
-		return "<h5>" + info + "</h5>" + "\n";
+	public String h3(String info) {
+		return "<h3>" + info + "</h3>" + "\n";
 	}
 
-	public String h2(String info) {
-		return "<h2>" + info + "</h2>" + "\n";
+	public String h1(String info) {
+		return "<h1>" + info + "</h1>" + "\n";
 	}
 
 	private String generateIntroHtml() {
-		return "<div class=\"introduction\">" + "\n" + h2(nameTF.getText()) + h5(addressTF.getText())
-				+ h5(emailTF.getText()) + h5(phoneTF.getText()) + "</div>";
+		return "<div class=\"introduction\">" + "\n" + h1(nameTF.getText()) + h3(addressTF.getText())
+				+ h3(emailTF.getText()) + h3(phoneTF.getText()) + "</div>";
 	}
 
 	private String generateHeader() {
