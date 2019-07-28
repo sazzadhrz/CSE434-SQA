@@ -93,4 +93,18 @@ public class OthersController {
 		}
 
 	}
+	
+	//html tags as method
+	public String h4(String info) {
+		return "<h4>" + info + "</h4>" + "\n";
+	}
+	
+	public String p(String info) {
+		return "<p>" + info + "</p>" + "\n";
+	}
+	
+	
+	
+	
+	
 }

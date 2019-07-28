@@ -236,7 +236,7 @@ public class WorkController {
 			}
 	
 			private String generateWorkHTML() {
-				String title = "<h1><i>Educational Background</i></h1>" + "\n";
+				String title = "<h1><i>Work Experience</i></h1>" + "\n";
 				String work1 = 
 						  h3(name1.getText()) 
 						+ h4(position1.getText())
