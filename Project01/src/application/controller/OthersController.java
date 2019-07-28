@@ -114,9 +114,13 @@ public class OthersController {
 		skillsTAFieldValidation() &&
 		interestsTAFieldValidation();
 	}
+	
+	public boolean isNull (String string) {
+		return (string == "null" || string.trim().isEmpty());
+	}
 
 	public boolean skillsTAFieldValidation() {
-		if (skillsTA.getText() == "null" || skillsTA.getText().trim().isEmpty()) {
+		if (isNull(skillsTA.getText())) {
 			warningLabel.setText("*Warning! All of the fields must be filled up");
 			System.out.println("False, skills null");
 			return false;
@@ -130,7 +134,7 @@ public class OthersController {
 	}
 
 	public boolean interestsTAFieldValidation() {
-		if (interestsTA.getText() == "null" || interestsTA.getText().trim().isEmpty()) {
+		if (isNull(interestsTA.getText())) {
 			warningLabel.setText("*Warning! All of the fields must be filled up");
 			System.out.println("False, interests null");
 			return false;
