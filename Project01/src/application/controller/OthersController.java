@@ -103,7 +103,17 @@ public class OthersController {
 		return "<p>" + info + "</p>" + "\n";
 	}
 	
-	
+	private String generateWorkHTML() {
+		String title = "<h1><i>Others</i></h1> <br>" + "\n";
+		String work1 = h4("Skills")
+				+ p(skillsTA.getText());
+		
+		String work2 = h4("Interests")
+				+ p(interestsTA.getText());
+		
+		String othersHTML = "<div class=\"workExperience\">" + "\n" + title + work1 + work2 + "</div>";
+		return othersHTML;
+	}
 	
 	
 	
