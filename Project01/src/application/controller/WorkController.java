@@ -229,8 +229,8 @@ public class WorkController {
 	
 	
 	// HTML tags as method
-			public String h5(String info) {
-				return "<h5>" + info + "</h5>" + "\n";
+			public String h4(String info) {
+				return "<h4>" + info + "</h4>" + "\n";
 			}
 
 			public String h3(String info) {
@@ -241,6 +241,20 @@ public class WorkController {
 				return "<p>" + info + "</p>" + "\n";
 			}
 	
-	
+			private String generateWorkHTML() {
+				String title = "<h1><i>Educational Background</i></h1>" + "\n";
+				String work1 = 
+						  h3(name1.getText()) 
+						+ h4(position1.getText())
+						+ p(description1.getText());
+				
+				String work2 = 
+						  h3(name2.getText()) 
+						+ h4(position2.getText())
+						+ p(description2.getText());
+				
+				String educationHTML = "<div class=\"workExperience\">" + "\n" + title + work1 + work2 + "</div>";
+				return educationHTML;
+			}
 	
 }
