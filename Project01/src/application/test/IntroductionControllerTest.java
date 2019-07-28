@@ -57,5 +57,15 @@ public class IntroductionControllerTest {
 		assertTrue(ic.isPhoneValid("9125698"));
 		// fail("NI");
 	}
+	
+	@Test
+	public void h1Test() {
+		assertEquals("<h1>" + "Sazzad" + "</h1>" + "\n", ic.h1("Sazzad"));
+	}
+	
+	@Test
+	public void h3Test() {
+		assertEquals("<h3>" + "school" + "</h3>" + "\n", ic.h3("school"));
+	}
 
 }
