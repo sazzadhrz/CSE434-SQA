@@ -31,7 +31,6 @@ public class IntroductionController {
 	@FXML
 	Label warningLabel;
 	
-	public static ArrayList<String> introductionList = new ArrayList<String>();
 
 	// Cancel button controller
 	public void introductionCancelBtnActionController() {
@@ -45,18 +44,18 @@ public class IntroductionController {
 	}
 
 	// scene change variables
-	// private Stage stage;
 	@FXML
 	private StackPane introductionlayout;
 
 	// Next button controller
 	public void introductionNextBtnActionController(ActionEvent event) throws IOException {
 		System.out.println("next btn pressed");
-		// if (fieldValidation()) {
-		// System.out.println("validation done");
-		// pushDataToNext();
-		// goToEducation();
-		// }
+//		 if (fieldValidation()) {
+//		 System.out.println("validation done");
+//		 addToMainList();
+//		 goToEducation();
+//		 }
+		addToMainList();
 		goToEducation();
 	}
 
@@ -66,25 +65,14 @@ public class IntroductionController {
 		introductionlayout.setMargin(pane, new Insets(50, 50, 50, 50));
 	}
 
-	private void pushDataToNext() {
+	private void addToMainList() {
 		Main.arraylist.add(generateHeader());
 		Main.arraylist.add(bodyOpen());
 
 		Main.arraylist.add(generateIntroHtml());
-		// System.out.println(Main.arraylist);
+		 System.out.println(Main.arraylist);
 
 	}
-	
-	/*
-	  private void pushDataToNext() {
-		introductionList.add(generateHeader());
-		introductionList.add(bodyOpen());
-
-		introductionList.add(generateIntroHtml());
-		// System.out.println(Main.arraylist);
-
-	}
-	 */
 
 	public boolean fieldValidation() {
 		return fieldNullValidation() && nameValidation() && emailValidation() && phoneValidation();

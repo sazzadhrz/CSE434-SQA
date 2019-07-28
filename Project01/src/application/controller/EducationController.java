@@ -3,6 +3,7 @@ package application.controller;
 import java.io.IOException;
 import java.util.ArrayList;
 
+import application.Main;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -61,6 +62,7 @@ public class EducationController {
 
 	public void educationBackBtnActionController() throws IOException {
 		System.out.println("edu back btn pressed");
+		Main.arraylist.clear(); // clears the main list
 		goToIntroduction();
 	}
 	
