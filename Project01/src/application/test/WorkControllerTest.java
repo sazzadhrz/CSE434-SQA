@@ -118,5 +118,48 @@ public class WorkControllerTest {
 		assertFalse(wc.isNameValid("FB = Facebook"));
 		assertFalse(wc.isNameValid("n$u north $outh university"));
 	}
+	
+	
+	/*
+	 * INPUT SPACE PARTITIONING FOR isPositionValid
+	 * 
+	 * PARAMETER STRING
+	 * DOMAIN - ANY KING OF STRING
+	 * 
+	 * CHARACTERISTICS 
+	 * 1 - VALID
+	 * 2 - NOT VALID
+	 * 
+	 * BLOCK FOR VALID INPUT
+	 * 1 - PLAIN NAME
+	 * 
+	 * BLOCK FOR INVALID INPUT
+	 * 2 - WITH NUMERIC CHARACTER
+	 * 3 - WITH SPECIAL CHARACTER
+	 *  
+	 */
+
+	@Test
+	public void isPositionValidTest() {
+		// fail("Not yet implemented");
+		
+		// BLOCK 1
+		assertTrue(wc.isPositionValid("Intern"));
+		assertTrue(wc.isPositionValid("Athlete"));
+		assertTrue(wc.isPositionValid("Student"));
+		assertTrue(wc.isPositionValid("CEO"));		
+		assertTrue(wc.isPositionValid("Proffesor"));	
+		assertTrue(wc.isPositionValid("Fisherman"));
+		
+		// BLOCK 2
+		assertFalse(wc.isPositionValid("Intern5"));
+		assertFalse(wc.isPositionValid("5456484325"));
+		assertFalse(wc.isPositionValid("T3ach3r"));
+		
+		// BLOCK 3
+		assertFalse(wc.isPositionValid("#Dr."));
+		assertFalse(wc.isPositionValid("Prof."));
+		assertFalse(wc.isPositionValid("Eng."));
+	}
 
 }
