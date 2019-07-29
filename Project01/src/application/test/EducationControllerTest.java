@@ -253,7 +253,7 @@ public class EducationControllerTest {
 	}
 	
 	/*
-	 * INPUT SPACE PARTITIONING FOR h5, h4AND h3
+	 * INPUT SPACE PARTITIONING FOR h5, h4 AND h3
 	 * 
 	 * PARAMETER STRING
 	 * DOMAIN - ANY KING OF STRING

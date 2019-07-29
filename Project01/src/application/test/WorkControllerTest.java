@@ -161,5 +161,57 @@ public class WorkControllerTest {
 		assertFalse(wc.isPositionValid("Prof."));
 		assertFalse(wc.isPositionValid("Eng."));
 	}
+	
+	
+	/*
+	 * INPUT SPACE PARTITIONING FOR p, h4 AND h3
+	 * 
+	 * PARAMETER STRING
+	 * DOMAIN - ANY KING OF STRING
+	 * 
+	 * CHARACTERISTICS 
+	 * 1 - VALID
+	 * 2 - NOT VALID
+	 * 
+	 */
+	
+	@Test
+	public void pTest() {
+		// VALID
+		assertEquals("<p>" + "Sazzad" + "</p>" + "\n", wc.p("Sazzad"));
+		assertEquals("<p>" + "" + "</p>" + "\n", wc.p(""));
+		assertEquals("<p>" + "KheLa hoBe" + "</p>" + "\n", wc.p("KheLa hoBe"));
+		
+		//NOT VALID
+		assertNotEquals("<p>" + "sazzad" + "</p>" + "\n", wc.p("Sazzad"));
+		assertNotEquals("<p>" + "KheLa hoBe" + "</p>" + "\n", wc.p("Khela Hobe"));
+		assertNotEquals("<p>" + "" + "</p>" + "\n", wc.p("434"));
+	}
+	
+	@Test
+	public void h4Test() {
+		// VALID
+		assertEquals("<h4>" + "Sazzad" + "</h4>" + "\n", wc.h4("Sazzad"));
+		assertEquals("<h4>" + "" + "</h4>" + "\n", wc.h4(""));
+		assertEquals("<h4>" + "KheLa hoBe" + "</h4>" + "\n", wc.h4("KheLa hoBe"));
+		
+		//NOT VALID
+		assertNotEquals("<h4>" + "sazzad" + "</h4>" + "\n", wc.h4("Sazzad"));
+		assertNotEquals("<h4>" + "KheLa hoBe" + "</h4>" + "\n", wc.h4("Khela Hobe"));
+		assertNotEquals("<h4>" + "" + "</h4>" + "\n", wc.h4("434"));
+	}
+
+	@Test
+	public void h3Test() {
+		// VALID
+		assertEquals("<h3>" + "Sazzad" + "</h3>" + "\n", wc.h3("Sazzad"));
+		assertEquals("<h3>" + "" + "</h3>" + "\n", wc.h3(""));
+		assertEquals("<h3>" + "KheLa hoBe" + "</h3>" + "\n", wc.h3("KheLa hoBe"));
+		
+		//NOT VALID
+		assertNotEquals("<h3>" + "sazzad" + "</h3>" + "\n", wc.h3("Sazzad"));
+		assertNotEquals("<h3>" + "KheLa hoBe" + "</h3>" + "\n", wc.h3("Khela Hobe"));
+		assertNotEquals("<h3>" + "" + "</h3>" + "\n", wc.h3("434"));
+	}
 
 }
