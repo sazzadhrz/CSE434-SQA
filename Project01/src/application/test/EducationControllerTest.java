@@ -114,6 +114,48 @@ public class EducationControllerTest {
 		assertFalse(ec.isNameValid("n$u north $outh university"));
 	}
 	
+	/*
+	 * INPUT SPACE PARTITIONING FOR isDegreeValid
+	 * 
+	 * PARAMETER STRING
+	 * DOMAIN - ANY KING OF STRING
+	 * 
+	 * CHARACTERISTICS 
+	 * 1 - VALID
+	 * 2 - NOT VALID
+	 * 
+	 * BLOCK FOR VALID INPUT
+	 * 1 - PLAIN NAME
+	 * 
+	 * BLOCK FOR INVALID INPUT
+	 * 2 - WITH NUMERIC CHARACTER
+	 * 3 - WITH SPECIAL CHARACTER
+	 *  
+	 */
+
+	@Test
+	public void isDegreeValidTest() {
+		// fail("Not yet implemented");
+		
+		// BLOCK 1
+		assertTrue(ec.isNameValid("Intern"));
+		assertTrue(ec.isNameValid("CEO"));
+		assertTrue(ec.isNameValid("Student"));
+		assertTrue(ec.isNameValid("Fisherman"));
+		assertTrue(ec.isNameValid("Proffesor"));
+		assertTrue(ec.isNameValid("Athlete"));
+		
+		// BLOCK 2
+		assertFalse(ec.isNameValid("Intern5"));
+		assertFalse(ec.isNameValid("5456484325"));
+		assertFalse(ec.isNameValid("T3ach3r"));
+		
+		// BLOCK 3
+		assertFalse(ec.isNameValid("#Dr."));
+		assertFalse(ec.isNameValid("Prof."));
+		assertFalse(ec.isNameValid("Eng."));
+	}
+	
 	
 
 }
