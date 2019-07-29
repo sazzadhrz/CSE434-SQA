@@ -237,11 +237,29 @@ public class IntroductionControllerTest {
 	}
 	
 	
+	/*
+	 * INPUT SPACE PARTITIONING FOR isPhoneValid
+	 * 
+	 * PARAMETER STRING
+	 * DOMAIN - ANY KING OF STRING
+	 * 
+	 * CHARACTERISTICS 
+	 * 1 - VALID
+	 * 2 - NOT VALID
+	 * 
+	 */
+	
 	@Test
 	public void h1Test() {
+		// VALID
 		assertEquals("<h1>" + "Sazzad" + "</h1>" + "\n", ic.h1("Sazzad"));
+		assertEquals("<h1>" + "" + "</h1>" + "\n", ic.h1(""));
+		assertEquals("<h1>" + "KheLa hoBe" + "</h1>" + "\n", ic.h1("KheLa hoBe"));
 		
+		//NOT VALID
 		assertNotEquals("<h1>" + "sazzad" + "</h1>" + "\n", ic.h1("Sazzad"));
+		assertNotEquals("<h1>" + "KheLa hoBe" + "</h1>" + "\n", ic.h1("Khela Hobe"));
+		assertNotEquals("<h1>" + "" + "</h1>" + "\n", ic.h1("434"));
 	}
 	
 	@Test
