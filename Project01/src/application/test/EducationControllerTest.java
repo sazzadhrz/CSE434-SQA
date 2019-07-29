@@ -199,5 +199,57 @@ public class EducationControllerTest {
 		assertFalse(ec.isYearValid("J@nuary - Feb"));
 		assertFalse(ec.isYearValid("= 2017"));
 	}
+	
+	/*
+	 * INPUT SPACE PARTITIONING FOR isCGPAValid
+	 * 
+	 * PARAMETER STRING
+	 * DOMAIN - ANY KING OF STRING
+	 * 
+	 * CHARACTERISTICS 
+	 * 1 - VALID
+	 * 2 - NOT VALID
+	 * 
+	 * BLOCK FOR VALID INPUT
+	 * 1 - CGPA >= 0 && CGPA <=4.00 [UNIVERSITY + HSC/SSC]
+	 * 2 - CGPA >4.00 && CGPA <= 5.00 [GPA FOR SSC AND HSC]
+	 * 
+	 * BLOCK FOR INVALID INPUT
+	 * 3 - CGPA > 5
+	 * 4 - INTEGER
+	 * 5 - DON'T FOLLOW THE FORMAT [#.##]
+	 *  
+	 */
+
+	@Test
+	public void isCgpaValidTest() {
+		//BLOCK 1
+		assertTrue(ec.isCgpaValid("2.36"));
+		assertTrue(ec.isCgpaValid("3.81"));
+		assertTrue(ec.isCgpaValid("1.23"));
+		assertTrue(ec.isCgpaValid("4.00"));
+		
+		//BLOCK 2
+		assertTrue(ec.isCgpaValid("5.00"));
+		assertTrue(ec.isCgpaValid("4.81"));
+		assertTrue(ec.isCgpaValid("4.44"));
+		
+		//BLOCK 3
+		assertFalse(ec.isCgpaValid("5.01"));
+		assertFalse(ec.isCgpaValid("9.91"));
+		assertFalse(ec.isCgpaValid("8.45"));
+		
+		//BLOCK 4
+		assertFalse(ec.isCgpaValid("0"));
+		assertFalse(ec.isCgpaValid("4"));
+		assertFalse(ec.isCgpaValid("5"));
+		
+		//BLOCK 5
+		assertFalse(ec.isCgpaValid("23.26"));
+		assertFalse(ec.isCgpaValid("2.258"));
+		assertFalse(ec.isCgpaValid("4.0"));
+		assertFalse(ec.isCgpaValid("3.6"));
+		assertFalse(ec.isCgpaValid("03.03"));
+	}
 
 }
