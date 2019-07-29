@@ -184,14 +184,55 @@ public class IntroductionControllerTest {
 		assertFalse(ic.isEmailValid("w3~r|d@gmail.com"));
 
 	}
+	
+	
+	/*
+	 * INPUT SPACE PARTITIONING FOR isPhoneValid
+	 * 
+	 * PARAMETER STRING
+	 * DOMAIN - ANY KING OF STRING
+	 * 
+	 * CHARACTERISTICS 
+	 * 1 - VALID
+	 * 2 - NOT VALID
+	 * 
+	 * BLOCK FOR VALID INPUT
+	 * 1 - PLAIN NUMBER
+	 * 2 - NUMBER CONTAINS SOME CHARACTERS (EG. +, -, #, \,  )
+	 * 
+	 * BLOCK FOR INVALID INPUT
+	 * 3 - LENGTH <= 6
+	 * 4 - CONTAINING SPECIAL CHARACTERS
+	 * 5 - NUMBER CONTAINING ALPHABET
+	 *  
+	 */
 
 	@Test
 	public void isPhoneValidTest() {
+		// BLOCK 1
 		assertEquals(true, ic.isPhoneValid("01613645555"));
-		assertFalse(ic.isPhoneValid("1234"));
-		assertTrue(ic.isPhoneValid("+8801613645555"));
 		assertTrue(ic.isPhoneValid("9125698"));
+		
+		// BLOCK 2
+		assertTrue(ic.isPhoneValid("+8801613645555"));
 		assertTrue(ic.isPhoneValid("018-132-56"));
+		assertTrue(ic.isPhoneValid("0161 3645555"));
+		
+		// BLOCK 3
+		assertFalse(ic.isPhoneValid("1234"));
+		assertFalse(ic.isPhoneValid("+880"));
+		assertFalse(ic.isPhoneValid("123-58"));
+		
+		// BLOCK 4
+		assertFalse(ic.isPhoneValid("S$55465456"));
+		assertFalse(ic.isPhoneValid("@01254354"));
+		assertFalse(ic.isPhoneValid("12&*=34"));
+		
+		
+		// BLOCK 5
+		assertFalse(ic.isPhoneValid("AKJSHFKJ"));
+		assertFalse(ic.isPhoneValid("123KA"));
+		
 		// fail("NI");
 	}
 	
@@ -199,6 +240,8 @@ public class IntroductionControllerTest {
 	@Test
 	public void h1Test() {
 		assertEquals("<h1>" + "Sazzad" + "</h1>" + "\n", ic.h1("Sazzad"));
+		
+		assertNotEquals("<h1>" + "sazzad" + "</h1>" + "\n", ic.h1("Sazzad"));
 	}
 	
 	@Test
