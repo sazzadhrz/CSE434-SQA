@@ -123,16 +123,66 @@ public class IntroductionControllerTest {
 	}
 	
 	
-
+	/*
+	 * INPUT SPACE PARTITIONING FOR isEmailValid
+	 * 
+	 * PARAMETER STRING
+	 * DOMAIN - ANY KING OF STRING
+	 * 
+	 * CHARACTERISTICS 
+	 * 1 - VALID
+	 * 2 - NOT VALID
+	 * 
+	 * BLOCK FOR VALID INPUT
+	 * 1 - EMAIL CONTAINS ONLY ALPHABET WITH @ AND .
+	 * 2 - EMAIL CONTAINS NUMERIC VALUE/ _ - WITH @ AND .
+	 * 
+	 * BLOCK FOR INVALID INPUT
+	 * 3 - EMAIL WITHOUT @
+	 * 4 - EMAIL WITHOUT .
+	 * 5 - EMAIL WITHOUT @ AND .
+	 * 6 - EMAIL CONTAINING SPECIAL CHARACTERS
+	 *  
+	 */
 
 	@Test
 	public void isEmailValidTest() {
 		// fail("Not yet implemented");
-
+		
+		// BLOCK 1
 		assertTrue("valid", ic.isEmailValid("sazzadhrz@gmail.com"));
-		assertFalse(ic.isEmailValid("dfsaf5"));
+		assertTrue(ic.isEmailValid("saz@pbsca.ca"));
+		assertTrue(ic.isEmailValid("alibaba_arabian@lufthansa.com"));
+		assertTrue(ic.isEmailValid("shaikh.shimon@northsouth.edu"));
+		assertTrue(ic.isEmailValid("nabeel.mohammed@northsouth.edu"));
+		
+		
+		//BLOCK 2
 		assertTrue("valid", ic.isEmailValid("sazzad_5136@hotmail.com"));
+		assertTrue(ic.isEmailValid("sazzad9798@yahoo.com"));
+		assertTrue(ic.isEmailValid("saz-526@gmail.com"));
+		
+		// BLOCK 3
 		assertFalse(ic.isEmailValid("sazzad.com"));
+		assertFalse(ic.isEmailValid("gameon-google.com"));
+		assertFalse(ic.isEmailValid("hello5_at_nsu.edu"));
+		
+		// BLOCK 4
+		assertFalse(ic.isEmailValid("sazzad@gmailcom"));
+		assertFalse(ic.isEmailValid("saz5@yahoo,com"));
+		assertFalse(ic.isEmailValid("noa@nasa"));
+		
+		//BLOCK 5
+		assertFalse(ic.isEmailValid("sazzadhrz"));
+		assertFalse(ic.isEmailValid("saz5"));
+		assertFalse(ic.isEmailValid("morshed47&gmail,com"));
+		
+		//BLOCK 6
+		assertFalse(ic.isEmailValid("s@zzad@gmail.com"));
+		assertFalse(ic.isEmailValid("$azzad@nus.com"));
+		assertFalse(ic.isEmailValid("@#$%@sdkjf.com"));
+		assertFalse(ic.isEmailValid("w3~r|d@gmail.com"));
+
 	}
 
 	@Test
