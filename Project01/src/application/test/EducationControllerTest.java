@@ -35,8 +35,17 @@ public class EducationControllerTest {
 	}
 
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void isNameValidTest() {
+		// fail("Not yet implemented");
+
+		assertTrue(ec.isNameValid("NSU"));
+		assertTrue(ec.isNameValid("North South University"));
+		assertTrue(ec.isNameValid("North South University"));
+		
+		assertFalse(ec.isNameValid("G5"));
+		assertFalse(ec.isNameValid("#NSU"));
+		assertFalse(ec.isNameValid("nsu = north south university"));
+		assertFalse(ec.isNameValid("G5"));
 	}
 
 }

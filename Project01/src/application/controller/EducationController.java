@@ -1,7 +1,6 @@
 package application.controller;
 
 import java.io.IOException;
-import java.util.ArrayList;
 
 import application.Main;
 import javafx.application.Platform;
