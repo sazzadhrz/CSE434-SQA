@@ -34,9 +34,48 @@ public class OthersControllerTest {
 		oc = null;
 	}
 
+
+	
+	
+	/*
+	 * INPUT SPACE PARTITIONING FOR isNull
+	 * 
+	 * PARAMETER STRING
+	 * DOMAIN - ANY KING OF STRING
+	 * 
+	 * CHARACTERISTICS 
+	 * 1 - NULL
+	 * 2 - NOT NULL
+	 * 
+	 * BLOCK
+	 * 1 - ESCAPE SEQUENCE (NULL, WHITESPACE, TAB, NEW LINE ETC.)
+	 * 2 - ESCAPE SEQUENCE EXCEPT ( \", \', \\)
+	 * 3 - ANYTHING LENGTH > 0
+	 *  
+	 */
+	
 	@Test
-	public void test() {
-		//fail("Not yet implemented");
+	public void IsNullTest() {
+		// BLOCK 1
+		assertTrue(oc.isNull(""));
+		assertTrue(oc.isNull(" \t"));
+		assertTrue(oc.isNull("\n"));
+		assertTrue(oc.isNull("                "));
+		assertTrue(oc.isNull("\b"));
+		assertTrue(oc.isNull("\f"));
+		assertTrue(oc.isNull("\r"));
+		
+		// BLOCK 2
+		assertFalse(oc.isNull("\\"));
+		assertFalse(oc.isNull("\""));
+		assertFalse(oc.isNull("\'"));
+		
+		// BLOCK 3
+		assertFalse(oc.isNull("Supra"));
+		assertFalse(oc.isNull("545"));
+		assertFalse(oc.isNull("saz5"));
+		assertFalse(oc.isNull("&$^#*&^#&"));
+		assertFalse(oc.isNull("M1x3d f$C@"));
 	}
 
 }
