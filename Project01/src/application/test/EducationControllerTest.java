@@ -33,13 +33,20 @@ public class EducationControllerTest {
 	public void tearDown() throws Exception {
 		ec = null;
 	}
+	
+	
+	@Test
+	public void IsNullTest() {
+		assertTrue(ec.isNull(""));
+		assertFalse(ec.isNull("Supra"));
+	}
 
 	@Test
 	public void isNameValidTest() {
 		// fail("Not yet implemented");
 
 		assertTrue(ec.isNameValid("NSU"));
-		assertTrue(ec.isNameValid("North South University"));
+		assertTrue(ec.isNameValid("NORTH SOUTH UNIVERSITY"));
 		assertTrue(ec.isNameValid("North South University"));
 		
 		assertFalse(ec.isNameValid("G5"));
@@ -47,5 +54,7 @@ public class EducationControllerTest {
 		assertFalse(ec.isNameValid("nsu = north south university"));
 		assertFalse(ec.isNameValid("G5"));
 	}
+	
+	
 
 }
