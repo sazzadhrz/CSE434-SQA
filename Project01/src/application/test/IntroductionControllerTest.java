@@ -238,7 +238,7 @@ public class IntroductionControllerTest {
 	
 	
 	/*
-	 * INPUT SPACE PARTITIONING FOR isPhoneValid
+	 * INPUT SPACE PARTITIONING FOR h1 AND h3
 	 * 
 	 * PARAMETER STRING
 	 * DOMAIN - ANY KING OF STRING
@@ -262,9 +262,20 @@ public class IntroductionControllerTest {
 		assertNotEquals("<h1>" + "" + "</h1>" + "\n", ic.h1("434"));
 	}
 	
+
 	@Test
 	public void h3Test() {
-		assertEquals("<h3>" + "school" + "</h3>" + "\n", ic.h3("school"));
+		// VALID
+		assertEquals("<h3>" + "Sazzad" + "</h3>" + "\n", ic.h3("Sazzad"));
+		assertEquals("<h3>" + "" + "</h3>" + "\n", ic.h3(""));
+		assertEquals("<h3>" + "KheLa hoBe" + "</h3>" + "\n", ic.h3("KheLa hoBe"));
+		
+		//NOT VALID
+		assertNotEquals("<h3>" + "sazzad" + "</h3>" + "\n", ic.h3("Sazzad"));
+		assertNotEquals("<h3>" + "KheLa hoBe" + "</h3>" + "\n", ic.h3("Khela Hobe"));
+		assertNotEquals("<h3>" + "" + "</h3>" + "\n", ic.h3("434"));
 	}
+	
+	
 
 }
