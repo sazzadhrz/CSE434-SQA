@@ -123,7 +123,7 @@ public class IntroductionController {
 	}
 
 	public boolean isPhoneValid(String phone) {
-		String regex = "^[0-9+#*\\[\\]]+$";
+		String regex = "^[0-9+#*\\[\\w-\\]]+$";
 		return phone.matches(regex) && phone.length() > 4;
 	}
 

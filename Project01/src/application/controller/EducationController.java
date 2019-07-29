@@ -110,7 +110,8 @@ public class EducationController {
 	}
 
 	public boolean isNameValid(String name) {
-		String regex = "^[\\p{L} .'-]+$";
+//		String regex = "^[\\p{L} .'-]+$";
+		String regex = "^[a-zA-Z ]+$";
 		return name.matches(regex);
 	}
 
