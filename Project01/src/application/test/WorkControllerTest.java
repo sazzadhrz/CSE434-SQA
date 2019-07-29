@@ -9,17 +9,21 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import application.controller.WorkController;
+
 /**
  * @author Sazzad
  *
  */
 public class WorkControllerTest {
+	private WorkController wc;
 
 	/**
 	 * @throws java.lang.Exception
 	 */
 	@Before
 	public void setUp() throws Exception {
+		wc = new WorkController();
 	}
 
 	/**
@@ -27,6 +31,7 @@ public class WorkControllerTest {
 	 */
 	@After
 	public void tearDown() throws Exception {
+		wc = null;
 	}
 
 	@Test

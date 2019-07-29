@@ -9,17 +9,21 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import application.controller.EducationController;
+
 /**
  * @author Sazzad
  *
  */
 public class EducationControllerTest {
+	private EducationController ec;
 
 	/**
 	 * @throws java.lang.Exception
 	 */
 	@Before
 	public void setUp() throws Exception {
+		ec = new EducationController();
 	}
 
 	/**
@@ -27,6 +31,7 @@ public class EducationControllerTest {
 	 */
 	@After
 	public void tearDown() throws Exception {
+		ec = null;
 	}
 
 	@Test

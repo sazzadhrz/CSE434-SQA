@@ -9,17 +9,21 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import application.controller.OthersController;
+
 /**
  * @author Sazzad
  *
  */
 public class OthersControllerTest {
+	private OthersController oc;
 
 	/**
 	 * @throws java.lang.Exception
 	 */
 	@Before
 	public void setUp() throws Exception {
+		oc = new OthersController();
 	}
 
 	/**
@@ -27,6 +31,7 @@ public class OthersControllerTest {
 	 */
 	@After
 	public void tearDown() throws Exception {
+		oc = null;
 	}
 
 	@Test
