@@ -30,6 +30,48 @@ public class IntroductionControllerTest {
 	public void tearDown() throws Exception {
 		ic = null;
 	}
+	
+	
+	/*
+	 * INPUT SPACE PARTITIONING FOR isNull
+	 * 
+	 * PARAMETER STRING
+	 * DOMAIN - ANY KING OF STRING
+	 * 
+	 * CHARACTERISTICS 
+	 * 1 - NULL
+	 * 2 - NOT NULL
+	 * 
+	 * BLOCK
+	 * 1 - ESCAPE SEQUENCE (NULL, WHITESPACE, TAB, NEW LINE ETC.)
+	 * 2 - ESCAPE SEQUENCE EXCEPT ( \", \', \\)
+	 * 3 - ANYTHING LENGTH > 0
+	 *  
+	 */
+	
+	@Test
+	public void IsNullTest() {
+		// BLOCK 1
+		assertTrue(ic.isNull(""));
+		assertTrue(ic.isNull(" \t"));
+		assertTrue(ic.isNull("\n"));
+		assertTrue(ic.isNull("                "));
+		assertTrue(ic.isNull("\b"));
+		assertTrue(ic.isNull("\f"));
+		assertTrue(ic.isNull("\r"));
+		
+		// BLOCK 2
+		assertFalse(ic.isNull("\\"));
+		assertFalse(ic.isNull("\""));
+		assertFalse(ic.isNull("\'"));
+		
+		// BLOCK 3
+		assertFalse(ic.isNull("Supra"));
+		assertFalse(ic.isNull("545"));
+		assertFalse(ic.isNull("saz5"));
+		assertFalse(ic.isNull("&$^#*&^#&"));
+		assertFalse(ic.isNull("M1x3d f$C@"));
+	}
 
 	@Test
 	public void isNameValidTest() {
@@ -58,11 +100,6 @@ public class IntroductionControllerTest {
 		// fail("NI");
 	}
 	
-	@Test
-	public void IsNullTest() {
-		assertTrue(ic.isNull(""));
-		assertFalse(ic.isNull("Supra"));
-	}
 	
 	@Test
 	public void h1Test() {
