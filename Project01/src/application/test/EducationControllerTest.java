@@ -69,6 +69,10 @@ public class EducationControllerTest {
 		
 		// BLOCK 3
 		assertFalse(ec.isNull("Supra"));
+		assertFalse(ec.isNull("545"));
+		assertFalse(ec.isNull("saz5"));
+		assertFalse(ec.isNull("&$^#*&^#&"));
+		assertFalse(ec.isNull("M1x3d f$C@"));
 	}
 
 	@Test
