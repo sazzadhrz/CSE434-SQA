@@ -78,5 +78,45 @@ public class WorkControllerTest {
 	}
 	
 
+	/*
+	 * INPUT SPACE PARTITIONING FOR isNameValid
+	 * 
+	 * PARAMETER STRING
+	 * DOMAIN - ANY KING OF STRING
+	 * 
+	 * CHARACTERISTICS 
+	 * 1 - VALID
+	 * 2 - NOT VALID
+	 * 
+	 * BLOCK FOR VALID INPUT
+	 * 1 - PLAIN NAME
+	 * 
+	 * BLOCK FOR INVALID INPUT
+	 * 2 - WITH NUMERIC CHARACTER
+	 * 3 - WITH SPECIAL CHARACTER
+	 *  
+	 */
+
+	@Test
+	public void isNameValidTest() {
+		// fail("Not yet implemented");
+		
+		// BLOCK 1
+		assertTrue(wc.isNameValid("NASA"));
+		assertTrue(wc.isNameValid("NORTH SOUTH UNIVERSITY"));
+		assertTrue(wc.isNameValid("NSU-CPC"));
+		assertTrue(wc.isNameValid("Facebook Inc."));
+		assertTrue(wc.isNameValid("Microsoft Cloud"));
+		
+		// BLOCK 2
+		assertFalse(wc.isNameValid("G5"));
+		assertFalse(wc.isNameValid("5456484325"));
+		assertFalse(wc.isNameValid("N0R7H 50U7H UN1V3RS1TY"));
+		
+		// BLOCK 3
+		assertFalse(wc.isNameValid("#NASA"));
+		assertFalse(wc.isNameValid("FB = Facebook"));
+		assertFalse(wc.isNameValid("n$u north $outh university"));
+	}
 
 }
