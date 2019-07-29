@@ -73,7 +73,7 @@
             </AnchorPane>
          </children>
       </VBox>
-      <Label fx:id="warningLabel" text="T" textFill="RED">
+      <Label fx:id="warningLabel" textFill="RED">
          <font>
             <Font size="16.0" />
          </font>

@@ -227,13 +227,10 @@ public class IntroductionControllerTest {
 		assertFalse(ic.isPhoneValid("S$55465456"));
 		assertFalse(ic.isPhoneValid("@01254354"));
 		assertFalse(ic.isPhoneValid("12&*=34"));
-		
-		
+				
 		// BLOCK 5
 		assertFalse(ic.isPhoneValid("AKJSHFKJ"));
 		assertFalse(ic.isPhoneValid("123KA"));
-		
-		// fail("NI");
 	}
 	
 	
@@ -279,9 +276,8 @@ public class IntroductionControllerTest {
 	
 	
 	/*
-	 * AS THE FUNCTIONS OF INTRODUCTION-CONTROLLER ARE SMALL UNIT AND INDIVIDUAL, IT IS NOT POSSIBLE TO DO GRAPH COVERAGE
-	 */
-	
-	
+	 * AS THE FUNCTIONS OF INTRODUCTION-CONTROLLER ARE SMALL UNIT AND INDIVIDUAL, 
+	 * IT IS NOT POSSIBLE TO DO GRAPH COVERAGE
+	 */	
 
 }

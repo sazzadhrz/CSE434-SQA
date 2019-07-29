@@ -41,9 +41,8 @@ public class EducationController {
 
 	@FXML
 	private VBox educationlayout;
-	
-	public static String educationHtml;
 
+	public static String educationHtml;
 
 	public void educationCancelBtnActionController() {
 		System.out.println("Cancel btn pressed");
@@ -60,18 +59,18 @@ public class EducationController {
 		Main.arraylist.clear(); // clears the main list
 		goToIntroduction();
 	}
-	
+
 	public void next() throws IOException {
-		 if (fieldValidation()) {
-			 System.out.println("validation done");
-			 storeData();
-			 goToWork();
-			 }
+		if (fieldValidation()) {
+			System.out.println("validation done");
+			storeData();
+			goToWork();
+		}
 	}
-	
+
 	public void storeData() {
 		educationHtml = generateEducationHTML();
-		//Main.arraylist.add(educationHtml);
+		// Main.arraylist.add(educationHtml);
 	}
 
 	public void exit() {
@@ -91,12 +90,7 @@ public class EducationController {
 	}
 
 	public boolean fieldValidation() {
-		return 
-		fieldNullValidation() &&
-		nameValidation() &&
-		degreeValidation() &&
-		yearValidation() &&
-		cgpaValidation();
+		return fieldNullValidation() && nameValidation() && degreeValidation() && yearValidation() && cgpaValidation();
 	}
 
 	public boolean nameValidation() {
@@ -110,7 +104,7 @@ public class EducationController {
 	}
 
 	public boolean isNameValid(String name) {
-//		String regex = "^[\\p{L} .'-]+$";
+		// String regex = "^[\\p{L} .'-]+$";
 		String regex = "^[a-zA-Z ]+$";
 		return name.matches(regex);
 	}
@@ -169,19 +163,12 @@ public class EducationController {
 	}
 
 	public boolean fieldNullValidation() {
-		return
-		name1FieldValidation() &&
-		degree1FieldValidation() &&
-		year1FieldValidation() &&
-		cgpa1FieldValidation() &&
+		return name1FieldValidation() && degree1FieldValidation() && year1FieldValidation() && cgpa1FieldValidation() &&
 
-		name2FieldValidation() &&
-		degree2FieldValidation() &&
-		year2FieldValidation() &&
-		cgpa2FieldValidation();
+				name2FieldValidation() && degree2FieldValidation() && year2FieldValidation() && cgpa2FieldValidation();
 	}
-	
-	public boolean isNull (String string) {
+
+	public boolean isNull(String string) {
 		return (string == "null" || string.trim().isEmpty());
 	}
 
@@ -249,7 +236,7 @@ public class EducationController {
 		}
 
 		else {
-			System.out.println(year1.getText());			
+			System.out.println(year1.getText());
 			return true;
 		}
 
@@ -263,7 +250,7 @@ public class EducationController {
 		}
 
 		else {
-			System.out.println(year2.getText());			
+			System.out.println(year2.getText());
 			return true;
 		}
 
@@ -277,7 +264,7 @@ public class EducationController {
 		}
 
 		else {
-			System.out.println(cgpa1.getText());			
+			System.out.println(cgpa1.getText());
 			return true;
 		}
 
@@ -291,42 +278,33 @@ public class EducationController {
 		}
 
 		else {
-			System.out.println(cgpa2.getText());			
+			System.out.println(cgpa2.getText());
 			return true;
 		}
 
 	}
-	
-	// HTML tags as method
-		public String h5(String info) {
-			return "<h5>" + info + "</h5>" + "\n";
-		}
 
-		public String h3(String info) {
-			return "<h3>" + info + "</h3>" + "\n";
-		}
-		
-		public String h4(String info) {
-			return "<h4>" + info + "</h4>" + "\n";
-		}
-		
-		private String generateEducationHTML() {
-			String title = "<h2><i>Educational Background</i></h2>" + "\n";
-			String edu1 = 
-					  h3(name1.getText()) 
-					+ h4(degree1.getText())
-					+ h5(year1.getText())
-					+ h5(cgpa1.getText());
-			
-			String edu2 = 
-					  h3(name2.getText()) 
-					+ h4(degree2.getText())
-					+ h5(year2.getText())
-					+ h5(cgpa2.getText());
-			
-			String educationHTML = "<div class=\"education\">" + "\n" + title + edu1 + edu2 + "</div>";
-			return educationHTML;
-		}
-		
+	// HTML tags as method
+	public String h5(String info) {
+		return "<h5>" + info + "</h5>" + "\n";
+	}
+
+	public String h3(String info) {
+		return "<h3>" + info + "</h3>" + "\n";
+	}
+
+	public String h4(String info) {
+		return "<h4>" + info + "</h4>" + "\n";
+	}
+
+	private String generateEducationHTML() {
+		String title = "<h2><i>Educational Background</i></h2>" + "\n";
+		String edu1 = h3(name1.getText()) + h4(degree1.getText()) + h5(year1.getText()) + h5(cgpa1.getText());
+
+		String edu2 = h3(name2.getText()) + h4(degree2.getText()) + h5(year2.getText()) + h5(cgpa2.getText());
+
+		String educationHTML = "<div class=\"education\">" + "\n" + title + edu1 + edu2 + "</div>";
+		return educationHTML;
+	}
 
 }

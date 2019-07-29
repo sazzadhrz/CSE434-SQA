@@ -30,7 +30,7 @@ public class OthersController {
 	private Button cancel;
 	@FXML
 	private Button generateCV;
-	
+
 	public static String othersHTML;
 
 	// Event Listener on Button[#back].onAction
@@ -54,18 +54,18 @@ public class OthersController {
 		System.out.println("generateResume button pressed");
 		next();
 	}
-	
+
 	public void next() throws IOException {
-		 if (fieldValidation()) {
-			 System.out.println("validation done");
-			 storeData();
-			 addToMainList();
-			 generateResume();
-			 exit();
-			 }
+		if (fieldValidation()) {
+			System.out.println("validation done");
+			storeData();
+			addToMainList();
+			generateResume();
+			exit();
+		}
 	}
-	
-	public static void generateResume() throws IOException {
+
+	public void generateResume() throws IOException {
 		Main.arraylist.add(bodyClose());
 
 		File outfile = new File("html/resume.html");
@@ -79,16 +79,16 @@ public class OthersController {
 		bw.close();
 		System.out.println("Resume Generated Successfully!!");
 	}
-	
-	private static String bodyClose() {
+
+	private String bodyClose() {
 		return "</body>";
 	}
-	
+
 	public void storeData() {
 		othersHTML = generateOthersHTML();
-		//Main.arraylist.add(workHTML);
+		// Main.arraylist.add(workHTML);
 	}
-	
+
 	public void addToMainList() {
 		Main.arraylist.add("<br>");
 		Main.arraylist.add(EducationController.educationHtml);
@@ -97,7 +97,6 @@ public class OthersController {
 		Main.arraylist.add("<br>");
 		Main.arraylist.add(OthersController.othersHTML);
 	}
-	
 
 	public void exit() {
 		Platform.exit();
@@ -110,12 +109,10 @@ public class OthersController {
 	}
 
 	public boolean fieldValidation() {
-		return
-		skillsTAFieldValidation() &&
-		interestsTAFieldValidation();
+		return skillsTAFieldValidation() && interestsTAFieldValidation();
 	}
-	
-	public boolean isNull (String string) {
+
+	public boolean isNull(String string) {
 		return (string == "null" || string.trim().isEmpty());
 	}
 
@@ -127,7 +124,7 @@ public class OthersController {
 		}
 
 		else {
-			System.out.println(skillsTA.getText());			
+			System.out.println(skillsTA.getText());
 			return true;
 		}
 
@@ -141,33 +138,29 @@ public class OthersController {
 		}
 
 		else {
-			System.out.println(interestsTA.getText());			
+			System.out.println(interestsTA.getText());
 			return true;
 		}
 
 	}
-	
-	//html tags as method
+
+	// html tags as method
 	public String h4(String info) {
 		return "<h4>" + info + "</h4>" + "\n";
 	}
-	
+
 	public String p(String info) {
 		return "<p>" + info + "</p>" + "\n";
 	}
-	
+
 	private String generateOthersHTML() {
 		String title = "<h2><i>Others</i></h2>" + "\n";
-		String skills = h4("Skills")
-				+ p(skillsTA.getText());
-		
-		String interests = h4("Interests")
-				+ p(interestsTA.getText());
-		
+		String skills = h4("Skills") + p(skillsTA.getText());
+
+		String interests = h4("Interests") + p(interestsTA.getText());
+
 		String othersHTML = "<div class=\"others\">" + "\n" + title + skills + interests + "</div>";
 		return othersHTML;
 	}
-	
-	
-	
+
 }

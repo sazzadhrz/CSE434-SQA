@@ -29,7 +29,6 @@ public class IntroductionController {
 	TextField phoneTF;
 	@FXML
 	Label warningLabel;
-	
 
 	// Cancel button controller
 	public void introductionCancelBtnActionController() {
@@ -50,15 +49,15 @@ public class IntroductionController {
 	public void introductionNextBtnActionController(ActionEvent event) throws IOException {
 		System.out.println("next btn pressed");
 		next();
-//		goToEducation();
+		// goToEducation();
 	}
-	
+
 	public void next() throws IOException {
-		 if (fieldValidation()) {
-			 System.out.println("validation done");
-			 addToMainList();
-			 goToEducation();
-			 }
+		if (fieldValidation()) {
+			System.out.println("validation done");
+			addToMainList();
+			goToEducation();
+		}
 	}
 
 	public void goToEducation() throws IOException {
@@ -72,7 +71,7 @@ public class IntroductionController {
 		Main.arraylist.add(bodyOpen());
 
 		Main.arraylist.add(generateIntroHtml());
-		 System.out.println(Main.arraylist);
+		System.out.println(Main.arraylist);
 
 	}
 
@@ -123,23 +122,21 @@ public class IntroductionController {
 	}
 
 	public boolean isPhoneValid(String phone) {
-//		String regex = "^[0-9+#* \\[\\w-\\]]+$";
+		// String regex = "^[0-9+#* \\[\\w-\\]]+$";
 		String regex = "^[0-9+# \\,-]*$";
 		return phone.matches(regex) && phone.length() > 6;
 	}
 
 	public boolean fieldNullValidation() {
-		if (nameFieldNullValidation() && 
-				addressFieldNullValidation() && 
-				emailFieldNullValidation()	&& 
-				phoneFieldNullValidation()) {
+		if (nameFieldNullValidation() && addressFieldNullValidation() && emailFieldNullValidation()
+				&& phoneFieldNullValidation()) {
 			warningLabel.setText("");
 			return true;
 		} else
 			return false;
 	}
-	
-	public boolean isNull (String string) {
+
+	public boolean isNull(String string) {
 		return (string == "null" || string.trim().isEmpty());
 	}
 
@@ -168,7 +165,7 @@ public class IntroductionController {
 
 		else {
 			System.out.println(addressTF.getText());
-			//System.out.println("True, address not null");
+			// System.out.println("True, address not null");
 			return true;
 		}
 
@@ -184,7 +181,7 @@ public class IntroductionController {
 
 		else {
 			System.out.println(emailTF.getText());
-			//System.out.println("True, email not null");
+			// System.out.println("True, email not null");
 			return true;
 		}
 
@@ -200,7 +197,7 @@ public class IntroductionController {
 
 		else {
 			System.out.println(phoneTF.getText());
-			//System.out.println("True, phone not null");
+			// System.out.println("True, phone not null");
 			return true;
 		}
 

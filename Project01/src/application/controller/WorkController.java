@@ -35,7 +35,7 @@ public class WorkController {
 	private Button cancel;
 	@FXML
 	private Button next;
-	
+
 	public static String workHTML;
 
 	// Event Listener on Button[#back].onAction
@@ -64,25 +64,22 @@ public class WorkController {
 		Platform.exit();
 		System.exit(0);
 	}
-	
+
 	public void next() throws IOException {
-		 if (fieldValidation()) {
-			 System.out.println("validation done");
-			 storeData();
-			 goToOthers();
-			 }
+		if (fieldValidation()) {
+			System.out.println("validation done");
+			storeData();
+			goToOthers();
+		}
 	}
-	
+
 	public void storeData() {
 		workHTML = generateWorkHTML();
-		//Main.arraylist.add(workHTML);
+		// Main.arraylist.add(workHTML);
 	}
-	
+
 	public boolean fieldValidation() {
-		return 
-		fieldNullValidation() &&
-		nameValidation() &&
-		positionValidation();
+		return fieldNullValidation() && nameValidation() && positionValidation();
 	}
 
 	public void goToOthers() throws IOException {
@@ -126,17 +123,12 @@ public class WorkController {
 	}
 
 	public boolean fieldNullValidation() {
-		return
-		name1FieldValidation() &&
-		position1FieldValidation() &&
-		description1FieldValidation() &&
+		return name1FieldValidation() && position1FieldValidation() && description1FieldValidation() &&
 
-		name2FieldValidation() &&
-		position2FieldValidation() &&
-		description2FieldValidation();
+				name2FieldValidation() && position2FieldValidation() && description2FieldValidation();
 	}
-	
-	public boolean isNull (String string) {
+
+	public boolean isNull(String string) {
 		return (string == "null" || string.trim().isEmpty());
 	}
 
@@ -148,7 +140,7 @@ public class WorkController {
 		}
 
 		else {
-			System.out.println(name1.getText());			
+			System.out.println(name1.getText());
 			return true;
 		}
 
@@ -162,7 +154,7 @@ public class WorkController {
 		}
 
 		else {
-			System.out.println(name2.getText());			
+			System.out.println(name2.getText());
 			return true;
 		}
 
@@ -176,7 +168,7 @@ public class WorkController {
 		}
 
 		else {
-			System.out.println(position1.getText());			
+			System.out.println(position1.getText());
 			return true;
 		}
 
@@ -190,7 +182,7 @@ public class WorkController {
 		}
 
 		else {
-			System.out.println(position2.getText());			
+			System.out.println(position2.getText());
 			return true;
 		}
 
@@ -204,7 +196,7 @@ public class WorkController {
 		}
 
 		else {
-			System.out.println(description1.getText());			
+			System.out.println(description1.getText());
 			return true;
 		}
 
@@ -218,41 +210,33 @@ public class WorkController {
 		}
 
 		else {
-			System.out.println(description2.getText());			
+			System.out.println(description2.getText());
 			return true;
 		}
 
 	}
-	
-	
-	
-	// HTML tags as method
-			public String h4(String info) {
-				return "<h4>" + info + "</h4>" + "\n";
-			}
 
-			public String h3(String info) {
-				return "<h3>" + info + "</h3>" + "\n";
-			}
-			
-			public String p(String info) {
-				return "<p>" + info + "</p>" + "\n";
-			}
-	
-			private String generateWorkHTML() {
-				String title = "<h2><i>Work Experience</i></h2>" + "\n";
-				String work1 = 
-						  h3(name1.getText()) 
-						+ h4(position1.getText())
-						+ p(description1.getText());
-				
-				String work2 = 
-						  h3(name2.getText()) 
-						+ h4(position2.getText())
-						+ p(description2.getText());
-				
-				String educationHTML = "<div class=\"workExperience\">" + "\n" + title + work1 + work2 + "</div>";
-				return educationHTML;
-			}
-	
+	// HTML tags as method
+	public String h4(String info) {
+		return "<h4>" + info + "</h4>" + "\n";
+	}
+
+	public String h3(String info) {
+		return "<h3>" + info + "</h3>" + "\n";
+	}
+
+	public String p(String info) {
+		return "<p>" + info + "</p>" + "\n";
+	}
+
+	private String generateWorkHTML() {
+		String title = "<h2><i>Work Experience</i></h2>" + "\n";
+		String work1 = h3(name1.getText()) + h4(position1.getText()) + p(description1.getText());
+
+		String work2 = h3(name2.getText()) + h4(position2.getText()) + p(description2.getText());
+
+		String educationHTML = "<div class=\"workExperience\">" + "\n" + title + work1 + work2 + "</div>";
+		return educationHTML;
+	}
+
 }

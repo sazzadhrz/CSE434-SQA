@@ -7,9 +7,13 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-<StackPane fx:id="introductionlayout" alignment="TOP_LEFT" prefHeight="550.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.IntroductionController">
+<StackPane fx:id="introductionlayout" alignment="TOP_LEFT"
+	prefHeight="550.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171"
+	xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.IntroductionController">
 	<children>
-		<Label alignment="CENTER" contentDisplay="CENTER" lineSpacing="5.0" text="Welcome to Resume Generator" textAlignment="CENTER" textFill="#3b89ff" textOverrun="CLIP" StackPane.alignment="TOP_CENTER">
+		<Label alignment="CENTER" contentDisplay="CENTER" lineSpacing="5.0"
+			text="Welcome to Resume Generator" textAlignment="CENTER" textFill="#3b89ff"
+			textOverrun="CLIP" StackPane.alignment="TOP_CENTER">
 			<font>
 				<Font name="Elephant Italic" size="24.0" />
 			</font>
@@ -17,7 +21,8 @@
 				<Insets top="20.0" />
 			</StackPane.margin>
 		</Label>
-		<Label lineSpacing="5.0" text="Get Started" textFill="#141414" StackPane.alignment="TOP_CENTER">
+		<Label lineSpacing="5.0" text="Get Started" textFill="#141414"
+			StackPane.alignment="TOP_CENTER">
 			<StackPane.margin>
 				<Insets top="62.0" />
 			</StackPane.margin>
@@ -33,12 +38,15 @@
 				<Font name="System Bold" size="14.0" />
 			</font>
 		</Label>
-		<TextField fx:id="nameTF" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="420.0" StackPane.alignment="TOP_CENTER">
+		<TextField fx:id="nameTF" maxHeight="-Infinity" maxWidth="-Infinity"
+			minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0"
+			prefWidth="420.0" StackPane.alignment="TOP_CENTER">
 			<StackPane.margin>
 				<Insets left="65.0" top="125.0" />
 			</StackPane.margin>
 		</TextField>
-		<Label text="Contact Information" underline="true" StackPane.alignment="TOP_LEFT">
+		<Label text="Contact Information" underline="true"
+			StackPane.alignment="TOP_LEFT">
 			<StackPane.margin>
 				<Insets left="50.0" top="190.0" />
 			</StackPane.margin>
@@ -54,7 +62,9 @@
 				<Font name="System Bold" size="14.0" />
 			</font>
 		</Label>
-		<TextField fx:id="addressTF" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="420.0">
+		<TextField fx:id="addressTF" maxHeight="-Infinity" maxWidth="-Infinity"
+			minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0"
+			prefWidth="420.0">
 			<StackPane.margin>
 				<Insets left="120.0" top="240.0" />
 			</StackPane.margin>
@@ -67,7 +77,10 @@
 				<Insets left="50.0" top="280.0" />
 			</StackPane.margin>
 		</Label>
-		<TextField fx:id="emailTF" layoutX="130.0" layoutY="250.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="420.0" StackPane.alignment="TOP_LEFT">
+		<TextField fx:id="emailTF" layoutX="130.0" layoutY="250.0"
+			maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+			minWidth="-Infinity" prefHeight="25.0" prefWidth="420.0"
+			StackPane.alignment="TOP_LEFT">
 			<StackPane.margin>
 				<Insets left="120.0" top="280.0" />
 			</StackPane.margin>
@@ -76,16 +89,20 @@
 			<font>
 				<Font name="System Bold" size="14.0" />
 			</font>
-         <StackPane.margin>
-            <Insets left="50.0" top="320.0" />
-         </StackPane.margin>
+			<StackPane.margin>
+				<Insets left="50.0" top="320.0" />
+			</StackPane.margin>
 		</Label>
-		<TextField fx:id="phoneTF" layoutX="130.0" layoutY="290.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="420.0">
+		<TextField fx:id="phoneTF" layoutX="130.0" layoutY="290.0"
+			maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+			minWidth="-Infinity" prefHeight="25.0" prefWidth="420.0">
 			<StackPane.margin>
 				<Insets left="120.0" top="320.0" />
 			</StackPane.margin>
 		</TextField>
-		<Button fx:id="introductionNextBtn" mnemonicParsing="false" onAction="#introductionNextBtnActionController" text="Next" StackPane.alignment="BOTTOM_RIGHT">
+		<Button fx:id="introductionNextBtn" mnemonicParsing="false"
+			onAction="#introductionNextBtnActionController" text="Next"
+			StackPane.alignment="BOTTOM_RIGHT">
 			<StackPane.margin>
 				<Insets bottom="60.0" right="65.0" />
 			</StackPane.margin>
@@ -93,7 +110,9 @@
 				<Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
 			</padding>
 		</Button>
-		<Button fx:id="introductionCancelBtn" layoutX="504.0" layoutY="475.0" mnemonicParsing="false" onAction="#introductionCancelBtnActionController" text="Cancel" StackPane.alignment="BOTTOM_RIGHT">
+		<Button fx:id="introductionCancelBtn" layoutX="504.0" layoutY="475.0"
+			mnemonicParsing="false" onAction="#introductionCancelBtnActionController"
+			text="Cancel" StackPane.alignment="BOTTOM_RIGHT">
 			<StackPane.margin>
 				<Insets bottom="60.0" right="150.0" />
 			</StackPane.margin>
@@ -101,13 +120,13 @@
 				<Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
 			</padding>
 		</Button>
-      <Label fx:id="warningLabel" alignment="CENTER" text="Label" textFill="RED">
-         <font>
-            <Font size="16.0" />
-         </font>
-         <StackPane.margin>
-            <Insets left="55.0" top="385.0" />
-         </StackPane.margin>
-      </Label>
+		<Label fx:id="warningLabel" alignment="CENTER" textFill="RED">
+			<font>
+				<Font size="16.0" />
+			</font>
+			<StackPane.margin>
+				<Insets left="55.0" top="385.0" />
+			</StackPane.margin>
+		</Label>
 	</children>
 </StackPane>
