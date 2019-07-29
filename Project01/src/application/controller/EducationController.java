@@ -141,7 +141,7 @@ public class EducationController {
 	}
 
 	public boolean isYearValid(String year) {
-		String regex = "^[a-zA-Z0-9_.-]*$";
+		String regex = "^[a-zA-Z0-9 _.-]*$";
 		return year.matches(regex);
 	}
 

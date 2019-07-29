@@ -157,5 +157,47 @@ public class EducationControllerTest {
 	}
 	
 	
+	/*
+	 * INPUT SPACE PARTITIONING FOR isYearValid
+	 * 
+	 * PARAMETER STRING
+	 * DOMAIN - ANY KING OF STRING
+	 * 
+	 * CHARACTERISTICS 
+	 * 1 - VALID
+	 * 2 - NOT VALID
+	 * 
+	 * BLOCK FOR VALID INPUT
+	 * 1 - ONLY YEAR
+	 * 2 - YEAR WITH STRING
+	 * 3 - ONLY STRING
+	 * 
+	 * BLOCK FOR INVALID INPUT
+	 * 4 - WITH SPECIAL CHARACTER
+	 *  
+	 */
+	
+	@Test
+	public void isYearValidTest() {
+		// BLOCK 1
+		assertTrue(ec.isYearValid("2016-2018"));
+		assertTrue(ec.isYearValid("2019"));
+		assertTrue(ec.isYearValid("2002-2015"));
+		
+		//BLOCK 2
+		assertTrue(ec.isYearValid("February 2018 - March 2019"));
+		assertTrue(ec.isYearValid("2011 - Present"));
+		assertTrue(ec.isYearValid("14th January 2004 - Present"));
+		
+		//BLOCK 3
+		assertTrue(ec.isYearValid("February - Present"));
+		assertTrue(ec.isYearValid("Not Applicable"));
+		assertTrue(ec.isYearValid("March - This Month"));
+		
+		//BLOCK 4
+		assertFalse(ec.isYearValid("$$$"));
+		assertFalse(ec.isYearValid("J@nuary - Feb"));
+		assertFalse(ec.isYearValid("= 2017"));
+	}
 
 }

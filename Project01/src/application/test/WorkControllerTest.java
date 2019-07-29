@@ -76,5 +76,7 @@ public class WorkControllerTest {
 		assertFalse(wc.isNull("&$^#*&^#&"));
 		assertFalse(wc.isNull("M1x3d f$C@"));
 	}
+	
+
 
 }
