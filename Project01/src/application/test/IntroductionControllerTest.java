@@ -277,5 +277,11 @@ public class IntroductionControllerTest {
 	}
 	
 	
+	
+	/*
+	 * AS THE FUNCTIONS OF INTRODUCTION-CONTROLLER ARE SMALL UNIT AND INDIVIDUAL, IT IS NOT POSSIBLE TO DO GRAPH COVERAGE
+	 */
+	
+	
 
 }

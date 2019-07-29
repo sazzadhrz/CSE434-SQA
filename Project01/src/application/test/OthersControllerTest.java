@@ -77,5 +77,9 @@ public class OthersControllerTest {
 		assertFalse(oc.isNull("&$^#*&^#&"));
 		assertFalse(oc.isNull("M1x3d f$C@"));
 	}
+	
+	/*
+	 * AS THE FUNCTIONS OF OTHERS-CONTROLLER ARE SMALL UNIT AND INDIVIDUAL, IT IS NOT POSSIBLE TO DO GRAPH COVERAGE
+	 */
 
 }

@@ -302,5 +302,9 @@ public class EducationControllerTest {
 		assertNotEquals("<h3>" + "KheLa hoBe" + "</h3>" + "\n", ec.h3("Khela Hobe"));
 		assertNotEquals("<h3>" + "" + "</h3>" + "\n", ec.h3("434"));
 	}
+	
+	/*
+	 * AS THE FUNCTIONS OF EDUCATION-CONTROLLER ARE SMALL UNIT AND INDIVIDUAL, IT IS NOT POSSIBLE TO DO GRAPH COVERAGE
+	 */
 
 }
