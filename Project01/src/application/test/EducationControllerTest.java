@@ -251,5 +251,56 @@ public class EducationControllerTest {
 		assertFalse(ec.isCgpaValid("3.6"));
 		assertFalse(ec.isCgpaValid("03.03"));
 	}
+	
+	/*
+	 * INPUT SPACE PARTITIONING FOR h5, h4AND h3
+	 * 
+	 * PARAMETER STRING
+	 * DOMAIN - ANY KING OF STRING
+	 * 
+	 * CHARACTERISTICS 
+	 * 1 - VALID
+	 * 2 - NOT VALID
+	 * 
+	 */
+	
+	@Test
+	public void h5Test() {
+		// VALID
+		assertEquals("<h5>" + "Sazzad" + "</h5>" + "\n", ec.h5("Sazzad"));
+		assertEquals("<h5>" + "" + "</h5>" + "\n", ec.h5(""));
+		assertEquals("<h5>" + "KheLa hoBe" + "</h5>" + "\n", ec.h5("KheLa hoBe"));
+		
+		//NOT VALID
+		assertNotEquals("<h5>" + "sazzad" + "</h5>" + "\n", ec.h5("Sazzad"));
+		assertNotEquals("<h5>" + "KheLa hoBe" + "</h5>" + "\n", ec.h5("Khela Hobe"));
+		assertNotEquals("<h5>" + "" + "</h5>" + "\n", ec.h5("434"));
+	}
+	
+	@Test
+	public void h4Test() {
+		// VALID
+		assertEquals("<h4>" + "Sazzad" + "</h4>" + "\n", ec.h4("Sazzad"));
+		assertEquals("<h4>" + "" + "</h4>" + "\n", ec.h4(""));
+		assertEquals("<h4>" + "KheLa hoBe" + "</h4>" + "\n", ec.h4("KheLa hoBe"));
+		
+		//NOT VALID
+		assertNotEquals("<h4>" + "sazzad" + "</h4>" + "\n", ec.h4("Sazzad"));
+		assertNotEquals("<h4>" + "KheLa hoBe" + "</h4>" + "\n", ec.h4("Khela Hobe"));
+		assertNotEquals("<h4>" + "" + "</h4>" + "\n", ec.h4("434"));
+	}
+
+	@Test
+	public void h3Test() {
+		// VALID
+		assertEquals("<h3>" + "Sazzad" + "</h3>" + "\n", ec.h3("Sazzad"));
+		assertEquals("<h3>" + "" + "</h3>" + "\n", ec.h3(""));
+		assertEquals("<h3>" + "KheLa hoBe" + "</h3>" + "\n", ec.h3("KheLa hoBe"));
+		
+		//NOT VALID
+		assertNotEquals("<h3>" + "sazzad" + "</h3>" + "\n", ec.h3("Sazzad"));
+		assertNotEquals("<h3>" + "KheLa hoBe" + "</h3>" + "\n", ec.h3("Khela Hobe"));
+		assertNotEquals("<h3>" + "" + "</h3>" + "\n", ec.h3("434"));
+	}
 
 }
