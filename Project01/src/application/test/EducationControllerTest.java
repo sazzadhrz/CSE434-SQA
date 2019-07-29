@@ -34,10 +34,40 @@ public class EducationControllerTest {
 		ec = null;
 	}
 	
+	/*
+	 * INPUT SPACE PARTITIONING FOR isNull
+	 * 
+	 * PARAMETER STRING
+	 * DOMAIN - ANY KING OF STRING
+	 * 
+	 * CHARACTERISTICS 
+	 * 1 - NULL
+	 * 2 - NOT NULL
+	 * 
+	 * BLOCK
+	 * 1 - ESCAPE SEQUENCE (NULL, WHITESPACE, TAB, NEW LINE ETC.)
+	 * 2 - ESCAPE SEQUENCE EXCEPT ( \", \', \\)
+	 * 3 - ANYTHING LENGTH > 0
+	 *  
+	 */
 	
 	@Test
 	public void IsNullTest() {
+		// BLOCK 1
 		assertTrue(ec.isNull(""));
+		assertTrue(ec.isNull(" \t"));
+		assertTrue(ec.isNull("\n"));
+		assertTrue(ec.isNull("                "));
+		assertTrue(ec.isNull("\b"));
+		assertTrue(ec.isNull("\f"));
+		assertTrue(ec.isNull("\r"));
+		
+		// BLOCK 2
+		assertFalse(ec.isNull("\\"));
+		assertFalse(ec.isNull("\""));
+		assertFalse(ec.isNull("\'"));
+		
+		// BLOCK 3
 		assertFalse(ec.isNull("Supra"));
 	}
 
