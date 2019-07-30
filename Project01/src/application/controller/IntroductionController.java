@@ -11,6 +11,7 @@ import javafx.geometry.Insets;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 
@@ -29,6 +30,7 @@ public class IntroductionController {
 	TextField phoneTF;
 	@FXML
 	Label warningLabel;
+	
 
 	// Cancel button controller
 	public void introductionCancelBtnActionController() {
@@ -58,6 +60,7 @@ public class IntroductionController {
 			addToMainList();
 			goToEducation();
 		}
+
 	}
 
 	public void goToEducation() throws IOException {
@@ -65,7 +68,8 @@ public class IntroductionController {
 		introductionlayout.getChildren().setAll(pane);
 		introductionlayout.setMargin(pane, new Insets(50, 50, 50, 50));
 	}
-
+	
+	
 	private void addToMainList() {
 		Main.arraylist.add(generateHeader());
 		Main.arraylist.add(bodyOpen());
@@ -225,5 +229,6 @@ public class IntroductionController {
 	private String bodyOpen() {
 		return "<body>";
 	}
+
 
 }

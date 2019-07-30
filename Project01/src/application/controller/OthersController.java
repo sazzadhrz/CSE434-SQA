@@ -10,6 +10,7 @@ import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Insets;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
@@ -61,8 +62,10 @@ public class OthersController {
 			storeData();
 			addToMainList();
 			generateResume();
-			exit();
+//			exit();
+			goToSuccess();
 		}
+		
 	}
 
 	public void generateResume() throws IOException {
@@ -106,6 +109,12 @@ public class OthersController {
 	public void goToWork() throws IOException {
 		VBox pane = FXMLLoader.load(getClass().getResource("../view/Work.fxml"));
 		otherslayout.getChildren().setAll(pane);
+	}
+	
+	public void goToSuccess() throws IOException {
+		VBox pane = FXMLLoader.load(getClass().getResource("../view/Success.fxml"));
+		otherslayout.getChildren().setAll(pane);
+		//otherslayout.setMargin(pane, new Insets(50, 50, 50, 50));
 	}
 
 	public boolean fieldValidation() {

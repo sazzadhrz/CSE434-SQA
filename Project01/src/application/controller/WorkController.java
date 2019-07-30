@@ -6,10 +6,12 @@ import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Insets;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
 
 public class WorkController {
@@ -71,12 +73,13 @@ public class WorkController {
 			storeData();
 			goToOthers();
 		}
-	}
+	}	
 
 	public void storeData() {
 		workHTML = generateWorkHTML();
 		// Main.arraylist.add(workHTML);
 	}
+	
 
 	public boolean fieldValidation() {
 		return fieldNullValidation() && nameValidation() && positionValidation();
