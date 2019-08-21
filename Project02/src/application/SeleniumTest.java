@@ -1,5 +1,6 @@
 package application;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -20,5 +21,7 @@ public class SeleniumTest {
         //Scroll down the webpage by 5000 pixels  
       JavascriptExecutor js = (JavascriptExecutor)driver;  
       js.executeScript("scrollBy(0, 5000)");  
+      
+      driver.findElement(By.linkText("Documentation")).click();  
 	}
 }
