@@ -1,8 +1,8 @@
 package application;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
 
 public class SeleniumTest {
 	
@@ -14,5 +14,11 @@ public class SeleniumTest {
 //		WebDriver d = new EdgeDriver();
 		
 		driver.get("https://seleniumhq.org/");
+		
+        driver.manage().window().maximize();  
+        
+        //Scroll down the webpage by 5000 pixels  
+      JavascriptExecutor js = (JavascriptExecutor)driver;  
+      js.executeScript("scrollBy(0, 5000)");  
 	}
 }
