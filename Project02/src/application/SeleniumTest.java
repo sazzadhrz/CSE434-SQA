@@ -18,9 +18,18 @@ public class SeleniumTest {
 		          
 		    // Click on the search text box and send value  
 		    driver.findElement(By.linkText("OFFERS")).click();
+		   // driver.navigate().back();
+		    
+		    //login
+		    
+		    driver.findElement(By.linkText("MY ACCOUNT")).click();
+		    driver.findElement(By.linkText("Login")).click();
 		    
 		          
-		    // Click on the search button  
-		    //driver.findElement(By.name("btnI")).click();  
+		   
+	}
+	
+	public static void login() {
+		
 	}
 }
