@@ -2,32 +2,32 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="38770" started-at="2019-08-28T18:03:48Z" finished-at="2019-08-28T18:04:26Z">
+  <suite name="Default suite" duration-ms="31361" started-at="2019-08-28T18:04:52Z" finished-at="2019-08-28T18:05:23Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="38770" started-at="2019-08-28T18:03:48Z" finished-at="2019-08-28T18:04:26Z">
+    <test name="Default test" duration-ms="31361" started-at="2019-08-28T18:04:52Z" finished-at="2019-08-28T18:05:23Z">
       <class name="application.SignUpTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:application.SignUpTest@6cc4c815]" name="setup" is-config="true" duration-ms="23803" started-at="2019-08-29T00:03:48Z" finished-at="2019-08-29T00:04:11Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.SignUpTest@6cc4c815]" name="setup" is-config="true" duration-ms="16012" started-at="2019-08-29T00:04:52Z" finished-at="2019-08-29T00:05:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="noFirstNameTest()[pri:0, instance:application.SignUpTest@6cc4c815]" name="noFirstNameTest" duration-ms="958" started-at="2019-08-29T00:04:11Z" finished-at="2019-08-29T00:04:12Z">
+        <test-method status="PASS" signature="noFirstNameTest()[pri:0, instance:application.SignUpTest@6cc4c815]" name="noFirstNameTest" duration-ms="811" started-at="2019-08-29T00:05:08Z" finished-at="2019-08-29T00:05:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- noFirstNameTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:application.SignUpTest@6cc4c815]" name="tearDown" is-config="true" duration-ms="1" started-at="2019-08-29T00:04:12Z" finished-at="2019-08-29T00:04:12Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:application.SignUpTest@6cc4c815]" name="tearDown" is-config="true" duration-ms="1" started-at="2019-08-29T00:05:08Z" finished-at="2019-08-29T00:05:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:application.SignUpTest@6cc4c815]" name="setup" is-config="true" duration-ms="13774" started-at="2019-08-29T00:04:12Z" finished-at="2019-08-29T00:04:26Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.SignUpTest@6cc4c815]" name="setup" is-config="true" duration-ms="14336" started-at="2019-08-29T00:05:08Z" finished-at="2019-08-29T00:05:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="noInputTest()[pri:0, instance:application.SignUpTest@6cc4c815]" name="noInputTest" duration-ms="198" started-at="2019-08-29T00:04:26Z" finished-at="2019-08-29T00:04:26Z">
+        <test-method status="PASS" signature="noInputTest()[pri:0, instance:application.SignUpTest@6cc4c815]" name="noInputTest" duration-ms="170" started-at="2019-08-29T00:05:23Z" finished-at="2019-08-29T00:05:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- noInputTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:application.SignUpTest@6cc4c815]" name="tearDown" is-config="true" duration-ms="7" started-at="2019-08-29T00:04:26Z" finished-at="2019-08-29T00:04:26Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:application.SignUpTest@6cc4c815]" name="tearDown" is-config="true" duration-ms="8" started-at="2019-08-29T00:05:23Z" finished-at="2019-08-29T00:05:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
