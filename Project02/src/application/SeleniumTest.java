@@ -25,6 +25,10 @@ public class SeleniumTest {
 		    driver.findElement(By.linkText("MY ACCOUNT")).click();
 		    driver.findElement(By.linkText("Login")).click();
 		    
+		    driver.findElement(By.name("username")).sendKeys("sazzad");
+		    driver.findElement(By.name("password")).sendKeys("1234");
+		    driver.findElement(By.className("loginbtn")).click();
+		    
 		          
 		   
 	}
