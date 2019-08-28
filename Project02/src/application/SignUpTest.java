@@ -63,6 +63,20 @@ public class SignUpTest {
 
 	}
 	
+	@Test 
+	public void noPhoneTest() {
+		driver.findElement(By.name("firstname")).sendKeys("Sazzad");
+		driver.findElement(By.name("lastname")).sendKeys("Hossain");
+		driver.findElement(By.name("email")).sendKeys("sazzad.hossian09@northsouth.edu");
+		driver.findElement(By.name("password")).sendKeys("haha123");
+		driver.findElement(By.name("confirmpassword")).sendKeys("haha123");
+		
+		driver.findElement(By.className("signupbtn")).click();
+		
+		driver.findElement(By.className("resultsignup")).getText();
+
+	}
+	
 	
 	
 	@AfterMethod
