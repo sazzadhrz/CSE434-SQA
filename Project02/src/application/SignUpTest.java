@@ -1,9 +1,12 @@
 package application;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -11,6 +14,7 @@ import org.testng.annotations.Test;
 public class SignUpTest {
 	
 	WebDriver driver;
+	JavascriptExecutor js;
 	
 	@BeforeMethod
 	public void setup() {
@@ -22,20 +26,29 @@ public class SignUpTest {
 		driver.manage().window().maximize();
 		driver.navigate().to("https://www.phptravels.net/register"); 
 		// scroll down to access submit btn
-		JavascriptExecutor jse = (JavascriptExecutor)driver;
-		jse.executeScript("scroll(0, 200);");
+		js = (JavascriptExecutor)driver;
+		js.executeScript("scroll(0, 200);");
 		
+	}
+	
+	public void scrollUpandGetWarningTextandAssert(String expectedWarning) {
+		js.executeScript("scroll(0, -200);");				
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+
+		String warning = driver.findElement(By.cssSelector("div.alert.alert-danger p")).getText();
+		System.out.println(warning);
+		Assert.assertEquals(warning, expectedWarning);
 	}
 	
 	@Test 
 	public void noInputTest() {
-		driver.findElement(By.className("signupbtn")).click();
+		driver.findElement(By.className("signupbtn")).click();	
 		
-		driver.findElement(By.className("resultsignup")).getText();
+		scrollUpandGetWarningTextandAssert("The Email field is required.");
 
 	}
 	
-	@Test 
+/*	@Test 
 	public void noFirstNameTest() {
 		driver.findElement(By.name("lastname")).sendKeys("Hossain");
 		driver.findElement(By.name("phone")).sendKeys("01613645555");
@@ -101,9 +114,14 @@ public class SignUpTest {
 		
 		driver.findElement(By.className("signupbtn")).click();
 		
-		driver.findElement(By.className("resultsignup")).getText();
+		js.executeScript("scroll(0, -200);");				
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		
+		String warning = driver.findElement(By.cssSelector("div.alert.alert-danger p")).getText();
+		System.out.println(warning);		
+		Assert.assertEquals(warning, "The Password field is required.");
 
-	}
+	} 
 	
 	@Test 
 	public void noConfirmPasswordTest() {
@@ -115,9 +133,14 @@ public class SignUpTest {
 		
 		driver.findElement(By.className("signupbtn")).click();
 		
-		driver.findElement(By.className("resultsignup")).getText();
+		js.executeScript("scroll(0, -200);");				
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
-	}
+		String warning = driver.findElement(By.cssSelector("div.alert.alert-danger p")).getText();
+		System.out.println(warning);		
+		Assert.assertEquals(warning, "The Password field is required.");
+
+	} */
 	
 	
 	
