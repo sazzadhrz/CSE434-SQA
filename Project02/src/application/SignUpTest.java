@@ -105,6 +105,21 @@ public class SignUpTest {
 	}
 	
 	@Test 
+	public void invalidEmailTest() {
+		driver.findElement(By.name("firstname")).sendKeys("Sazzad");
+		driver.findElement(By.name("lastname")).sendKeys("Hossain");
+		driver.findElement(By.name("phone")).sendKeys("01613645555");
+		driver.findElement(By.name("email")).sendKeys("agdum bagdum");
+		driver.findElement(By.name("password")).sendKeys("haha123");
+		driver.findElement(By.name("confirmpassword")).sendKeys("haha123");
+		
+		driver.findElement(By.className("signupbtn")).click();
+		
+		scrollUpandGetWarningTextandAssert("The Email field is required.");
+
+	}
+	
+	@Test 
 	public void noPasswordTest() {
 		driver.findElement(By.name("firstname")).sendKeys("Sazzad");
 		driver.findElement(By.name("lastname")).sendKeys("Hossain");
