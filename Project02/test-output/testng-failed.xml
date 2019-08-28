@@ -5,7 +5,8 @@
     <classes>
       <class name="application.SignUpTest">
         <methods>
-          <include name="noInputTest"/>
+          <include name="noLastNameTest"/>
+          <include name="noPhoneTest"/>
           <include name="setup"/>
           <include name="tearDown"/>
         </methods>

@@ -48,7 +48,7 @@ public class SignUpTest {
 
 	}
 	
-/*	@Test 
+	@Test 
 	public void noFirstNameTest() {
 		driver.findElement(By.name("lastname")).sendKeys("Hossain");
 		driver.findElement(By.name("phone")).sendKeys("01613645555");
@@ -58,7 +58,7 @@ public class SignUpTest {
 		
 		driver.findElement(By.className("signupbtn")).click();
 		
-		driver.findElement(By.className("resultsignup")).getText();
+		scrollUpandGetWarningTextandAssert("The First name field is required.");
 
 	}
 	
@@ -72,7 +72,7 @@ public class SignUpTest {
 		
 		driver.findElement(By.className("signupbtn")).click();
 		
-		driver.findElement(By.className("resultsignup")).getText();
+		scrollUpandGetWarningTextandAssert("The Last Name field is required.");
 
 	}
 	
@@ -86,7 +86,7 @@ public class SignUpTest {
 		
 		driver.findElement(By.className("signupbtn")).click();
 		
-		driver.findElement(By.className("resultsignup")).getText();
+		scrollUpandGetWarningTextandAssert("The Phone field is required.");
 
 	}
 	
@@ -100,7 +100,7 @@ public class SignUpTest {
 		
 		driver.findElement(By.className("signupbtn")).click();
 		
-		driver.findElement(By.className("resultsignup")).getText();
+		scrollUpandGetWarningTextandAssert("The Email field is required.");
 
 	}
 	
@@ -114,12 +114,7 @@ public class SignUpTest {
 		
 		driver.findElement(By.className("signupbtn")).click();
 		
-		js.executeScript("scroll(0, -200);");				
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		
-		String warning = driver.findElement(By.cssSelector("div.alert.alert-danger p")).getText();
-		System.out.println(warning);		
-		Assert.assertEquals(warning, "The Password field is required.");
+		scrollUpandGetWarningTextandAssert("The Password field is required.");	
 
 	} 
 	
@@ -133,20 +128,29 @@ public class SignUpTest {
 		
 		driver.findElement(By.className("signupbtn")).click();
 		
-		js.executeScript("scroll(0, -200);");				
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		scrollUpandGetWarningTextandAssert("The Password field is required.");		
 
-		String warning = driver.findElement(By.cssSelector("div.alert.alert-danger p")).getText();
-		System.out.println(warning);		
-		Assert.assertEquals(warning, "The Password field is required.");
+	} 
+	
+	@Test 
+	public void shortPasswordTest() {
+		driver.findElement(By.name("firstname")).sendKeys("Sazzad");
+		driver.findElement(By.name("lastname")).sendKeys("Hossain");
+		driver.findElement(By.name("phone")).sendKeys("01613645555");
+		driver.findElement(By.name("email")).sendKeys("sazzad.hossian09@northsouth.edu");
+		driver.findElement(By.name("confirmpassword")).sendKeys("a123");
+		
+		driver.findElement(By.className("signupbtn")).click();
+		
+		scrollUpandGetWarningTextandAssert("The Password field must be at least 6 characters in length.");	
 
-	} */
+	} 
 	
 	
 	
 	@AfterMethod
 	public void tearDown() {
-		//driver.close();
+		driver.close();
 	}
 
 }
