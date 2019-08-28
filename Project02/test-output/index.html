@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\DELL\AppData\Local\Temp\testng-eclipse-1586862715\testng-customsuite.xml</span>
+                    <span>C:\Users\DELL\AppData\Local\Temp\testng-eclipse--20832204\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods, 2 failed,   5 passed</span>
+                    <span class="method-stats">10 methods, 1 failed,   9 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -100,11 +100,6 @@
                       <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
                     </span>
                     <div class="method-list-content failed suite-Default_suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="application.SignUpTest" hash-for-method="noLastNameTest">noLastNameTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="application.SignUpTest" hash-for-method="noPhoneTest">noPhoneTest</a> <!-- method navigator-link -->
@@ -119,6 +114,11 @@
                       <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
                     <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="application.SignUpTest" hash-for-method="invalidEmailTest">invalidEmailTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="application.SignUpTest" hash-for-method="noConfirmPasswordTest">noConfirmPasswordTest</a> <!-- method navigator-link -->
@@ -141,7 +141,22 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="application.SignUpTest" hash-for-method="noLastNameTest">noLastNameTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="application.SignUpTest" hash-for-method="noPasswordTest">noPasswordTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="application.SignUpTest" hash-for-method="passwordMismathwithConfirmPasswordTest">passwordMismathwithConfirmPasswordTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="application.SignUpTest" hash-for-method="shortPasswordTest">shortPasswordTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -164,77 +179,18 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="noLastNameTest">
-                  </a> <!-- noLastNameTest -->
-                  <span class="method-name">noLastNameTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [The Last name field is required.] but found [The Last Name field is required.]
+                  <a name="noPhoneTest">
+                  </a> <!-- noPhoneTest -->
+                  <span class="method-name">noPhoneTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [The Phone field is required.] but found [The Password field is required.]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:513)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
 	at org.testng.Assert.assertEquals(Assert.java:116)
 	at org.testng.Assert.assertEquals(Assert.java:190)
 	at org.testng.Assert.assertEquals(Assert.java:200)
-	at application.SignUpTest.scrollUpandGetWarningTextandAssert(SignUpTest.java:40)
-	at application.SignUpTest.noLastNameTest(SignUpTest.java:75)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:746)
-	at org.testng.TestRunner.run(TestRunner.java:600)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
-	at org.testng.TestNG.runSuites(TestNG.java:1104)
-	at org.testng.TestNG.run(TestNG.java:1076)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="noPhoneTest">
-                  </a> <!-- noPhoneTest -->
-                  <span class="method-name">noPhoneTest</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div.alert.alert-danger p&quot;}
-  (Session info: chrome=76.0.3809.132)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
-System info: host: &apos;DESKTOP-2NB5M8O&apos;, ip: &apos;192.168.0.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58182}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: ac314e93dcd27dce579e5447b3aa2804
-*** Element info: {Using=css selector, value=div.alert.alert-danger p}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at application.SignUpTest.scrollUpandGetWarningTextandAssert(SignUpTest.java:38)
-	at application.SignUpTest.noPhoneTest(SignUpTest.java:89)
+	at application.SignUpTest.scrollUpandGetWarningTextandAssert(SignUpTest.java:51)
+	at application.SignUpTest.noPhoneTest(SignUpTest.java:111)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -274,6 +230,13 @@ Session ID: ac314e93dcd27dce579e5447b3aa2804
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="invalidEmailTest">
+                  </a> <!-- invalidEmailTest -->
+                  <span class="method-name">invalidEmailTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="noConfirmPasswordTest">
                   </a> <!-- noConfirmPasswordTest -->
                   <span class="method-name">noConfirmPasswordTest</span>
@@ -302,9 +265,30 @@ Session ID: ac314e93dcd27dce579e5447b3aa2804
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="noLastNameTest">
+                  </a> <!-- noLastNameTest -->
+                  <span class="method-name">noLastNameTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="noPasswordTest">
                   </a> <!-- noPasswordTest -->
                   <span class="method-name">noPasswordTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="passwordMismathwithConfirmPasswordTest">
+                  </a> <!-- passwordMismathwithConfirmPasswordTest -->
+                  <span class="method-name">passwordMismathwithConfirmPasswordTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shortPasswordTest">
+                  </a> <!-- shortPasswordTest -->
+                  <span class="method-name">shortPasswordTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -312,7 +296,7 @@ Session ID: ac314e93dcd27dce579e5447b3aa2804
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\DELL\AppData\Local\Temp\testng-eclipse-1586862715\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\DELL\AppData\Local\Temp\testng-eclipse--20832204\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -361,40 +345,52 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(7);
+data.addRows(10);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'noPhoneTest')
+data.setCell(0, 1, 'invalidEmailTest')
 data.setCell(0, 2, 'application.SignUpTest')
-data.setCell(0, 3, 6021);
+data.setCell(0, 3, 1015);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'noPasswordTest')
+data.setCell(1, 1, 'passwordMismathwithConfirmPasswordTest')
 data.setCell(1, 2, 'application.SignUpTest')
-data.setCell(1, 3, 1178);
+data.setCell(1, 3, 988);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'noFirstNameTest')
+data.setCell(2, 1, 'shortPasswordTest')
 data.setCell(2, 2, 'application.SignUpTest')
-data.setCell(2, 3, 1084);
+data.setCell(2, 3, 918);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'noConfirmPasswordTest')
+data.setCell(3, 1, 'noLastNameTest')
 data.setCell(3, 2, 'application.SignUpTest')
-data.setCell(3, 3, 1046);
+data.setCell(3, 3, 887);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'noLastNameTest')
+data.setCell(4, 1, 'noPasswordTest')
 data.setCell(4, 2, 'application.SignUpTest')
-data.setCell(4, 3, 1037);
+data.setCell(4, 3, 881);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'noEmailTest')
+data.setCell(5, 1, 'noFirstNameTest')
 data.setCell(5, 2, 'application.SignUpTest')
-data.setCell(5, 3, 943);
+data.setCell(5, 3, 850);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'noInputTest')
+data.setCell(6, 1, 'noConfirmPasswordTest')
 data.setCell(6, 2, 'application.SignUpTest')
-data.setCell(6, 3, 348);
+data.setCell(6, 3, 847);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'noPhoneTest')
+data.setCell(7, 2, 'application.SignUpTest')
+data.setCell(7, 3, 817);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'noEmailTest')
+data.setCell(8, 2, 'application.SignUpTest')
+data.setCell(8, 3, 799);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'noInputTest')
+data.setCell(9, 2, 'application.SignUpTest')
+data.setCell(9, 3, 421);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <span class="suite-total-time">Total running time: 8 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -421,93 +417,131 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">application.SignUpTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">invokeBrowser</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">14956 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">invalidEmailTest</span>
+                <span class="method-start">16012 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">17028 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">17029 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">noConfirmPasswordTest</span>
-                <span class="method-start">15482 ms</span>
+                <span class="method-start">18044 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">16529 ms</span>
+                <span class="method-start">18893 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">16783 ms</span>
+                <span class="method-start">18893 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">noEmailTest</span>
-                <span class="method-start">30905 ms</span>
+                <span class="method-start">19911 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">31850 ms</span>
+                <span class="method-start">20711 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">31979 ms</span>
+                <span class="method-start">20712 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">noFirstNameTest</span>
-                <span class="method-start">45642 ms</span>
+                <span class="method-start">21734 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">46728 ms</span>
+                <span class="method-start">22585 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">46854 ms</span>
+                <span class="method-start">22587 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">noInputTest</span>
-                <span class="method-start">60903 ms</span>
+                <span class="method-start">23544 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">61252 ms</span>
+                <span class="method-start">23967 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">61378 ms</span>
+                <span class="method-start">23967 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">noLastNameTest</span>
-                <span class="method-start">75229 ms</span>
+                <span class="method-start">24908 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">76270 ms</span>
+                <span class="method-start">25798 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">76462 ms</span>
+                <span class="method-start">25799 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">noPasswordTest</span>
-                <span class="method-start">90300 ms</span>
+                <span class="method-start">26816 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">91479 ms</span>
+                <span class="method-start">27698 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">91699 ms</span>
+                <span class="method-start">27699 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">noPhoneTest</span>
-                <span class="method-start">105865 ms</span>
+                <span class="method-start">28782 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">111892 ms</span>
+                <span class="method-start">29604 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">29605 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">passwordMismathwithConfirmPasswordTest</span>
+                <span class="method-start">30684 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">31673 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">31673 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">shortPasswordTest</span>
+                <span class="method-start">32740 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">33660 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

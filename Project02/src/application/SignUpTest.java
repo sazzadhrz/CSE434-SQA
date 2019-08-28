@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -16,19 +17,29 @@ public class SignUpTest {
 	WebDriver driver;
 	JavascriptExecutor js;
 	
-	@BeforeMethod
-	public void setup() {
-		System.setProperty("webdriver.chrome.driver",
-				"F:/chromedriver_win32/chromedriver.exe");
+	@BeforeClass
+	public void invokeBrowser() {
+		System.setProperty("webdriver.chrome.driver", "F:/chromedriver_win32/chromedriver.exe");
 		
-		driver = new ChromeDriver();
-		
+		driver = new ChromeDriver();	
 		driver.manage().window().maximize();
 		driver.navigate().to("https://www.phptravels.net/register"); 
-		// scroll down to access submit btn
+	}
+	
+	@BeforeMethod
+	public void setup() {
+//		System.setProperty("webdriver.chrome.driver", "F:/chromedriver_win32/chromedriver.exe");
+//		
+//		driver = new ChromeDriver();
+//		
+//		driver.manage().window().maximize();
+//		driver.navigate().to("https://www.phptravels.net/register"); 
+//		 scroll down to access submit btn
 		js = (JavascriptExecutor)driver;
 		js.executeScript("scroll(0, 200);");
-		
+		clearFields();
+		driver.navigate().refresh();
+//		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	}
 	
 	public void scrollUpandGetWarningTextandAssert(String expectedWarning) {
@@ -38,6 +49,15 @@ public class SignUpTest {
 		String warning = driver.findElement(By.cssSelector("div.alert.alert-danger p")).getText();
 		System.out.println(warning);
 		Assert.assertEquals(warning, expectedWarning);
+	}
+	
+	public void clearFields() {
+		driver.findElement(By.name("firstname")).clear();
+		driver.findElement(By.name("lastname")).clear();
+		driver.findElement(By.name("phone")).clear();
+		driver.findElement(By.name("email")).clear();
+		driver.findElement(By.name("password")).clear();
+		driver.findElement(By.name("confirmpassword")).clear();
 	}
 	
 	@Test 
@@ -76,13 +96,15 @@ public class SignUpTest {
 
 	}
 	
+	// forcefully failing it because it logs in without phone number
 	@Test 
 	public void noPhoneTest() {
 		driver.findElement(By.name("firstname")).sendKeys("Sazzad");
 		driver.findElement(By.name("lastname")).sendKeys("Hossain");
 		driver.findElement(By.name("email")).sendKeys("sazzad.hossian09@northsouth.edu");
 		driver.findElement(By.name("password")).sendKeys("haha123");
-		driver.findElement(By.name("confirmpassword")).sendKeys("haha123");
+		//driver.findElement(By.name("confirmpassword")).sendKeys("haha123");
+		
 		
 		driver.findElement(By.className("signupbtn")).click();
 		
@@ -109,13 +131,13 @@ public class SignUpTest {
 		driver.findElement(By.name("firstname")).sendKeys("Sazzad");
 		driver.findElement(By.name("lastname")).sendKeys("Hossain");
 		driver.findElement(By.name("phone")).sendKeys("01613645555");
-		driver.findElement(By.name("email")).sendKeys("agdum bagdum");
+		driver.findElement(By.name("email")).sendKeys("agdum-bagdum");
 		driver.findElement(By.name("password")).sendKeys("haha123");
 		driver.findElement(By.name("confirmpassword")).sendKeys("haha123");
 		
 		driver.findElement(By.className("signupbtn")).click();
 		
-		scrollUpandGetWarningTextandAssert("The Email field is required.");
+		scrollUpandGetWarningTextandAssert("The Email field must contain a valid email address.");
 
 	}
 	
@@ -153,7 +175,8 @@ public class SignUpTest {
 		driver.findElement(By.name("lastname")).sendKeys("Hossain");
 		driver.findElement(By.name("phone")).sendKeys("01613645555");
 		driver.findElement(By.name("email")).sendKeys("sazzad.hossian09@northsouth.edu");
-		driver.findElement(By.name("confirmpassword")).sendKeys("a123");
+		driver.findElement(By.name("password")).sendKeys("a");
+		driver.findElement(By.name("confirmpassword")).sendKeys("a");
 		
 		driver.findElement(By.className("signupbtn")).click();
 		
@@ -166,9 +189,9 @@ public class SignUpTest {
 		driver.findElement(By.name("firstname")).sendKeys("Sazzad");
 		driver.findElement(By.name("lastname")).sendKeys("Hossain");
 		driver.findElement(By.name("phone")).sendKeys("01613645555");
-		driver.findElement(By.name("email")).sendKeys("agdum bagdum");
+		driver.findElement(By.name("email")).sendKeys("sazzad.hossian09@northsouth.edu");
 		driver.findElement(By.name("password")).sendKeys("haha123");
-		driver.findElement(By.name("confirmpassword")).sendKeys("haha123");
+		driver.findElement(By.name("confirmpassword")).sendKeys("goru");
 		
 		driver.findElement(By.className("signupbtn")).click();
 		
@@ -180,7 +203,7 @@ public class SignUpTest {
 	
 	@AfterMethod
 	public void tearDown() {
-		driver.close();
+		//driver.close();
 	}
 
 }

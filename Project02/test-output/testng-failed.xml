@@ -5,9 +5,9 @@
     <classes>
       <class name="application.SignUpTest">
         <methods>
-          <include name="noLastNameTest"/>
           <include name="noPhoneTest"/>
           <include name="setup"/>
+          <include name="invokeBrowser"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- application.SignUpTest -->
