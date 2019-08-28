@@ -77,6 +77,20 @@ public class SignUpTest {
 
 	}
 	
+	@Test 
+	public void noEmailTest() {
+		driver.findElement(By.name("firstname")).sendKeys("Sazzad");
+		driver.findElement(By.name("lastname")).sendKeys("Hossain");
+		driver.findElement(By.name("phone")).sendKeys("01613645555");
+		driver.findElement(By.name("password")).sendKeys("haha123");
+		driver.findElement(By.name("confirmpassword")).sendKeys("haha123");
+		
+		driver.findElement(By.className("signupbtn")).click();
+		
+		driver.findElement(By.className("resultsignup")).getText();
+
+	}
+	
 	
 	
 	@AfterMethod
