@@ -31,6 +31,7 @@ public class SignInTest {
 //		 scroll down to access submit btn
 		//js = (JavascriptExecutor)driver;
 		//js.executeScript("scroll(0, 200);");
+		driver.navigate().refresh();
 
 	}
 	
@@ -60,7 +61,7 @@ public class SignInTest {
 		getWarningTextandAssert("Invalid Email or Password");
 	}
 	
-	@Test
+	@Test (priority = 5)
 	public void validTest() {
 		driver.findElement(By.name("username")).sendKeys("sazzad.hossian09@northsouth.edu");
 		driver.findElement(By.name("password")).sendKeys("haha123");
@@ -71,7 +72,7 @@ public class SignInTest {
 	
 	@AfterMethod
 	public void refreshAfterTest() {
-		driver.navigate().refresh();
+//		driver.navigate().refresh();
 	}
 	
 	
