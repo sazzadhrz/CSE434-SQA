@@ -61,7 +61,17 @@ public class HotelBookingTest {
 		hotelSarina.click();
 	}
 	
-	
+	@Test (priority = 2)
+	public void bookHotel() throws InterruptedException {
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//*[@id='rooms']/div[2]/div/div/form/div/div[1]/input")).click();
+		driver.findElement(By.xpath("//*[@id='rooms']/div[2]/div/div/form/div/div[1]/input")).sendKeys("31/08/2019");
+		
+		driver.findElement(By.xpath("//*[@id='rooms']/div[2]/div/div/form/div/div[2]/input")).click();
+		driver.findElement(By.xpath("//*[@id='rooms']/div[2]/div/div/form/div/div[2]/input")).sendKeys("01/09/2019");
+		
+		driver.findElement(By.xpath("//*[@id='rooms']/div[2]/div/div/form/div/div[5]/button")).click();
+	}
 	
 	
 }
