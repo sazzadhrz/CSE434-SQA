@@ -8,6 +8,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -83,6 +84,11 @@ public class HotelBookingTest {
 		checkOut.sendKeys("2019-09-07");
 		
 		driver.findElement(By.xpath("//*[@id='rooms']/div[2]/div/div/form/div/div[5]/button")).click();
+	}
+	
+	@AfterClass
+	public void tearDown() {
+		driver.close();
 	}
 	
 	
