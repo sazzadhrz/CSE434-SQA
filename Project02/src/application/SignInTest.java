@@ -7,6 +7,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -66,6 +67,11 @@ public class SignInTest {
 		driver.findElement(By.className("loginbtn")).click();
 		
 		//getWarningTextandAssert("Invalid Email or Password");
+	}
+	
+	@AfterMethod
+	public void refreshAfterTest() {
+		driver.navigate().refresh();
 	}
 	
 	
