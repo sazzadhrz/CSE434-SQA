@@ -33,7 +33,7 @@ public class SignInTest {
 
 	}
 	
-	public void GetWarningTextandAssert(String expectedWarning) {			
+	public void getWarningTextandAssert(String expectedWarning) {			
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
 		String warning = driver.findElement(By.cssSelector("div.alert.alert-danger p")).getText();
@@ -46,6 +46,8 @@ public class SignInTest {
 		driver.findElement(By.name("username")).sendKeys("sazzad bhai");
 		driver.findElement(By.name("password")).sendKeys("dhikachika123");
 		driver.findElement(By.className("loginbtn")).click();
+		
+		getWarningTextandAssert("Invalid Email or Password");
 	}
 	
 	
