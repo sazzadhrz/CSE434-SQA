@@ -1,9 +1,15 @@
 package application;
 
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 public class SignInTest {
 	WebDriver driver;
@@ -17,7 +23,23 @@ public class SignInTest {
 		driver.manage().window().maximize();
 		driver.navigate().to("https://www.phptravels.net/login"); 
 	}
+	
+	@BeforeMethod
+	public void setup() {
 
+//		 scroll down to access submit btn
+		//js = (JavascriptExecutor)driver;
+		//js.executeScript("scroll(0, 200);");
+
+	}
+	
+	
+	@Test
+	public void invalidEmailTest() {
+		driver.findElement(By.name("username")).sendKeys("sazzad bhai");
+		driver.findElement(By.name("password")).sendKeys("dhikachika123");
+		driver.findElement(By.className("loginbtn")).click();
+	}
 	
 	
 }
