@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18852" started-at="2019-08-29T16:00:19Z" finished-at="2019-08-29T16:00:38Z">
+  <suite name="Default suite" duration-ms="63163" started-at="2019-08-29T16:09:45Z" finished-at="2019-08-29T16:10:48Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18852" started-at="2019-08-29T16:00:19Z" finished-at="2019-08-29T16:00:38Z">
+    <test name="Default test" duration-ms="63163" started-at="2019-08-29T16:09:45Z" finished-at="2019-08-29T16:10:48Z">
       <class name="application.SignInTest">
-        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:application.SignInTest@6cc4c815]" name="invokeBrowser" is-config="true" duration-ms="18316" started-at="2019-08-29T22:00:19Z" finished-at="2019-08-29T22:00:37Z">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:application.SignInTest@6cc4c815]" name="invokeBrowser" is-config="true" duration-ms="62482" started-at="2019-08-29T22:09:45Z" finished-at="2019-08-29T22:10:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invokeBrowser -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:application.SignInTest@6cc4c815]" name="setup" is-config="true" duration-ms="0" started-at="2019-08-29T22:00:37Z" finished-at="2019-08-29T22:00:37Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.SignInTest@6cc4c815]" name="setup" is-config="true" duration-ms="0" started-at="2019-08-29T22:10:47Z" finished-at="2019-08-29T22:10:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="invalidEmailTest()[pri:0, instance:application.SignInTest@6cc4c815]" name="invalidEmailTest" duration-ms="507" started-at="2019-08-29T22:00:37Z" finished-at="2019-08-29T22:00:38Z">
+        <test-method status="PASS" signature="invalidEmailTest()[pri:0, instance:application.SignInTest@6cc4c815]" name="invalidEmailTest" duration-ms="650" started-at="2019-08-29T22:10:47Z" finished-at="2019-08-29T22:10:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidEmailTest -->

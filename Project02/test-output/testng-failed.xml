@@ -3,15 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="application.SignUpTest">
+      <class name="application.SignInTest">
         <methods>
-          <include name="TearDown"/>
-          <include name="noPhoneTest"/>
           <include name="setup"/>
-          <include name="refreshAfterTest"/>
+          <include name="invalidEmailTest"/>
           <include name="invokeBrowser"/>
         </methods>
-      </class> <!-- application.SignUpTest -->
+      </class> <!-- application.SignInTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
