@@ -210,7 +210,6 @@ public class SignUpTest {
 	@AfterClass
 	public void TearDown() {
 		driver.close();
-//		driver.navigate().refresh();
 	}
 
 }
