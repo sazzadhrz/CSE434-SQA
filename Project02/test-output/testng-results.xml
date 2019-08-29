@@ -1,43 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="1" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="82129" started-at="2019-08-29T18:32:58Z" finished-at="2019-08-29T18:34:20Z">
+  <suite name="Default suite" duration-ms="77887" started-at="2019-08-29T18:56:17Z" finished-at="2019-08-29T18:57:35Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="82129" started-at="2019-08-29T18:32:58Z" finished-at="2019-08-29T18:34:20Z">
+    <test name="Default test" duration-ms="77887" started-at="2019-08-29T18:56:17Z" finished-at="2019-08-29T18:57:35Z">
       <class name="application.HotelBookingTest">
-        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:application.HotelBookingTest@6cc4c815]" name="invokeBrowser" is-config="true" duration-ms="23154" started-at="2019-08-30T00:32:58Z" finished-at="2019-08-30T00:33:21Z">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:application.HotelBookingTest@6cc4c815]" name="invokeBrowser" is-config="true" duration-ms="28139" started-at="2019-08-30T00:56:17Z" finished-at="2019-08-30T00:56:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invokeBrowser -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:application.HotelBookingTest@6cc4c815]" name="setup" is-config="true" duration-ms="7" started-at="2019-08-30T00:33:21Z" finished-at="2019-08-30T00:33:21Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.HotelBookingTest@6cc4c815]" name="setup" is-config="true" duration-ms="4" started-at="2019-08-30T00:56:45Z" finished-at="2019-08-30T00:56:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="bookHotel()[pri:0, instance:application.HotelBookingTest@6cc4c815]" name="bookHotel" duration-ms="58938" started-at="2019-08-30T00:33:21Z" finished-at="2019-08-30T00:34:20Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="PASS" signature="searchHotel()[pri:0, instance:application.HotelBookingTest@6cc4c815]" name="searchHotel" duration-ms="44024" started-at="2019-08-30T00:56:45Z" finished-at="2019-08-30T00:57:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchHotel -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.HotelBookingTest@6cc4c815]" name="setup" is-config="true" duration-ms="5" started-at="2019-08-30T00:57:29Z" finished-at="2019-08-30T00:57:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="selectHotel()[pri:1, instance:application.HotelBookingTest@6cc4c815]" name="selectHotel" duration-ms="4512" started-at="2019-08-30T00:57:29Z" finished-at="2019-08-30T00:57:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectHotel -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.HotelBookingTest@6cc4c815]" name="setup" is-config="true" duration-ms="7" started-at="2019-08-30T00:57:34Z" finished-at="2019-08-30T00:57:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="bookHotel()[pri:2, instance:application.HotelBookingTest@6cc4c815]" name="bookHotel" duration-ms="1157" started-at="2019-08-30T00:57:34Z" finished-at="2019-08-30T00:57:35Z">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='thhotels']/form/div[5]/button"}
+              <![CDATA[element click intercepted: Element <input type="text" placeholder="Check in" name="checkin" value="1970-01-01" class="form-control hpcheckin"> is not clickable at point (284, 593). Other element would receive the click: <span id="cookieconsent:desc" class="cc-message">...</span>
   (Session info: chrome=76.0.3809.132)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
 System info: host: 'DESKTOP-2NB5M8O', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54948}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: dde715a2c25e7ff82aa7d43b808411d7
-*** Element info: {Using=xpath, value=//*[@id='thhotels']/form/div[5]/button}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59607}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: bd3fa3469ea99a0f2f1dc7be5dd3ecbb]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='thhotels']/form/div[5]/button"}
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input type="text" placeholder="Check in" name="checkin" value="1970-01-01" class="form-control hpcheckin"> is not clickable at point (284, 593). Other element would receive the click: <span id="cookieconsent:desc" class="cc-message">...</span>
   (Session info: chrome=76.0.3809.132)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
 System info: host: 'DESKTOP-2NB5M8O', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54948}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: dde715a2c25e7ff82aa7d43b808411d7
-*** Element info: {Using=xpath, value=//*[@id='thhotels']/form/div[5]/button}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59607}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: bd3fa3469ea99a0f2f1dc7be5dd3ecbb
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -48,11 +60,9 @@ Session ID: dde715a2c25e7ff82aa7d43b808411d7
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at application.HotelBookingTest.bookHotel(HotelBookingTest.java:53)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at application.HotelBookingTest.bookHotel(HotelBookingTest.java:67)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -80,7 +90,7 @@ Session ID: dde715a2c25e7ff82aa7d43b808411d7
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bookHotel -->

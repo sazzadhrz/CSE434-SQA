@@ -32,6 +32,7 @@ public class HotelBookingTest {
 	
 	@Test
 	public void searchHotel() throws InterruptedException {
+		driver.findElement(By.xpath("//*[@id='body-section']/section/div[2]/div/div/div[2]/ul/li[2]/a")).click();
 		WebElement searchbox = driver.findElement(By.xpath("//*[@id='s2id_location']/a"));
 		
 		System.out.println(searchbox.getText());
@@ -51,6 +52,16 @@ public class HotelBookingTest {
 		dateTo.sendKeys(Keys.ENTER);
 
 	}
+	
+	@Test (priority = 1)
+	public void selectHotel() throws InterruptedException {
+		Thread.sleep(1000);
+		WebElement hotelSarina = driver.findElement(By.xpath("//*[@id='listing']/tbody/tr[1]/td/div[2]/div/h4/a"));
+		System.out.println(hotelSarina.getText());
+		hotelSarina.click();
+	}
+	
+	
 	
 	
 }
