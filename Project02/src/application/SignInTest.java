@@ -33,6 +33,13 @@ public class SignInTest {
 
 	}
 	
+	public void GetWarningTextandAssert(String expectedWarning) {			
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+
+		String warning = driver.findElement(By.cssSelector("div.alert.alert-danger p")).getText();
+		System.out.println(warning);
+		Assert.assertEquals(warning, expectedWarning);
+	}
 	
 	@Test
 	public void invalidEmailTest() {
