@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\DELL\AppData\Local\Temp\testng-eclipse--20832204\testng-customsuite.xml</span>
+                    <span>C:\Users\DELL\AppData\Local\Temp\testng-eclipse-1798183541\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -182,15 +182,31 @@
                   <a name="noPhoneTest">
                   </a> <!-- noPhoneTest -->
                   <span class="method-name">noPhoneTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [The Phone field is required.] but found [The Password field is required.]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
-	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:190)
-	at org.testng.Assert.assertEquals(Assert.java:200)
-	at application.SignUpTest.scrollUpandGetWarningTextandAssert(SignUpTest.java:51)
-	at application.SignUpTest.noPhoneTest(SignUpTest.java:111)
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div.alert.alert-danger p&quot;}
+  (Session info: chrome=76.0.3809.132)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-2NB5M8O&apos;, ip: &apos;192.168.0.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61354}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 619deec00a98584bef8da3a4e9789291
+*** Element info: {Using=css selector, value=div.alert.alert-danger p}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at application.SignUpTest.scrollUpandGetWarningTextandAssert(SignUpTest.java:50)
+	at application.SignUpTest.noPhoneTest(SignUpTest.java:112)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -296,7 +312,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\DELL\AppData\Local\Temp\testng-eclipse--20832204\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\DELL\AppData\Local\Temp\testng-eclipse-1798183541\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -347,50 +363,50 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(10);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'invalidEmailTest')
+data.setCell(0, 1, 'noPhoneTest')
 data.setCell(0, 2, 'application.SignUpTest')
-data.setCell(0, 3, 1015);
+data.setCell(0, 3, 5673);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'passwordMismathwithConfirmPasswordTest')
+data.setCell(1, 1, 'noConfirmPasswordTest')
 data.setCell(1, 2, 'application.SignUpTest')
-data.setCell(1, 3, 988);
+data.setCell(1, 3, 1456);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'shortPasswordTest')
+data.setCell(2, 1, 'passwordMismathwithConfirmPasswordTest')
 data.setCell(2, 2, 'application.SignUpTest')
-data.setCell(2, 3, 918);
+data.setCell(2, 3, 1194);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'noLastNameTest')
+data.setCell(3, 1, 'invalidEmailTest')
 data.setCell(3, 2, 'application.SignUpTest')
-data.setCell(3, 3, 887);
+data.setCell(3, 3, 1184);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'noPasswordTest')
+data.setCell(4, 1, 'noLastNameTest')
 data.setCell(4, 2, 'application.SignUpTest')
-data.setCell(4, 3, 881);
+data.setCell(4, 3, 1067);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'noFirstNameTest')
+data.setCell(5, 1, 'shortPasswordTest')
 data.setCell(5, 2, 'application.SignUpTest')
-data.setCell(5, 3, 850);
+data.setCell(5, 3, 1053);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'noConfirmPasswordTest')
+data.setCell(6, 1, 'noPasswordTest')
 data.setCell(6, 2, 'application.SignUpTest')
-data.setCell(6, 3, 847);
+data.setCell(6, 3, 1032);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'noPhoneTest')
+data.setCell(7, 1, 'noFirstNameTest')
 data.setCell(7, 2, 'application.SignUpTest')
-data.setCell(7, 3, 817);
+data.setCell(7, 3, 1023);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'noEmailTest')
 data.setCell(8, 2, 'application.SignUpTest')
-data.setCell(8, 3, 799);
+data.setCell(8, 3, 838);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'noInputTest')
 data.setCell(9, 2, 'application.SignUpTest')
-data.setCell(9, 3, 421);
+data.setCell(9, 3, 609);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <span class="suite-total-time">Total running time: 15 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -423,126 +439,130 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">14956 ms</span>
+                <span class="method-start">16991 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">invalidEmailTest</span>
-                <span class="method-start">16012 ms</span>
+                <span class="method-start">17512 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">17028 ms</span>
+                <span class="method-name">refreshAfterTest</span>
+                <span class="method-start">18698 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">17029 ms</span>
+                <span class="method-start">19947 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">noConfirmPasswordTest</span>
-                <span class="method-start">18044 ms</span>
+                <span class="method-start">20510 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">18893 ms</span>
+                <span class="method-name">refreshAfterTest</span>
+                <span class="method-start">21970 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">18893 ms</span>
+                <span class="method-start">23004 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">noEmailTest</span>
-                <span class="method-start">19911 ms</span>
+                <span class="method-start">23485 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">20711 ms</span>
+                <span class="method-name">refreshAfterTest</span>
+                <span class="method-start">24327 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">20712 ms</span>
+                <span class="method-start">28403 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">noFirstNameTest</span>
-                <span class="method-start">21734 ms</span>
+                <span class="method-start">29172 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">22585 ms</span>
+                <span class="method-name">refreshAfterTest</span>
+                <span class="method-start">30199 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">22587 ms</span>
+                <span class="method-start">31381 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">noInputTest</span>
-                <span class="method-start">23544 ms</span>
+                <span class="method-start">31689 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">23967 ms</span>
+                <span class="method-name">refreshAfterTest</span>
+                <span class="method-start">32303 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">23967 ms</span>
+                <span class="method-start">33347 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">noLastNameTest</span>
-                <span class="method-start">24908 ms</span>
+                <span class="method-start">33779 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">25798 ms</span>
+                <span class="method-name">refreshAfterTest</span>
+                <span class="method-start">34849 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">25799 ms</span>
+                <span class="method-start">35955 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">noPasswordTest</span>
-                <span class="method-start">26816 ms</span>
+                <span class="method-start">36352 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">27698 ms</span>
+                <span class="method-name">refreshAfterTest</span>
+                <span class="method-start">37390 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">27699 ms</span>
+                <span class="method-start">38412 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">passwordMismathwithConfirmPasswordTest</span>
+                <span class="method-start">38793 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">refreshAfterTest</span>
+                <span class="method-start">39991 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">40937 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">shortPasswordTest</span>
+                <span class="method-start">41311 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">refreshAfterTest</span>
+                <span class="method-start">42367 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">42423 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">noPhoneTest</span>
-                <span class="method-start">28782 ms</span>
+                <span class="method-start">43905 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">29604 ms</span>
+                <span class="method-name">refreshAfterTest</span>
+                <span class="method-start">49580 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">29605 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">passwordMismathwithConfirmPasswordTest</span>
-                <span class="method-start">30684 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">31673 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">31673 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">shortPasswordTest</span>
-                <span class="method-start">32740 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">33660 ms</span>
-              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">50633 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

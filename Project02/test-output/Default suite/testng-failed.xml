@@ -5,10 +5,11 @@
     <classes>
       <class name="application.SignUpTest">
         <methods>
+          <include name="TearDown"/>
           <include name="noPhoneTest"/>
           <include name="setup"/>
+          <include name="refreshAfterTest"/>
           <include name="invokeBrowser"/>
-          <include name="tearDown"/>
         </methods>
       </class> <!-- application.SignUpTest -->
     </classes>

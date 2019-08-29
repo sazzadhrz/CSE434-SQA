@@ -2,118 +2,166 @@
 <testng-results skipped="0" failed="1" total="10" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="33661" started-at="2019-08-28T19:48:30Z" finished-at="2019-08-28T19:49:04Z">
+  <suite name="Default suite" duration-ms="50782" started-at="2019-08-29T15:34:56Z" finished-at="2019-08-29T15:35:47Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="33661" started-at="2019-08-28T19:48:30Z" finished-at="2019-08-28T19:49:04Z">
+    <test name="Default test" duration-ms="50782" started-at="2019-08-29T15:34:56Z" finished-at="2019-08-29T15:35:47Z">
       <class name="application.SignUpTest">
-        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:application.SignUpTest@100fc185]" name="invokeBrowser" is-config="true" duration-ms="14942" started-at="2019-08-29T01:48:30Z" finished-at="2019-08-29T01:48:45Z">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:application.SignUpTest@643b1d11]" name="invokeBrowser" is-config="true" duration-ms="16973" started-at="2019-08-29T21:34:56Z" finished-at="2019-08-29T21:35:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invokeBrowser -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:application.SignUpTest@100fc185]" name="setup" is-config="true" duration-ms="1056" started-at="2019-08-29T01:48:45Z" finished-at="2019-08-29T01:48:46Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.SignUpTest@643b1d11]" name="setup" is-config="true" duration-ms="521" started-at="2019-08-29T21:35:13Z" finished-at="2019-08-29T21:35:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="invalidEmailTest()[pri:0, instance:application.SignUpTest@100fc185]" name="invalidEmailTest" duration-ms="1015" started-at="2019-08-29T01:48:46Z" finished-at="2019-08-29T01:48:47Z">
+        <test-method status="PASS" signature="invalidEmailTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="invalidEmailTest" duration-ms="1184" started-at="2019-08-29T21:35:13Z" finished-at="2019-08-29T21:35:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidEmailTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:application.SignUpTest@100fc185]" name="tearDown" is-config="true" duration-ms="1" started-at="2019-08-29T01:48:47Z" finished-at="2019-08-29T01:48:47Z">
+        <test-method status="PASS" signature="refreshAfterTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="refreshAfterTest" is-config="true" duration-ms="1247" started-at="2019-08-29T21:35:15Z" finished-at="2019-08-29T21:35:16Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:application.SignUpTest@100fc185]" name="setup" is-config="true" duration-ms="1015" started-at="2019-08-29T01:48:47Z" finished-at="2019-08-29T01:48:48Z">
+        </test-method> <!-- refreshAfterTest -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.SignUpTest@643b1d11]" name="setup" is-config="true" duration-ms="563" started-at="2019-08-29T21:35:16Z" finished-at="2019-08-29T21:35:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="noConfirmPasswordTest()[pri:0, instance:application.SignUpTest@100fc185]" name="noConfirmPasswordTest" duration-ms="847" started-at="2019-08-29T01:48:48Z" finished-at="2019-08-29T01:48:49Z">
+        <test-method status="PASS" signature="noConfirmPasswordTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="noConfirmPasswordTest" duration-ms="1456" started-at="2019-08-29T21:35:16Z" finished-at="2019-08-29T21:35:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- noConfirmPasswordTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:application.SignUpTest@100fc185]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-08-29T01:48:49Z" finished-at="2019-08-29T01:48:49Z">
+        <test-method status="PASS" signature="refreshAfterTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="refreshAfterTest" is-config="true" duration-ms="1032" started-at="2019-08-29T21:35:18Z" finished-at="2019-08-29T21:35:19Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:application.SignUpTest@100fc185]" name="setup" is-config="true" duration-ms="1018" started-at="2019-08-29T01:48:49Z" finished-at="2019-08-29T01:48:50Z">
+        </test-method> <!-- refreshAfterTest -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.SignUpTest@643b1d11]" name="setup" is-config="true" duration-ms="481" started-at="2019-08-29T21:35:19Z" finished-at="2019-08-29T21:35:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="noEmailTest()[pri:0, instance:application.SignUpTest@100fc185]" name="noEmailTest" duration-ms="799" started-at="2019-08-29T01:48:50Z" finished-at="2019-08-29T01:48:51Z">
+        <test-method status="PASS" signature="noEmailTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="noEmailTest" duration-ms="838" started-at="2019-08-29T21:35:19Z" finished-at="2019-08-29T21:35:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- noEmailTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:application.SignUpTest@100fc185]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-08-29T01:48:51Z" finished-at="2019-08-29T01:48:51Z">
+        <test-method status="PASS" signature="refreshAfterTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="refreshAfterTest" is-config="true" duration-ms="4074" started-at="2019-08-29T21:35:20Z" finished-at="2019-08-29T21:35:24Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:application.SignUpTest@100fc185]" name="setup" is-config="true" duration-ms="1022" started-at="2019-08-29T01:48:51Z" finished-at="2019-08-29T01:48:52Z">
+        </test-method> <!-- refreshAfterTest -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.SignUpTest@643b1d11]" name="setup" is-config="true" duration-ms="769" started-at="2019-08-29T21:35:24Z" finished-at="2019-08-29T21:35:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="noFirstNameTest()[pri:0, instance:application.SignUpTest@100fc185]" name="noFirstNameTest" duration-ms="850" started-at="2019-08-29T01:48:52Z" finished-at="2019-08-29T01:48:53Z">
+        <test-method status="PASS" signature="noFirstNameTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="noFirstNameTest" duration-ms="1023" started-at="2019-08-29T21:35:25Z" finished-at="2019-08-29T21:35:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- noFirstNameTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:application.SignUpTest@100fc185]" name="tearDown" is-config="true" duration-ms="1" started-at="2019-08-29T01:48:53Z" finished-at="2019-08-29T01:48:53Z">
+        <test-method status="PASS" signature="refreshAfterTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="refreshAfterTest" is-config="true" duration-ms="1182" started-at="2019-08-29T21:35:26Z" finished-at="2019-08-29T21:35:27Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:application.SignUpTest@100fc185]" name="setup" is-config="true" duration-ms="957" started-at="2019-08-29T01:48:53Z" finished-at="2019-08-29T01:48:54Z">
+        </test-method> <!-- refreshAfterTest -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.SignUpTest@643b1d11]" name="setup" is-config="true" duration-ms="308" started-at="2019-08-29T21:35:27Z" finished-at="2019-08-29T21:35:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="noInputTest()[pri:0, instance:application.SignUpTest@100fc185]" name="noInputTest" duration-ms="421" started-at="2019-08-29T01:48:54Z" finished-at="2019-08-29T01:48:54Z">
+        <test-method status="PASS" signature="noInputTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="noInputTest" duration-ms="609" started-at="2019-08-29T21:35:27Z" finished-at="2019-08-29T21:35:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- noInputTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:application.SignUpTest@100fc185]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-08-29T01:48:54Z" finished-at="2019-08-29T01:48:54Z">
+        <test-method status="PASS" signature="refreshAfterTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="refreshAfterTest" is-config="true" duration-ms="1043" started-at="2019-08-29T21:35:28Z" finished-at="2019-08-29T21:35:29Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:application.SignUpTest@100fc185]" name="setup" is-config="true" duration-ms="941" started-at="2019-08-29T01:48:54Z" finished-at="2019-08-29T01:48:55Z">
+        </test-method> <!-- refreshAfterTest -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.SignUpTest@643b1d11]" name="setup" is-config="true" duration-ms="432" started-at="2019-08-29T21:35:29Z" finished-at="2019-08-29T21:35:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="noLastNameTest()[pri:0, instance:application.SignUpTest@100fc185]" name="noLastNameTest" duration-ms="887" started-at="2019-08-29T01:48:55Z" finished-at="2019-08-29T01:48:56Z">
+        <test-method status="PASS" signature="noLastNameTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="noLastNameTest" duration-ms="1067" started-at="2019-08-29T21:35:30Z" finished-at="2019-08-29T21:35:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- noLastNameTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:application.SignUpTest@100fc185]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-08-29T01:48:56Z" finished-at="2019-08-29T01:48:56Z">
+        <test-method status="PASS" signature="refreshAfterTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="refreshAfterTest" is-config="true" duration-ms="1104" started-at="2019-08-29T21:35:31Z" finished-at="2019-08-29T21:35:32Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:application.SignUpTest@100fc185]" name="setup" is-config="true" duration-ms="1016" started-at="2019-08-29T01:48:56Z" finished-at="2019-08-29T01:48:57Z">
+        </test-method> <!-- refreshAfterTest -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.SignUpTest@643b1d11]" name="setup" is-config="true" duration-ms="397" started-at="2019-08-29T21:35:32Z" finished-at="2019-08-29T21:35:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="noPasswordTest()[pri:0, instance:application.SignUpTest@100fc185]" name="noPasswordTest" duration-ms="881" started-at="2019-08-29T01:48:57Z" finished-at="2019-08-29T01:48:58Z">
+        <test-method status="PASS" signature="noPasswordTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="noPasswordTest" duration-ms="1032" started-at="2019-08-29T21:35:32Z" finished-at="2019-08-29T21:35:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- noPasswordTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:application.SignUpTest@100fc185]" name="tearDown" is-config="true" duration-ms="1" started-at="2019-08-29T01:48:58Z" finished-at="2019-08-29T01:48:58Z">
+        <test-method status="PASS" signature="refreshAfterTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="refreshAfterTest" is-config="true" duration-ms="1021" started-at="2019-08-29T21:35:33Z" finished-at="2019-08-29T21:35:34Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:application.SignUpTest@100fc185]" name="setup" is-config="true" duration-ms="1083" started-at="2019-08-29T01:48:58Z" finished-at="2019-08-29T01:48:59Z">
+        </test-method> <!-- refreshAfterTest -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.SignUpTest@643b1d11]" name="setup" is-config="true" duration-ms="381" started-at="2019-08-29T21:35:34Z" finished-at="2019-08-29T21:35:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="noPhoneTest()[pri:0, instance:application.SignUpTest@100fc185]" name="noPhoneTest" duration-ms="817" started-at="2019-08-29T01:48:59Z" finished-at="2019-08-29T01:49:00Z">
-          <exception class="java.lang.AssertionError">
+        <test-method status="PASS" signature="passwordMismathwithConfirmPasswordTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="passwordMismathwithConfirmPasswordTest" duration-ms="1194" started-at="2019-08-29T21:35:35Z" finished-at="2019-08-29T21:35:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- passwordMismathwithConfirmPasswordTest -->
+        <test-method status="PASS" signature="refreshAfterTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="refreshAfterTest" is-config="true" duration-ms="943" started-at="2019-08-29T21:35:36Z" finished-at="2019-08-29T21:35:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refreshAfterTest -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.SignUpTest@643b1d11]" name="setup" is-config="true" duration-ms="374" started-at="2019-08-29T21:35:37Z" finished-at="2019-08-29T21:35:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="shortPasswordTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="shortPasswordTest" duration-ms="1053" started-at="2019-08-29T21:35:37Z" finished-at="2019-08-29T21:35:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shortPasswordTest -->
+        <test-method status="PASS" signature="refreshAfterTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="refreshAfterTest" is-config="true" duration-ms="50" started-at="2019-08-29T21:35:38Z" finished-at="2019-08-29T21:35:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refreshAfterTest -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.SignUpTest@643b1d11]" name="setup" is-config="true" duration-ms="1482" started-at="2019-08-29T21:35:38Z" finished-at="2019-08-29T21:35:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="noPhoneTest()[pri:15, instance:application.SignUpTest@643b1d11]" name="noPhoneTest" duration-ms="5673" started-at="2019-08-29T21:35:40Z" finished-at="2019-08-29T21:35:45Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[expected [The Phone field is required.] but found [The Password field is required.]]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"div.alert.alert-danger p"}
+  (Session info: chrome=76.0.3809.132)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-2NB5M8O', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61354}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 619deec00a98584bef8da3a4e9789291
+*** Element info: {Using=css selector, value=div.alert.alert-danger p}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [The Phone field is required.] but found [The Password field is required.]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
-	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:190)
-	at org.testng.Assert.assertEquals(Assert.java:200)
-	at application.SignUpTest.scrollUpandGetWarningTextandAssert(SignUpTest.java:51)
-	at application.SignUpTest.noPhoneTest(SignUpTest.java:111)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div.alert.alert-danger p"}
+  (Session info: chrome=76.0.3809.132)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-2NB5M8O', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61354}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 619deec00a98584bef8da3a4e9789291
+*** Element info: {Using=css selector, value=div.alert.alert-danger p}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at application.SignUpTest.scrollUpandGetWarningTextandAssert(SignUpTest.java:50)
+	at application.SignUpTest.noPhoneTest(SignUpTest.java:112)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -141,38 +189,18 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- noPhoneTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:application.SignUpTest@100fc185]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-08-29T01:49:00Z" finished-at="2019-08-29T01:49:00Z">
+        <test-method status="PASS" signature="refreshAfterTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="refreshAfterTest" is-config="true" duration-ms="1053" started-at="2019-08-29T21:35:45Z" finished-at="2019-08-29T21:35:46Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:application.SignUpTest@100fc185]" name="setup" is-config="true" duration-ms="1079" started-at="2019-08-29T01:49:00Z" finished-at="2019-08-29T01:49:01Z">
+        </test-method> <!-- refreshAfterTest -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:application.SignUpTest@643b1d11]" name="TearDown" is-config="true" duration-ms="139" started-at="2019-08-29T21:35:46Z" finished-at="2019-08-29T21:35:47Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="passwordMismathwithConfirmPasswordTest()[pri:0, instance:application.SignUpTest@100fc185]" name="passwordMismathwithConfirmPasswordTest" duration-ms="988" started-at="2019-08-29T01:49:01Z" finished-at="2019-08-29T01:49:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- passwordMismathwithConfirmPasswordTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:application.SignUpTest@100fc185]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-08-29T01:49:02Z" finished-at="2019-08-29T01:49:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:application.SignUpTest@100fc185]" name="setup" is-config="true" duration-ms="1067" started-at="2019-08-29T01:49:02Z" finished-at="2019-08-29T01:49:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="shortPasswordTest()[pri:0, instance:application.SignUpTest@100fc185]" name="shortPasswordTest" duration-ms="918" started-at="2019-08-29T01:49:03Z" finished-at="2019-08-29T01:49:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- shortPasswordTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:application.SignUpTest@100fc185]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-08-29T01:49:04Z" finished-at="2019-08-29T01:49:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
+        </test-method> <!-- TearDown -->
       </class> <!-- application.SignUpTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

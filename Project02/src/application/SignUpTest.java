@@ -7,6 +7,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -38,7 +39,7 @@ public class SignUpTest {
 		js = (JavascriptExecutor)driver;
 		js.executeScript("scroll(0, 200);");
 		clearFields();
-		driver.navigate().refresh();
+//		driver.navigate().refresh();
 //		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	}
 	
@@ -97,13 +98,13 @@ public class SignUpTest {
 	}
 	
 	// forcefully failing it because it logs in without phone number
-	@Test 
+	@Test (priority = 15)
 	public void noPhoneTest() {
 		driver.findElement(By.name("firstname")).sendKeys("Sazzad");
 		driver.findElement(By.name("lastname")).sendKeys("Hossain");
 		driver.findElement(By.name("email")).sendKeys("sazzad.hossian09@northsouth.edu");
 		driver.findElement(By.name("password")).sendKeys("haha123");
-		//driver.findElement(By.name("confirmpassword")).sendKeys("haha123");
+		driver.findElement(By.name("confirmpassword")).sendKeys("haha123");
 		
 		
 		driver.findElement(By.className("signupbtn")).click();
@@ -202,8 +203,14 @@ public class SignUpTest {
 	
 	
 	@AfterMethod
-	public void tearDown() {
-		//driver.close();
+	public void refreshAfterTest() {
+		driver.navigate().refresh();
+	}
+	
+	@AfterClass
+	public void TearDown() {
+		driver.close();
+//		driver.navigate().refresh();
 	}
 
 }
