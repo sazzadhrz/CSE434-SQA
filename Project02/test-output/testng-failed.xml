@@ -6,8 +6,9 @@
       <class name="application.SignInTest">
         <methods>
           <include name="setup"/>
-          <include name="invalidEmailTest"/>
+          <include name="invalidPasswordTest"/>
           <include name="invokeBrowser"/>
+          <include name="validTest"/>
         </methods>
       </class> <!-- application.SignInTest -->
     </classes>

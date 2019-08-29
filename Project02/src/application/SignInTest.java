@@ -59,5 +59,14 @@ public class SignInTest {
 		getWarningTextandAssert("Invalid Email or Password");
 	}
 	
+	@Test
+	public void validTest() {
+		driver.findElement(By.name("username")).sendKeys("sazzad.hossian09@northsouth.edu");
+		driver.findElement(By.name("password")).sendKeys("haha123");
+		driver.findElement(By.className("loginbtn")).click();
+		
+		//getWarningTextandAssert("Invalid Email or Password");
+	}
+	
 	
 }
