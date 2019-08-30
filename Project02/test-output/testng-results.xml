@@ -1,32 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="41605" started-at="2019-08-30T17:21:13Z" finished-at="2019-08-30T17:21:55Z">
+  <suite name="Default suite" duration-ms="51654" started-at="2019-08-30T17:39:53Z" finished-at="2019-08-30T17:40:45Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="41605" started-at="2019-08-30T17:21:13Z" finished-at="2019-08-30T17:21:55Z">
+    <test name="Default test" duration-ms="51654" started-at="2019-08-30T17:39:53Z" finished-at="2019-08-30T17:40:45Z">
       <class name="application.TourTest">
-        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:application.TourTest@2ef5e5e3]" name="invokeBrowser" is-config="true" duration-ms="24849" started-at="2019-08-30T23:21:13Z" finished-at="2019-08-30T23:21:38Z">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:application.TourTest@2ef5e5e3]" name="invokeBrowser" is-config="true" duration-ms="23361" started-at="2019-08-30T23:39:53Z" finished-at="2019-08-30T23:40:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invokeBrowser -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:application.TourTest@2ef5e5e3]" name="setup" is-config="true" duration-ms="13" started-at="2019-08-30T23:21:38Z" finished-at="2019-08-30T23:21:38Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.TourTest@2ef5e5e3]" name="setup" is-config="true" duration-ms="14" started-at="2019-08-30T23:40:16Z" finished-at="2019-08-30T23:40:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="searchTour()[pri:0, instance:application.TourTest@2ef5e5e3]" name="searchTour" duration-ms="11257" started-at="2019-08-30T23:21:38Z" finished-at="2019-08-30T23:21:49Z">
+        <test-method status="PASS" signature="searchTourTest()[pri:0, instance:application.TourTest@2ef5e5e3]" name="searchTourTest" duration-ms="12445" started-at="2019-08-30T23:40:16Z" finished-at="2019-08-30T23:40:29Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchTour -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:application.TourTest@2ef5e5e3]" name="setup" is-config="true" duration-ms="9" started-at="2019-08-30T23:21:49Z" finished-at="2019-08-30T23:21:49Z">
+        </test-method> <!-- searchTourTest -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.TourTest@2ef5e5e3]" name="setup" is-config="true" duration-ms="14" started-at="2019-08-30T23:40:29Z" finished-at="2019-08-30T23:40:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="bookTourwithoutFirstName()[pri:2, instance:application.TourTest@2ef5e5e3]" name="bookTourwithoutFirstName" duration-ms="5421" started-at="2019-08-30T23:21:49Z" finished-at="2019-08-30T23:21:55Z">
+        <test-method status="PASS" signature="bookTourwithoutFirstNameTest()[pri:2, instance:application.TourTest@2ef5e5e3]" name="bookTourwithoutFirstNameTest" duration-ms="6863" started-at="2019-08-30T23:40:29Z" finished-at="2019-08-30T23:40:36Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- bookTourwithoutFirstName -->
+        </test-method> <!-- bookTourwithoutFirstNameTest -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.TourTest@2ef5e5e3]" name="setup" is-config="true" duration-ms="8" started-at="2019-08-30T23:40:36Z" finished-at="2019-08-30T23:40:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="bookTourwithouTEmail()[pri:3, instance:application.TourTest@2ef5e5e3]" name="bookTourwithouTEmail" duration-ms="3948" started-at="2019-08-30T23:40:36Z" finished-at="2019-08-30T23:40:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookTourwithouTEmail -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.TourTest@2ef5e5e3]" name="setup" is-config="true" duration-ms="10" started-at="2019-08-30T23:40:40Z" finished-at="2019-08-30T23:40:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="bookTourwithoutLasttNameTest()[pri:3, instance:application.TourTest@2ef5e5e3]" name="bookTourwithoutLasttNameTest" duration-ms="4931" started-at="2019-08-30T23:40:40Z" finished-at="2019-08-30T23:40:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookTourwithoutLasttNameTest -->
       </class> <!-- application.TourTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

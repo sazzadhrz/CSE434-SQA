@@ -5,7 +5,7 @@
     <classes>
       <class name="application.TourTest">
         <methods>
-          <include name="bookTourwithoutFirstName"/>
+          <include name="bookTourwithoutLasttNameTest"/>
           <include name="invokeBrowser"/>
           <include name="setup"/>
         </methods>
