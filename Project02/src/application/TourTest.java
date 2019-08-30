@@ -8,6 +8,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -16,6 +17,8 @@ public class TourTest {
 	WebDriver driver;
 	JavascriptExecutor js;
 	
+	
+	
 	@BeforeClass
 	public void invokeBrowser() {
 		System.setProperty("webdriver.chrome.driver", "F:/chromedriver_win32/chromedriver.exe");
@@ -23,11 +26,13 @@ public class TourTest {
 		driver = new ChromeDriver();	
 		driver.manage().window().maximize();
 		driver.navigate().to("https://www.phptravels.net/m-tours"); 
+		js = (JavascriptExecutor)driver;
 	}
 	
 	@BeforeMethod
 	public void setup() {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
 	}
 	
 	@Test
@@ -49,7 +54,7 @@ public class TourTest {
 
 	}
 	
-	@Test (priority = 1)
+/*	@Test (priority = 1)
 	public void reviewTour() throws InterruptedException {
 		js = (JavascriptExecutor)driver;
 		js.executeScript("scroll(0, 3000);");
@@ -63,7 +68,20 @@ public class TourTest {
 		Thread.sleep(200);
 		js.executeScript("scroll(0, 3100);");
 		Thread.sleep(200);
-		driver.findElement(By.xpath("//*[@id='32']")).click();
+		driver.findElement(By.xpath("//*[@id='body-section']/div[3]/div[4]/div/div[2]/button")).click(); 
+		
+	} */
+	
+	@Test (priority = 2)
+	public void bookTour() throws InterruptedException {
+		WebElement bookNow = driver.findElement(By.xpath("//*[@id='body-section']/div[3]/div[2]/div[2]/div/form/div[4]/button"));
+		scrollUntilFindElement(bookNow);
+		
+		bookNow.click();
+
+
+
+		
 	}
 	
 	

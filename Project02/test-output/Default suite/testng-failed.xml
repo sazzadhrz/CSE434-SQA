@@ -5,8 +5,8 @@
     <classes>
       <class name="application.TourTest">
         <methods>
+          <include name="bookTour"/>
           <include name="invokeBrowser"/>
-          <include name="reviewTour"/>
           <include name="setup"/>
         </methods>
       </class> <!-- application.TourTest -->
