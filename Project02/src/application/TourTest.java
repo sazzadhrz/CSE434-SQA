@@ -42,14 +42,29 @@ public class TourTest {
 		searchbox.sendKeys(Keys.ENTER);
 
 		WebElement date = driver.findElement(By.xpath("//*[@id='tchkin']/div/input"));
+		date.clear();
 		date.click();
 		date.sendKeys("04/09/2019");
 		date.sendKeys(Keys.ENTER);
-		
-		WebElement tourType = driver.findElement(By.xpath("//*[@id='tourtype']"));
-		tourType.click();
-		Thread.sleep(500);
-		driver.findElement(By.xpath("//*[@id='tourtype']/option[3]")).click();
 
 	}
+	
+	@Test (priority = 1)
+	public void reviewTour() throws InterruptedException {
+		js = (JavascriptExecutor)driver;
+		js.executeScript("scroll(0, 3000);");
+		
+		driver.findElement(By.xpath("//*[@id='body-section']/div[3]/div[4]/div/div[2]/button")).click();
+		
+		driver.findElement(By.name("fullname")).sendKeys("Sazzad Hossain");
+		driver.findElement(By.name("email")).sendKeys("sazzad@yahoo.com");
+		driver.findElement(By.name("reviews_comments")).sendKeys("Amazing Place. nice weather. Would like to visit again");
+		
+		Thread.sleep(200);
+		js.executeScript("scroll(0, 3100);");
+		Thread.sleep(200);
+		driver.findElement(By.xpath("//*[@id='32']")).click();
+	}
+	
+	
 }
