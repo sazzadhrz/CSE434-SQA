@@ -5,9 +5,16 @@
     <classes>
       <class name="application.TourTest">
         <methods>
+          <include name="bookTourSuccessfully"/>
           <include name="bookTourwithoutLasttNameTest"/>
+          <include name="bookTourwithWrongConfirmEmailTest"/>
+          <include name="bookTourwithoutConfirmEmailTest"/>
+          <include name="bookTourwithoutEmailTest"/>
           <include name="invokeBrowser"/>
+          <include name="bookTourwithoutFirstNameTest"/>
+          <include name="searchTourTest"/>
           <include name="setup"/>
+          <include name="bookTourwithInvalidEmailTest"/>
         </methods>
       </class> <!-- application.TourTest -->
     </classes>

@@ -56,7 +56,7 @@ public class TourTest {
 
 	}
 	
-/*	@Test (priority = 1)
+	@Test (priority = 1)
 	public void reviewTour() throws InterruptedException {
 		js = (JavascriptExecutor)driver;
 		js.executeScript("scroll(0, 3000);");
@@ -72,7 +72,7 @@ public class TourTest {
 		Thread.sleep(200);
 		driver.findElement(By.xpath("//*[@id='body-section']/div[3]/div[4]/div/div[2]/button")).click(); 
 		
-	} */
+	} 
 	
 	@Test (priority = 2)
 	public void bookTourwithoutFirstNameTest() throws InterruptedException {
@@ -193,7 +193,7 @@ public class TourTest {
 		js.executeScript("scroll(0, 00);");
 		
 		String warning = driver.findElement(By.xpath("//*[@id='body-section']/div[1]/div/div/div/div[1]/div[2]/div[1]/div/p[1]")).getText();
-		Assert.assertEquals(warning, "Email is required");
+		Assert.assertEquals(warning, "The Email field must contain a valid email address");
 		
 	}
 	
@@ -220,7 +220,7 @@ public class TourTest {
 		
 	}
 	
-/*	@Test (priority = 4)
+	@Test (priority = 4)
 	public void bookTourSuccessfully() throws InterruptedException {
 		driver.navigate().refresh();
 		Thread.sleep(500);
@@ -232,11 +232,38 @@ public class TourTest {
 		driver.findElement(By.xpath("//*[@id='guestform']/div[3]/div[2]/input")).sendKeys("01613645555");
 		driver.findElement(By.xpath("//*[@id='guestform']/div[4]/div[2]/input")).sendKeys("Dhaka");
 		
+		scrollUntilFindElement(driver.findElement(By.xpath("//*[@id='bookingdetails']/div[5]/div[2]/div[2]/div[2]/input")));
+		
+		driver.findElement(By.xpath("//*[@id='bookingdetails']/div[5]/div[2]/div[2]/div[2]/input")).sendKeys("AX85G9");
+		
+		// for guest 1
+		driver.findElement(By.xpath("//*[@id='bookingdetails']/div[7]/div[2]/div/div[1]/div[1]/input")).sendKeys("Sazzad");
+		driver.findElement(By.xpath("//*[@id='bookingdetails']/div[7]/div[2]/div/div[1]/div[2]/input")).sendKeys("AR256315");
+		driver.findElement(By.xpath("//*[@id='bookingdetails']/div[7]/div[2]/div/div[1]/div[3]/input")).sendKeys("23");
+		
+		// for guest 2
+		driver.findElement(By.xpath("//*[@id='bookingdetails']/div[7]/div[2]/div/div[2]/div[1]/input")).sendKeys("Hossain");
+		driver.findElement(By.xpath("//*[@id='bookingdetails']/div[7]/div[2]/div/div[2]/div[2]/input")).sendKeys("CX123543");
+		driver.findElement(By.xpath("//*[@id='bookingdetails']/div[7]/div[2]/div/div[2]/div[3]/input")).sendKeys("25");
+		
 		WebElement confirmBookingBtn = driver.findElement(By.xpath("//*[@id='body-section']/div[1]/div/div/div/div[1]/div[2]/div[4]/button"));
 		scrollUntilFindElement(confirmBookingBtn);
 		confirmBookingBtn.click();
 		
-	} */
+		Thread.sleep(1500);
+		
+		String invoiceUsername = driver.findElement(By.xpath("//*[@id='invoiceTable']/tbody/tr[2]/td/div[2]/table/tbody/tr/td/div[2]")).getText();		
+		String invoiceUserAdress = driver.findElement(By.xpath("//*[@id='invoiceTable']/tbody/tr[2]/td/div[2]/table/tbody/tr/td/div[3]")).getText();	
+		String invoiceUserPhone = driver.findElement(By.xpath("//*[@id='invoiceTable']/tbody/tr[2]/td/div[2]/table/tbody/tr/td/div[4]")).getText();	
+		String passport1 = driver.findElement(By.xpath("//*[@id='invoiceTable']/tbody/tr[4]/td/table/tbody/tr[2]/td/table[2]/tbody/tr[1]/td[2]")).getText();
+		String passport2 = driver.findElement(By.xpath("//*[@id='invoiceTable']/tbody/tr[4]/td/table/tbody/tr[2]/td/table[2]/tbody/tr[2]/td[2]")).getText();	
+		
+		Assert.assertEquals(invoiceUsername, "SAZZAD HOSSAIN");
+		Assert.assertEquals(invoiceUserAdress, "DHAKA");
+		Assert.assertEquals(invoiceUserPhone, "01613645555");
+		Assert.assertEquals(passport1, "AR256315");
+		Assert.assertEquals(passport2, "CX123543");
+	} 
 	
 	
 }
