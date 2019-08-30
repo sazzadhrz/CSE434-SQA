@@ -17,7 +17,9 @@ public class TourTest {
 	WebDriver driver;
 	JavascriptExecutor js;
 	
-	
+	public void scrollUntilFindElement(WebElement WebElement_Path) {
+		js.executeScript("arguments[0].scrollIntoView(true);", WebElement_Path);
+	}
 	
 	@BeforeClass
 	public void invokeBrowser() {
