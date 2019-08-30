@@ -9,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -264,6 +265,12 @@ public class TourTest {
 		Assert.assertEquals(passport1, "AR256315");
 		Assert.assertEquals(passport2, "CX123543");
 	} 
+	
+	@AfterClass
+	public void TearDown() throws InterruptedException {
+		Thread.sleep(10000);
+		driver.close();
+	}
 	
 	
 }
