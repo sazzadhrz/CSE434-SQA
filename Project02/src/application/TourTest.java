@@ -197,5 +197,23 @@ public class TourTest {
 		
 	}
 	
+	@Test (priority = 4)
+	public void bookTourSuccessfully() throws InterruptedException {
+		driver.navigate().refresh();
+		Thread.sleep(500);
+		
+		driver.findElement(By.xpath("//*[@id='guestform']/div[1]/div[2]/input")).sendKeys("Sazzad");
+		driver.findElement(By.xpath("//*[@id='guestform']/div[1]/div[3]/input")).sendKeys("Hossain");
+		driver.findElement(By.xpath("//*[@id='guestform']/div[2]/div[2]/input")).sendKeys("sazzad.hossian09@northsouth.edu");
+		driver.findElement(By.xpath("//*[@id='guestform']/div[2]/div[3]/input")).sendKeys("sazzad.hossian09@northsouth.edu");
+		driver.findElement(By.xpath("//*[@id='guestform']/div[3]/div[2]/input")).sendKeys("01613645555");
+		driver.findElement(By.xpath("//*[@id='guestform']/div[4]/div[2]/input")).sendKeys("Dhaka");
+		
+		WebElement confirmBookingBtn = driver.findElement(By.xpath("//*[@id='body-section']/div[1]/div/div/div/div[1]/div[2]/div[4]/button"));
+		scrollUntilFindElement(confirmBookingBtn);
+		confirmBookingBtn.click();
+		
+	}
+	
 	
 }
