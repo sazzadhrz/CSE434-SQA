@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">	
+
+<suite thread-count="1" verbose="1" name="PHP Travels Suite" annotations="JDK" parallel="tests">
+         
+  <test name="Hotel Booking Test">
+	 <classes>
+	   <class name="application.HotelBookingTest"/>
+	 </classes>
+   </test>
+   
+  <test name="Tour Test">
+     <classes>
+       <class name="application.TourTest"/>
+     </classes>
+   </test>
+</suite>
