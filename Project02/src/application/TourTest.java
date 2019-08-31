@@ -230,6 +230,7 @@ public class TourTest {
 		
 		scrollUntilFindElement(driver.findElement(By.xpath("//*[@id='bookingdetails']/div[5]/div[2]/div[2]/div[2]/input")));
 		
+		// promotional code
 		driver.findElement(By.xpath("//*[@id='bookingdetails']/div[5]/div[2]/div[2]/div[2]/input")).sendKeys("AX85G9");
 		
 		fillGuestDetails();

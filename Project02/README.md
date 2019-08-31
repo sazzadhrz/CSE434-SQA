@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/monsurhillas007/SU19CSE299S16G01NSU/blob/master/Mockup/logo/nsulogo.jpeg">
+<img src="https://github.com/sazzadhrz/CSE434/blob/master/Project02/img/nsulogo.jpeg">
 </p>
 
 <div align="center">
