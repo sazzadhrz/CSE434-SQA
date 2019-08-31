@@ -3,20 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="application.TourTest">
+      <class name="application.CarBookingTest">
         <methods>
-          <include name="bookTourSuccessfully"/>
-          <include name="bookTourwithoutLasttNameTest"/>
-          <include name="bookTourwithWrongConfirmEmailTest"/>
-          <include name="bookTourwithoutConfirmEmailTest"/>
-          <include name="bookTourwithoutEmailTest"/>
-          <include name="invokeBrowser"/>
-          <include name="bookTourwithoutFirstNameTest"/>
-          <include name="searchTourTest"/>
           <include name="setup"/>
-          <include name="bookTourwithInvalidEmailTest"/>
+          <include name="searchCarTest"/>
+          <include name="invokeBrowser"/>
         </methods>
-      </class> <!-- application.TourTest -->
+      </class> <!-- application.CarBookingTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
