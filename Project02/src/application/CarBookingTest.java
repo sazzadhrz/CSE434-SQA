@@ -225,6 +225,15 @@ public class CarBookingTest {
 		driver.findElement(By.xpath("//*[@id='bookingdetails']/div[7]/div[2]/div/div[2]/div[3]/input")).sendKeys("25");
 	}
 	
+	public void fillGuestBookingInformation() {
+		driver.findElement(By.xpath("//*[@id='guestform']/div[1]/div[2]/input")).sendKeys("Sazzad");
+		driver.findElement(By.xpath("//*[@id='guestform']/div[1]/div[3]/input")).sendKeys("Hossain");
+		driver.findElement(By.xpath("//*[@id='guestform']/div[2]/div[2]/input")).sendKeys("sazzad.hossian09@northsouth.edu");
+		driver.findElement(By.xpath("//*[@id='guestform']/div[2]/div[3]/input")).sendKeys("sazzad.hossian09@northsouth.edu");
+		driver.findElement(By.xpath("//*[@id='guestform']/div[3]/div[2]/input")).sendKeys("01613645555");
+		driver.findElement(By.xpath("//*[@id='guestform']/div[4]/div[2]/input")).sendKeys("Dhaka");
+	}
+	
 	@AfterClass
 	public void TearDown() throws InterruptedException {
 		Thread.sleep(10000);
