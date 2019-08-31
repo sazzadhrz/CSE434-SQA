@@ -99,7 +99,7 @@ public class CarBookingTest {
 	}
 	
 	@Test (priority = 3)
-	public void bookTourwithoutLasttNameTest() throws InterruptedException {
+	public void bookCarwithoutLasttNameTest() throws InterruptedException {
 		driver.navigate().refresh();		
 		Thread.sleep(1500);
 		
@@ -122,7 +122,7 @@ public class CarBookingTest {
 	}
 	
 	@Test (priority = 3)
-	public void bookCarrwithoutEmailTest() throws InterruptedException {
+	public void bookCarwithoutEmailTest() throws InterruptedException {
 		driver.navigate().refresh();
 		Thread.sleep(500);
 		
@@ -145,7 +145,7 @@ public class CarBookingTest {
 	}
 	
 	@Test (priority = 3)
-	public void bookCarrwithoutConfirmEmailTest() throws InterruptedException {
+	public void bookCarwithoutConfirmEmailTest() throws InterruptedException {
 		driver.navigate().refresh();
 		Thread.sleep(500);
 		
@@ -168,7 +168,7 @@ public class CarBookingTest {
 	}
 	
 	@Test (priority = 3)
-	public void bookCarrwithInvalidEmailTest() throws InterruptedException {
+	public void bookCarwithInvalidEmailTest() throws InterruptedException {
 		driver.navigate().refresh();
 		Thread.sleep(500);
 		
@@ -191,7 +191,7 @@ public class CarBookingTest {
 	}
 	
 	@Test (priority = 3)
-	public void bookCarrwithWrongConfirmEmailTest() throws InterruptedException {
+	public void bookCarwithWrongConfirmEmailTest() throws InterruptedException {
 		driver.navigate().refresh();
 		Thread.sleep(500);
 		
@@ -212,6 +212,39 @@ public class CarBookingTest {
 		Assert.assertEquals(warning, "Email not matching with confirm email");
 		
 	}
+	
+	@Test (priority = 4)
+	public void bookCarSuccessfully() throws InterruptedException {
+		driver.navigate().refresh();
+		Thread.sleep(500);
+		
+		fillGuestBookingInformation();
+		
+		scrollUntilFindElement(driver.findElement(By.xpath("//*[@id='bookingdetails']/div[5]/div[2]/div[2]/div[2]/input")));
+		
+		// promotional code
+		driver.findElement(By.xpath("//*[@id='bookingdetails']/div[5]/div[2]/div[2]/div[2]/input")).sendKeys("AX85G9");
+		
+		fillGuestDetails();
+		
+		WebElement confirmBookingBtn = driver.findElement(By.xpath("//*[@id='body-section']/div[1]/div/div/div/div[1]/div[2]/div[4]/button"));
+		scrollUntilFindElement(confirmBookingBtn);
+		confirmBookingBtn.click();
+		
+		Thread.sleep(1500);
+		
+		String invoiceUsername = driver.findElement(By.xpath("//*[@id='invoiceTable']/tbody/tr[2]/td/div[2]/table/tbody/tr/td/div[2]")).getText();		
+		String invoiceUserAdress = driver.findElement(By.xpath("//*[@id='invoiceTable']/tbody/tr[2]/td/div[2]/table/tbody/tr/td/div[3]")).getText();	
+		String invoiceUserPhone = driver.findElement(By.xpath("//*[@id='invoiceTable']/tbody/tr[2]/td/div[2]/table/tbody/tr/td/div[4]")).getText();	
+		String passport1 = driver.findElement(By.xpath("//*[@id='invoiceTable']/tbody/tr[4]/td/table/tbody/tr[2]/td/table[2]/tbody/tr[1]/td[2]")).getText();
+		String passport2 = driver.findElement(By.xpath("//*[@id='invoiceTable']/tbody/tr[4]/td/table/tbody/tr[2]/td/table[2]/tbody/tr[2]/td[2]")).getText();	
+		
+		Assert.assertEquals(invoiceUsername, "SAZZAD HOSSAIN");
+		Assert.assertEquals(invoiceUserAdress, "DHAKA");
+		Assert.assertEquals(invoiceUserPhone, "01613645555");
+		Assert.assertEquals(passport1, "AR256315");
+		Assert.assertEquals(passport2, "CX123543");
+	} 
 	
 	public void fillGuestDetails() {
 		// for guest 1
