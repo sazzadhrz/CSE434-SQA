@@ -71,7 +71,32 @@ public class CarBookingTest {
 		car.click();
 	}
 	
-	
+	@Test (priority = 2)
+	public void bookCarwithoutFirstNameTest() throws InterruptedException {
+		driver.navigate().refresh();
+		WebElement bookNow = driver.findElement(By.xpath("//*[@id='body-section']/div[4]/div/div[2]/form/button"));
+		scrollUntilFindElement(bookNow);		
+		bookNow.click();
+		
+		Thread.sleep(1500);
+		
+		//driver.findElement(By.xpath("//*[@id='guestform']/div[1]/div[2]/input")).sendKeys("Sazzad");
+		driver.findElement(By.xpath("//*[@id='guestform']/div[1]/div[3]/input")).sendKeys("Hossain");
+		driver.findElement(By.xpath("//*[@id='guestform']/div[2]/div[2]/input")).sendKeys("sazzad.hossian09@northsouth.edu");
+		driver.findElement(By.xpath("//*[@id='guestform']/div[2]/div[3]/input")).sendKeys("sazzad.hossian09@northsouth.edu");
+		driver.findElement(By.xpath("//*[@id='guestform']/div[3]/div[2]/input")).sendKeys("01613645555");
+		driver.findElement(By.xpath("//*[@id='guestform']/div[4]/div[2]/input")).sendKeys("Dhaka");
+		
+		WebElement confirmBookingBtn = driver.findElement(By.xpath("//*[@id='body-section']/div[1]/div/div/div/div[1]/div[2]/div[4]/button"));
+		scrollUntilFindElement(confirmBookingBtn);
+		confirmBookingBtn.click();
+
+		js.executeScript("scroll(0, 00);");
+		
+		String warning = driver.findElement(By.xpath("//*[@id='body-section']/div[1]/div/div/div/div[1]/div[2]/div[1]/div/p[1]")).getText();
+		Assert.assertEquals(warning, "First Name is required");
+		
+	}
 	
 	@AfterClass
 	public void TearDown() throws InterruptedException {
