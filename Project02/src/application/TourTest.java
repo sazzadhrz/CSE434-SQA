@@ -226,26 +226,13 @@ public class TourTest {
 		driver.navigate().refresh();
 		Thread.sleep(500);
 		
-		driver.findElement(By.xpath("//*[@id='guestform']/div[1]/div[2]/input")).sendKeys("Sazzad");
-		driver.findElement(By.xpath("//*[@id='guestform']/div[1]/div[3]/input")).sendKeys("Hossain");
-		driver.findElement(By.xpath("//*[@id='guestform']/div[2]/div[2]/input")).sendKeys("sazzad.hossian09@northsouth.edu");
-		driver.findElement(By.xpath("//*[@id='guestform']/div[2]/div[3]/input")).sendKeys("sazzad.hossian09@northsouth.edu");
-		driver.findElement(By.xpath("//*[@id='guestform']/div[3]/div[2]/input")).sendKeys("01613645555");
-		driver.findElement(By.xpath("//*[@id='guestform']/div[4]/div[2]/input")).sendKeys("Dhaka");
+		fillGuestBookingInformation();
 		
 		scrollUntilFindElement(driver.findElement(By.xpath("//*[@id='bookingdetails']/div[5]/div[2]/div[2]/div[2]/input")));
 		
 		driver.findElement(By.xpath("//*[@id='bookingdetails']/div[5]/div[2]/div[2]/div[2]/input")).sendKeys("AX85G9");
 		
-		// for guest 1
-		driver.findElement(By.xpath("//*[@id='bookingdetails']/div[7]/div[2]/div/div[1]/div[1]/input")).sendKeys("Sazzad");
-		driver.findElement(By.xpath("//*[@id='bookingdetails']/div[7]/div[2]/div/div[1]/div[2]/input")).sendKeys("AR256315");
-		driver.findElement(By.xpath("//*[@id='bookingdetails']/div[7]/div[2]/div/div[1]/div[3]/input")).sendKeys("23");
-		
-		// for guest 2
-		driver.findElement(By.xpath("//*[@id='bookingdetails']/div[7]/div[2]/div/div[2]/div[1]/input")).sendKeys("Hossain");
-		driver.findElement(By.xpath("//*[@id='bookingdetails']/div[7]/div[2]/div/div[2]/div[2]/input")).sendKeys("CX123543");
-		driver.findElement(By.xpath("//*[@id='bookingdetails']/div[7]/div[2]/div/div[2]/div[3]/input")).sendKeys("25");
+		fillGuestDetails();
 		
 		WebElement confirmBookingBtn = driver.findElement(By.xpath("//*[@id='body-section']/div[1]/div/div/div/div[1]/div[2]/div[4]/button"));
 		scrollUntilFindElement(confirmBookingBtn);
@@ -265,6 +252,27 @@ public class TourTest {
 		Assert.assertEquals(passport1, "AR256315");
 		Assert.assertEquals(passport2, "CX123543");
 	} 
+	
+	public void fillGuestDetails() {
+		// for guest 1
+		driver.findElement(By.xpath("//*[@id='bookingdetails']/div[7]/div[2]/div/div[1]/div[1]/input")).sendKeys("Sazzad");
+		driver.findElement(By.xpath("//*[@id='bookingdetails']/div[7]/div[2]/div/div[1]/div[2]/input")).sendKeys("AR256315");
+		driver.findElement(By.xpath("//*[@id='bookingdetails']/div[7]/div[2]/div/div[1]/div[3]/input")).sendKeys("23");
+				
+		// for guest 2
+		driver.findElement(By.xpath("//*[@id='bookingdetails']/div[7]/div[2]/div/div[2]/div[1]/input")).sendKeys("Hossain");
+		driver.findElement(By.xpath("//*[@id='bookingdetails']/div[7]/div[2]/div/div[2]/div[2]/input")).sendKeys("CX123543");
+		driver.findElement(By.xpath("//*[@id='bookingdetails']/div[7]/div[2]/div/div[2]/div[3]/input")).sendKeys("25");
+	}
+	
+	public void fillGuestBookingInformation() {
+		driver.findElement(By.xpath("//*[@id='guestform']/div[1]/div[2]/input")).sendKeys("Sazzad");
+		driver.findElement(By.xpath("//*[@id='guestform']/div[1]/div[3]/input")).sendKeys("Hossain");
+		driver.findElement(By.xpath("//*[@id='guestform']/div[2]/div[2]/input")).sendKeys("sazzad.hossian09@northsouth.edu");
+		driver.findElement(By.xpath("//*[@id='guestform']/div[2]/div[3]/input")).sendKeys("sazzad.hossian09@northsouth.edu");
+		driver.findElement(By.xpath("//*[@id='guestform']/div[3]/div[2]/input")).sendKeys("01613645555");
+		driver.findElement(By.xpath("//*[@id='guestform']/div[4]/div[2]/input")).sendKeys("Dhaka");
+	}
 	
 	@AfterClass
 	public void TearDown() throws InterruptedException {
