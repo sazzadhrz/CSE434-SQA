@@ -1,98 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="2" passed="1">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="49666" started-at="2019-08-31T11:28:37Z" finished-at="2019-08-31T11:29:26Z">
+  <suite name="Default suite" duration-ms="58533" started-at="2019-08-31T11:37:01Z" finished-at="2019-08-31T11:37:59Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="49666" started-at="2019-08-31T11:28:37Z" finished-at="2019-08-31T11:29:26Z">
+    <test name="Default test" duration-ms="58533" started-at="2019-08-31T11:37:01Z" finished-at="2019-08-31T11:37:59Z">
       <class name="application.CarBookingTest">
-        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:application.CarBookingTest@36d4b5c]" name="invokeBrowser" is-config="true" duration-ms="22585" started-at="2019-08-31T17:28:37Z" finished-at="2019-08-31T17:28:59Z">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:application.CarBookingTest@36d4b5c]" name="invokeBrowser" is-config="true" duration-ms="22897" started-at="2019-08-31T17:37:01Z" finished-at="2019-08-31T17:37:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invokeBrowser -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:application.CarBookingTest@36d4b5c]" name="setup" is-config="true" duration-ms="6" started-at="2019-08-31T17:28:59Z" finished-at="2019-08-31T17:28:59Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.CarBookingTest@36d4b5c]" name="setup" is-config="true" duration-ms="11" started-at="2019-08-31T17:37:24Z" finished-at="2019-08-31T17:37:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="searchCarTest()[pri:0, instance:application.CarBookingTest@36d4b5c]" name="searchCarTest" duration-ms="5039" started-at="2019-08-31T17:28:59Z" finished-at="2019-08-31T17:29:04Z">
+        <test-method status="PASS" signature="searchCarTest()[pri:0, instance:application.CarBookingTest@36d4b5c]" name="searchCarTest" duration-ms="4994" started-at="2019-08-31T17:37:24Z" finished-at="2019-08-31T17:37:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchCarTest -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:application.CarBookingTest@36d4b5c]" name="setup" is-config="true" duration-ms="13" started-at="2019-08-31T17:29:05Z" finished-at="2019-08-31T17:29:05Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.CarBookingTest@36d4b5c]" name="setup" is-config="true" duration-ms="8" started-at="2019-08-31T17:37:29Z" finished-at="2019-08-31T17:37:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="bookCarwithoutFirstNameTest()[pri:2, instance:application.CarBookingTest@36d4b5c]" name="bookCarwithoutFirstNameTest" duration-ms="11718" started-at="2019-08-31T17:29:05Z" finished-at="2019-08-31T17:29:16Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='body-section']/div[3]/div[2]/div[2]/div/form/div[4]/button"}
-  (Session info: chrome=76.0.3809.132)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'DESKTOP-2NB5M8O', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51541}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 0d05dbd1d5a4b9fb5b2c1b79a250e6ec
-*** Element info: {Using=xpath, value=//*[@id='body-section']/div[3]/div[2]/div[2]/div/form/div[4]/button}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='body-section']/div[3]/div[2]/div[2]/div/form/div[4]/button"}
-  (Session info: chrome=76.0.3809.132)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'DESKTOP-2NB5M8O', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51541}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 0d05dbd1d5a4b9fb5b2c1b79a250e6ec
-*** Element info: {Using=xpath, value=//*[@id='body-section']/div[3]/div[2]/div[2]/div/form/div[4]/button}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at application.CarBookingTest.bookCarwithoutFirstNameTest(CarBookingTest.java:69)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:746)
-	at org.testng.TestRunner.run(TestRunner.java:600)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
-	at org.testng.TestNG.runSuites(TestNG.java:1104)
-	at org.testng.TestNG.run(TestNG.java:1076)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method status="PASS" signature="selectCar()[pri:1, instance:application.CarBookingTest@36d4b5c]" name="selectCar" duration-ms="8481" started-at="2019-08-31T17:37:29Z" finished-at="2019-08-31T17:37:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCar -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.CarBookingTest@36d4b5c]" name="setup" is-config="true" duration-ms="11" started-at="2019-08-31T17:37:37Z" finished-at="2019-08-31T17:37:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="bookCarwithoutFirstNameTest()[pri:2, instance:application.CarBookingTest@36d4b5c]" name="bookCarwithoutFirstNameTest" duration-ms="6762" started-at="2019-08-31T17:37:37Z" finished-at="2019-08-31T17:37:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bookCarwithoutFirstNameTest -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:application.CarBookingTest@36d4b5c]" name="TearDown" is-config="true" duration-ms="10255" started-at="2019-08-31T17:29:16Z" finished-at="2019-08-31T17:29:26Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.CarBookingTest@36d4b5c]" name="setup" is-config="true" duration-ms="7" started-at="2019-08-31T17:37:44Z" finished-at="2019-08-31T17:37:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="bookTourwithoutLasttNameTest()[pri:3, instance:application.CarBookingTest@36d4b5c]" name="bookTourwithoutLasttNameTest" duration-ms="5062" started-at="2019-08-31T17:37:44Z" finished-at="2019-08-31T17:37:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookTourwithoutLasttNameTest -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:application.CarBookingTest@36d4b5c]" name="TearDown" is-config="true" duration-ms="10234" started-at="2019-08-31T17:37:49Z" finished-at="2019-08-31T17:37:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->

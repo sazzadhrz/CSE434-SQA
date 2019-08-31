@@ -121,6 +121,29 @@ public class CarBookingTest {
 		
 	}
 	
+	@Test (priority = 3)
+	public void bookCarrwithoutEmailTest() throws InterruptedException {
+		driver.navigate().refresh();
+		Thread.sleep(500);
+		
+		driver.findElement(By.xpath("//*[@id='guestform']/div[1]/div[2]/input")).sendKeys("Sazzad");
+		driver.findElement(By.xpath("//*[@id='guestform']/div[1]/div[3]/input")).sendKeys("Hossain");
+//		driver.findElement(By.xpath("//*[@id='guestform']/div[2]/div[2]/input")).sendKeys("sazzad.hossian09@northsouth.edu");
+		driver.findElement(By.xpath("//*[@id='guestform']/div[2]/div[3]/input")).sendKeys("sazzad.hossian09@northsouth.edu");
+		driver.findElement(By.xpath("//*[@id='guestform']/div[3]/div[2]/input")).sendKeys("01613645555");
+		driver.findElement(By.xpath("//*[@id='guestform']/div[4]/div[2]/input")).sendKeys("Dhaka");
+		
+		WebElement confirmBookingBtn = driver.findElement(By.xpath("//*[@id='body-section']/div[1]/div/div/div/div[1]/div[2]/div[4]/button"));
+		scrollUntilFindElement(confirmBookingBtn);
+		confirmBookingBtn.click();
+
+		js.executeScript("scroll(0, 00);");
+		
+		String warning = driver.findElement(By.xpath("//*[@id='body-section']/div[1]/div/div/div/div[1]/div[2]/div[1]/div/p[1]")).getText();
+		Assert.assertEquals(warning, "Email is required");
+		
+	}
+	
 	@AfterClass
 	public void TearDown() throws InterruptedException {
 		Thread.sleep(10000);
