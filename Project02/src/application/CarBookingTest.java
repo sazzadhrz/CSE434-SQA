@@ -8,6 +8,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -38,7 +39,7 @@ public class CarBookingTest {
 	
 	@Test
 	public void searchCarTest() throws InterruptedException {
-		WebElement pickUp = driver.findElement(By.xpath("//*[@id='s2id_carlocations']/a/span[1]"));
+		WebElement pickUp = driver.findElement(By.xpath("//*[@id='s2id_carlocations']/a"));
 		
 		System.out.println(pickUp.getText());
 		pickUp.click();
@@ -47,18 +48,24 @@ public class CarBookingTest {
 		Thread.sleep(1000);
 		pickUp.sendKeys(Keys.ENTER);
 
-	/*	WebElement pickupDate = driver.findElement(By.xpath("//*[@id='departcar']"));
+		WebElement pickupDate = driver.findElement(By.xpath("//*[@id='departcar']"));
 		pickupDate.clear();
 		pickupDate.click();
 		pickupDate.sendKeys("04/09/2019");
 //		pickupDate.sendKeys(Keys.ENTER);
 		
-		WebElement dropoffDate = driver.findElement(By.xpath("//*[@id='departcar']"));
+		WebElement dropoffDate = driver.findElement(By.xpath("//*[@id='returncar']"));
 		dropoffDate.clear();
 		dropoffDate.click();
 		dropoffDate.sendKeys("07/09/2019");
-		dropoffDate.sendKeys(Keys.ENTER);  */
+		dropoffDate.sendKeys(Keys.ENTER);  
 
+	}
+	
+	@AfterClass
+	public void TearDown() throws InterruptedException {
+		Thread.sleep(10000);
+		driver.close();
 	}
 
 }
