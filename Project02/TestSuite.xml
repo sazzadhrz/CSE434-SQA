@@ -28,4 +28,9 @@
 		</classes>
 	</test>
 
+	<test name="Car Booking Test">
+		<classes>
+			<class name="application.CarBookingTest" />
+		</classes>
+	</test>
 </suite>
