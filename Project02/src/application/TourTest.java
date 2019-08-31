@@ -241,11 +241,14 @@ public class TourTest {
 		
 		Thread.sleep(1500);
 		
+		
 		String invoiceUsername = driver.findElement(By.xpath("//*[@id='invoiceTable']/tbody/tr[2]/td/div[2]/table/tbody/tr/td/div[2]")).getText();		
 		String invoiceUserAdress = driver.findElement(By.xpath("//*[@id='invoiceTable']/tbody/tr[2]/td/div[2]/table/tbody/tr/td/div[3]")).getText();	
 		String invoiceUserPhone = driver.findElement(By.xpath("//*[@id='invoiceTable']/tbody/tr[2]/td/div[2]/table/tbody/tr/td/div[4]")).getText();	
 		String passport1 = driver.findElement(By.xpath("//*[@id='invoiceTable']/tbody/tr[4]/td/table/tbody/tr[2]/td/table[2]/tbody/tr[1]/td[2]")).getText();
 		String passport2 = driver.findElement(By.xpath("//*[@id='invoiceTable']/tbody/tr[4]/td/table/tbody/tr[2]/td/table[2]/tbody/tr[2]/td[2]")).getText();	
+		
+		scrollUntilFindElement(driver.findElement(By.xpath("//*[@id='invoiceTable']/tbody/tr[1]/td")));
 		
 		Assert.assertEquals(invoiceUsername, "SAZZAD HOSSAIN");
 		Assert.assertEquals(invoiceUserAdress, "DHAKA");
