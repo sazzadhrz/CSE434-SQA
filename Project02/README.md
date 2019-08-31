@@ -20,7 +20,7 @@
 
 **ID:** 1611235042
 
-**Faculty:** Shaikh Shawon Arefin Shimon(SAS3)
+**Faculty:** Shaikh Shawon Arefin Shimon (SAS3)
 
 **Section:** 01
 
