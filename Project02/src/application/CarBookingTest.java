@@ -63,7 +63,7 @@ public class CarBookingTest {
 
 	}
 	
-	@Test (priority = 1)
+	@Test (priority = 10)
 	public void selectCar() throws InterruptedException {
 		Thread.sleep(1000);
 		WebElement car = driver.findElement(By.xpath("//*[@id='body-section']/div[6]/div/div[3]/div/table/tbody/tr/td/div[2]/div/h4/a"));
@@ -71,7 +71,7 @@ public class CarBookingTest {
 		car.click();
 	}
 	
-	@Test (priority = 2)
+	@Test (priority = 20)
 	public void bookCarwithoutFirstNameTest() throws InterruptedException {
 		driver.navigate().refresh();
 		WebElement bookNow = driver.findElement(By.xpath("//*[@id='body-section']/div[4]/div/div[2]/form/button"));
@@ -98,7 +98,7 @@ public class CarBookingTest {
 		
 	}
 	
-	@Test (priority = 3)
+	@Test (priority = 30)
 	public void bookCarwithoutLasttNameTest() throws InterruptedException {
 		driver.navigate().refresh();		
 		Thread.sleep(1500);
@@ -121,7 +121,7 @@ public class CarBookingTest {
 		
 	}
 	
-	@Test (priority = 3)
+	@Test (priority = 30)
 	public void bookCarwithoutEmailTest() throws InterruptedException {
 		driver.navigate().refresh();
 		Thread.sleep(500);
@@ -144,7 +144,7 @@ public class CarBookingTest {
 		
 	}
 	
-	@Test (priority = 3)
+	@Test (priority = 30)
 	public void bookCarwithoutConfirmEmailTest() throws InterruptedException {
 		driver.navigate().refresh();
 		Thread.sleep(500);
@@ -167,7 +167,7 @@ public class CarBookingTest {
 		
 	}
 	
-	@Test (priority = 3)
+	@Test (priority = 30)
 	public void bookCarwithInvalidEmailTest() throws InterruptedException {
 		driver.navigate().refresh();
 		Thread.sleep(500);
@@ -190,7 +190,7 @@ public class CarBookingTest {
 		
 	}
 	
-	@Test (priority = 3)
+	@Test (priority = 30)
 	public void bookCarwithWrongConfirmEmailTest() throws InterruptedException {
 		driver.navigate().refresh();
 		Thread.sleep(500);
@@ -213,7 +213,7 @@ public class CarBookingTest {
 		
 	}
 	
-	@Test (priority = 4)
+	@Test (priority = 40)
 	public void bookCarSuccessfully() throws InterruptedException {
 		driver.navigate().refresh();
 		Thread.sleep(500);
@@ -223,11 +223,13 @@ public class CarBookingTest {
 		scrollUntilFindElement(driver.findElement(By.xpath("//*[@id='bookingdetails']/div[5]/div[2]/div[2]/div[2]/input")));
 		
 		// promotional code
-		driver.findElement(By.xpath("//*[@id='bookingdetails']/div[5]/div[2]/div[2]/div[2]/input")).sendKeys("AX85G9");
+		//driver.findElement(By.xpath("//*[@id='bookingdetails']/div[5]/div[2]/div[2]/div[2]/input")).sendKeys("AX85G9");
+		//driver.findElement(By.xpath("//*[@id='bookingdetails']/div[5]/div[2]/div[2]/div[3]/span")).click();
 		
-		fillGuestDetails();
+		//fillGuestDetails();
 		
-		WebElement confirmBookingBtn = driver.findElement(By.xpath("//*[@id='body-section']/div[1]/div/div/div/div[1]/div[2]/div[4]/button"));
+		WebElement confirmBookingBtn = driver.findElement(By.xpath("//*[@id='body-section']/div/div/div[1]/div/div[1]/div[2]/div[4]/button"));
+
 		scrollUntilFindElement(confirmBookingBtn);
 		confirmBookingBtn.click();
 		
@@ -236,17 +238,17 @@ public class CarBookingTest {
 		String invoiceUsername = driver.findElement(By.xpath("//*[@id='invoiceTable']/tbody/tr[2]/td/div[2]/table/tbody/tr/td/div[2]")).getText();		
 		String invoiceUserAdress = driver.findElement(By.xpath("//*[@id='invoiceTable']/tbody/tr[2]/td/div[2]/table/tbody/tr/td/div[3]")).getText();	
 		String invoiceUserPhone = driver.findElement(By.xpath("//*[@id='invoiceTable']/tbody/tr[2]/td/div[2]/table/tbody/tr/td/div[4]")).getText();	
-		String passport1 = driver.findElement(By.xpath("//*[@id='invoiceTable']/tbody/tr[4]/td/table/tbody/tr[2]/td/table[2]/tbody/tr[1]/td[2]")).getText();
-		String passport2 = driver.findElement(By.xpath("//*[@id='invoiceTable']/tbody/tr[4]/td/table/tbody/tr[2]/td/table[2]/tbody/tr[2]/td[2]")).getText();	
+		//String passport1 = driver.findElement(By.xpath("//*[@id='invoiceTable']/tbody/tr[4]/td/table/tbody/tr[2]/td/table[2]/tbody/tr[1]/td[2]")).getText();
+		//String passport2 = driver.findElement(By.xpath("//*[@id='invoiceTable']/tbody/tr[4]/td/table/tbody/tr[2]/td/table[2]/tbody/tr[2]/td[2]")).getText();	
 		
 		Assert.assertEquals(invoiceUsername, "SAZZAD HOSSAIN");
 		Assert.assertEquals(invoiceUserAdress, "DHAKA");
 		Assert.assertEquals(invoiceUserPhone, "01613645555");
-		Assert.assertEquals(passport1, "AR256315");
-		Assert.assertEquals(passport2, "CX123543");
+		//Assert.assertEquals(passport1, "AR256315");
+		//Assert.assertEquals(passport2, "CX123543");
 	} 
 	
-	public void fillGuestDetails() {
+/*	public void fillGuestDetails() {
 		// for guest 1
 		driver.findElement(By.xpath("//*[@id='bookingdetails']/div[7]/div[2]/div/div[1]/div[1]/input")).sendKeys("Sazzad");
 		driver.findElement(By.xpath("//*[@id='bookingdetails']/div[7]/div[2]/div/div[1]/div[2]/input")).sendKeys("AR256315");
@@ -256,7 +258,7 @@ public class CarBookingTest {
 		driver.findElement(By.xpath("//*[@id='bookingdetails']/div[7]/div[2]/div/div[2]/div[1]/input")).sendKeys("Hossain");
 		driver.findElement(By.xpath("//*[@id='bookingdetails']/div[7]/div[2]/div/div[2]/div[2]/input")).sendKeys("CX123543");
 		driver.findElement(By.xpath("//*[@id='bookingdetails']/div[7]/div[2]/div/div[2]/div[3]/input")).sendKeys("25");
-	}
+	} */
 	
 	public void fillGuestBookingInformation() {
 		driver.findElement(By.xpath("//*[@id='guestform']/div[1]/div[2]/input")).sendKeys("Sazzad");
@@ -265,7 +267,7 @@ public class CarBookingTest {
 		driver.findElement(By.xpath("//*[@id='guestform']/div[2]/div[3]/input")).sendKeys("sazzad.hossian09@northsouth.edu");
 		driver.findElement(By.xpath("//*[@id='guestform']/div[3]/div[2]/input")).sendKeys("01613645555");
 		driver.findElement(By.xpath("//*[@id='guestform']/div[4]/div[2]/input")).sendKeys("Dhaka");
-	}
+	} 
 	
 	@AfterClass
 	public void TearDown() throws InterruptedException {

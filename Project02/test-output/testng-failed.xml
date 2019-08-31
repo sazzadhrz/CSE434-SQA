@@ -8,7 +8,7 @@
           <include name="setup"/>
           <include name="invokeBrowser"/>
           <include name="TearDown"/>
-          <include name="bookCarwithoutFirstNameTest"/>
+          <include name="bookCarSuccessfully"/>
         </methods>
       </class> <!-- application.CarBookingTest -->
     </classes>

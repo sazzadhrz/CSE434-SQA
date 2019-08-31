@@ -1,49 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" total="9" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="58533" started-at="2019-08-31T11:37:01Z" finished-at="2019-08-31T11:37:59Z">
+  <suite name="Default suite" duration-ms="79659" started-at="2019-08-31T12:21:18Z" finished-at="2019-08-31T12:22:38Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="58533" started-at="2019-08-31T11:37:01Z" finished-at="2019-08-31T11:37:59Z">
+    <test name="Default test" duration-ms="79659" started-at="2019-08-31T12:21:18Z" finished-at="2019-08-31T12:22:38Z">
       <class name="application.CarBookingTest">
-        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:application.CarBookingTest@36d4b5c]" name="invokeBrowser" is-config="true" duration-ms="22897" started-at="2019-08-31T17:37:01Z" finished-at="2019-08-31T17:37:24Z">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:application.CarBookingTest@6d00a15d]" name="invokeBrowser" is-config="true" duration-ms="23103" started-at="2019-08-31T18:21:18Z" finished-at="2019-08-31T18:21:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invokeBrowser -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:application.CarBookingTest@36d4b5c]" name="setup" is-config="true" duration-ms="11" started-at="2019-08-31T17:37:24Z" finished-at="2019-08-31T17:37:24Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.CarBookingTest@6d00a15d]" name="setup" is-config="true" duration-ms="8" started-at="2019-08-31T18:21:41Z" finished-at="2019-08-31T18:21:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="searchCarTest()[pri:0, instance:application.CarBookingTest@36d4b5c]" name="searchCarTest" duration-ms="4994" started-at="2019-08-31T17:37:24Z" finished-at="2019-08-31T17:37:29Z">
+        <test-method status="PASS" signature="searchCarTest()[pri:0, instance:application.CarBookingTest@6d00a15d]" name="searchCarTest" duration-ms="5240" started-at="2019-08-31T18:21:41Z" finished-at="2019-08-31T18:21:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchCarTest -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:application.CarBookingTest@36d4b5c]" name="setup" is-config="true" duration-ms="8" started-at="2019-08-31T17:37:29Z" finished-at="2019-08-31T17:37:29Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.CarBookingTest@6d00a15d]" name="setup" is-config="true" duration-ms="7" started-at="2019-08-31T18:21:47Z" finished-at="2019-08-31T18:21:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="selectCar()[pri:1, instance:application.CarBookingTest@36d4b5c]" name="selectCar" duration-ms="8481" started-at="2019-08-31T17:37:29Z" finished-at="2019-08-31T17:37:37Z">
+        <test-method status="PASS" signature="selectCar()[pri:10, instance:application.CarBookingTest@6d00a15d]" name="selectCar" duration-ms="6843" started-at="2019-08-31T18:21:47Z" finished-at="2019-08-31T18:21:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectCar -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:application.CarBookingTest@36d4b5c]" name="setup" is-config="true" duration-ms="11" started-at="2019-08-31T17:37:37Z" finished-at="2019-08-31T17:37:37Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.CarBookingTest@6d00a15d]" name="setup" is-config="true" duration-ms="7" started-at="2019-08-31T18:21:53Z" finished-at="2019-08-31T18:21:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="bookCarwithoutFirstNameTest()[pri:2, instance:application.CarBookingTest@36d4b5c]" name="bookCarwithoutFirstNameTest" duration-ms="6762" started-at="2019-08-31T17:37:37Z" finished-at="2019-08-31T17:37:44Z">
+        <test-method status="PASS" signature="bookCarwithoutFirstNameTest()[pri:20, instance:application.CarBookingTest@6d00a15d]" name="bookCarwithoutFirstNameTest" duration-ms="6959" started-at="2019-08-31T18:21:53Z" finished-at="2019-08-31T18:22:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bookCarwithoutFirstNameTest -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:application.CarBookingTest@36d4b5c]" name="setup" is-config="true" duration-ms="7" started-at="2019-08-31T17:37:44Z" finished-at="2019-08-31T17:37:44Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.CarBookingTest@6d00a15d]" name="setup" is-config="true" duration-ms="5" started-at="2019-08-31T18:22:00Z" finished-at="2019-08-31T18:22:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="bookTourwithoutLasttNameTest()[pri:3, instance:application.CarBookingTest@36d4b5c]" name="bookTourwithoutLasttNameTest" duration-ms="5062" started-at="2019-08-31T17:37:44Z" finished-at="2019-08-31T17:37:49Z">
+        <test-method status="PASS" signature="bookCarwithInvalidEmailTest()[pri:30, instance:application.CarBookingTest@6d00a15d]" name="bookCarwithInvalidEmailTest" duration-ms="3934" started-at="2019-08-31T18:22:00Z" finished-at="2019-08-31T18:22:04Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- bookTourwithoutLasttNameTest -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:application.CarBookingTest@36d4b5c]" name="TearDown" is-config="true" duration-ms="10234" started-at="2019-08-31T17:37:49Z" finished-at="2019-08-31T17:37:59Z">
+        </test-method> <!-- bookCarwithInvalidEmailTest -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.CarBookingTest@6d00a15d]" name="setup" is-config="true" duration-ms="5" started-at="2019-08-31T18:22:04Z" finished-at="2019-08-31T18:22:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="bookCarwithWrongConfirmEmailTest()[pri:30, instance:application.CarBookingTest@6d00a15d]" name="bookCarwithWrongConfirmEmailTest" duration-ms="3577" started-at="2019-08-31T18:22:04Z" finished-at="2019-08-31T18:22:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookCarwithWrongConfirmEmailTest -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.CarBookingTest@6d00a15d]" name="setup" is-config="true" duration-ms="4" started-at="2019-08-31T18:22:08Z" finished-at="2019-08-31T18:22:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="bookCarwithoutConfirmEmailTest()[pri:30, instance:application.CarBookingTest@6d00a15d]" name="bookCarwithoutConfirmEmailTest" duration-ms="3622" started-at="2019-08-31T18:22:08Z" finished-at="2019-08-31T18:22:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookCarwithoutConfirmEmailTest -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.CarBookingTest@6d00a15d]" name="setup" is-config="true" duration-ms="3" started-at="2019-08-31T18:22:12Z" finished-at="2019-08-31T18:22:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="bookCarwithoutEmailTest()[pri:30, instance:application.CarBookingTest@6d00a15d]" name="bookCarwithoutEmailTest" duration-ms="3606" started-at="2019-08-31T18:22:12Z" finished-at="2019-08-31T18:22:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookCarwithoutEmailTest -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.CarBookingTest@6d00a15d]" name="setup" is-config="true" duration-ms="8" started-at="2019-08-31T18:22:15Z" finished-at="2019-08-31T18:22:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="bookCarwithoutLasttNameTest()[pri:30, instance:application.CarBookingTest@6d00a15d]" name="bookCarwithoutLasttNameTest" duration-ms="4724" started-at="2019-08-31T18:22:15Z" finished-at="2019-08-31T18:22:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookCarwithoutLasttNameTest -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.CarBookingTest@6d00a15d]" name="setup" is-config="true" duration-ms="5" started-at="2019-08-31T18:22:20Z" finished-at="2019-08-31T18:22:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="bookCarSuccessfully()[pri:40, instance:application.CarBookingTest@6d00a15d]" name="bookCarSuccessfully" duration-ms="7640" started-at="2019-08-31T18:22:20Z" finished-at="2019-08-31T18:22:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookCarSuccessfully -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:application.CarBookingTest@6d00a15d]" name="TearDown" is-config="true" duration-ms="10291" started-at="2019-08-31T18:22:28Z" finished-at="2019-08-31T18:22:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
