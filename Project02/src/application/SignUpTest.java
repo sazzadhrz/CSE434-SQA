@@ -221,7 +221,8 @@ public class SignUpTest {
 	}
 	
 	@AfterClass
-	public void TearDown() {
+	public void TearDown() throws InterruptedException {
+		Thread.sleep(2000);
 		driver.close();
 	}
 

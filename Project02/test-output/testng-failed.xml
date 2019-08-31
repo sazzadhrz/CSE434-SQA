@@ -1,17 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [PHP Travels Suite]" parallel="tests">
+  <test name="Sign In(failed)" parallel="tests">
     <classes>
+      <class name="application.TourTest">
+        <methods>
+          <include name="TearDown"/>
+          <include name="invokeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- application.TourTest -->
+      <class name="application.SignInTest">
+        <methods>
+          <include name="TearDown"/>
+          <include name="setup"/>
+          <include name="invalidEmailTest"/>
+          <include name="refreshAfterTest"/>
+          <include name="invokeBrowser"/>
+          <include name="validTest"/>
+        </methods>
+      </class> <!-- application.SignInTest -->
+      <class name="application.HotelBookingTest">
+        <methods>
+          <include name="setup"/>
+          <include name="invokeBrowser"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- application.HotelBookingTest -->
       <class name="application.SignUpTest">
         <methods>
           <include name="TearDown"/>
-          <include name="createAccountSuccessTest"/>
           <include name="setup"/>
           <include name="refreshAfterTest"/>
           <include name="invokeBrowser"/>
         </methods>
       </class> <!-- application.SignUpTest -->
+      <class name="application.CarBookingTest">
+        <methods>
+          <include name="setup"/>
+          <include name="invokeBrowser"/>
+          <include name="TearDown"/>
+        </methods>
+      </class> <!-- application.CarBookingTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Sign In(failed) -->
+</suite> <!-- Failed suite [PHP Travels Suite] -->

@@ -1,182 +1,393 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="10" passed="9">
+<testng-results skipped="0" failed="0" total="34" passed="34">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="43692" started-at="2019-08-31T12:49:17Z" finished-at="2019-08-31T12:50:01Z">
+  <suite name="PHP Travels Suite" duration-ms="277353" started-at="2019-08-31T12:59:54Z" finished-at="2019-08-31T13:04:31Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="43692" started-at="2019-08-31T12:49:17Z" finished-at="2019-08-31T12:50:01Z">
+    <test name="Sign Up" duration-ms="35656" started-at="2019-08-31T12:59:54Z" finished-at="2019-08-31T13:00:30Z">
       <class name="application.SignUpTest">
-        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:application.SignUpTest@643b1d11]" name="invokeBrowser" is-config="true" duration-ms="15801" started-at="2019-08-31T18:49:17Z" finished-at="2019-08-31T18:49:33Z">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:application.SignUpTest@643b1d11]" name="invokeBrowser" is-config="true" duration-ms="15533" started-at="2019-08-31T18:59:54Z" finished-at="2019-08-31T19:00:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invokeBrowser -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:application.SignUpTest@643b1d11]" name="setup" is-config="true" duration-ms="408" started-at="2019-08-31T18:49:33Z" finished-at="2019-08-31T18:49:34Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.SignUpTest@643b1d11]" name="setup" is-config="true" duration-ms="358" started-at="2019-08-31T19:00:10Z" finished-at="2019-08-31T19:00:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="invalidEmailTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="invalidEmailTest" duration-ms="877" started-at="2019-08-31T18:49:34Z" finished-at="2019-08-31T18:49:35Z">
+        <test-method status="PASS" signature="invalidEmailTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="invalidEmailTest" duration-ms="918" started-at="2019-08-31T19:00:10Z" finished-at="2019-08-31T19:00:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidEmailTest -->
-        <test-method status="PASS" signature="refreshAfterTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="refreshAfterTest" is-config="true" duration-ms="851" started-at="2019-08-31T18:49:35Z" finished-at="2019-08-31T18:49:35Z">
+        <test-method status="PASS" signature="refreshAfterTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="refreshAfterTest" is-config="true" duration-ms="831" started-at="2019-08-31T19:00:11Z" finished-at="2019-08-31T19:00:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- refreshAfterTest -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:application.SignUpTest@643b1d11]" name="setup" is-config="true" duration-ms="375" started-at="2019-08-31T18:49:35Z" finished-at="2019-08-31T18:49:36Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.SignUpTest@643b1d11]" name="setup" is-config="true" duration-ms="349" started-at="2019-08-31T19:00:12Z" finished-at="2019-08-31T19:00:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="noConfirmPasswordTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="noConfirmPasswordTest" duration-ms="888" started-at="2019-08-31T18:49:36Z" finished-at="2019-08-31T18:49:37Z">
+        <test-method status="PASS" signature="noConfirmPasswordTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="noConfirmPasswordTest" duration-ms="873" started-at="2019-08-31T19:00:12Z" finished-at="2019-08-31T19:00:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- noConfirmPasswordTest -->
-        <test-method status="PASS" signature="refreshAfterTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="refreshAfterTest" is-config="true" duration-ms="776" started-at="2019-08-31T18:49:37Z" finished-at="2019-08-31T18:49:37Z">
+        <test-method status="PASS" signature="refreshAfterTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="refreshAfterTest" is-config="true" duration-ms="851" started-at="2019-08-31T19:00:13Z" finished-at="2019-08-31T19:00:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- refreshAfterTest -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:application.SignUpTest@643b1d11]" name="setup" is-config="true" duration-ms="299" started-at="2019-08-31T18:49:37Z" finished-at="2019-08-31T18:49:38Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.SignUpTest@643b1d11]" name="setup" is-config="true" duration-ms="296" started-at="2019-08-31T19:00:14Z" finished-at="2019-08-31T19:00:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="noEmailTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="noEmailTest" duration-ms="748" started-at="2019-08-31T18:49:38Z" finished-at="2019-08-31T18:49:38Z">
+        <test-method status="PASS" signature="noEmailTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="noEmailTest" duration-ms="738" started-at="2019-08-31T19:00:14Z" finished-at="2019-08-31T19:00:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- noEmailTest -->
-        <test-method status="PASS" signature="refreshAfterTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="refreshAfterTest" is-config="true" duration-ms="759" started-at="2019-08-31T18:49:38Z" finished-at="2019-08-31T18:49:39Z">
+        <test-method status="PASS" signature="refreshAfterTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="refreshAfterTest" is-config="true" duration-ms="798" started-at="2019-08-31T19:00:15Z" finished-at="2019-08-31T19:00:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- refreshAfterTest -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:application.SignUpTest@643b1d11]" name="setup" is-config="true" duration-ms="300" started-at="2019-08-31T18:49:39Z" finished-at="2019-08-31T18:49:40Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.SignUpTest@643b1d11]" name="setup" is-config="true" duration-ms="281" started-at="2019-08-31T19:00:16Z" finished-at="2019-08-31T19:00:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="noFirstNameTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="noFirstNameTest" duration-ms="824" started-at="2019-08-31T18:49:40Z" finished-at="2019-08-31T18:49:40Z">
+        <test-method status="PASS" signature="noFirstNameTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="noFirstNameTest" duration-ms="893" started-at="2019-08-31T19:00:16Z" finished-at="2019-08-31T19:00:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- noFirstNameTest -->
-        <test-method status="PASS" signature="refreshAfterTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="refreshAfterTest" is-config="true" duration-ms="699" started-at="2019-08-31T18:49:40Z" finished-at="2019-08-31T18:49:41Z">
+        <test-method status="PASS" signature="refreshAfterTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="refreshAfterTest" is-config="true" duration-ms="777" started-at="2019-08-31T19:00:17Z" finished-at="2019-08-31T19:00:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- refreshAfterTest -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:application.SignUpTest@643b1d11]" name="setup" is-config="true" duration-ms="307" started-at="2019-08-31T18:49:41Z" finished-at="2019-08-31T18:49:41Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.SignUpTest@643b1d11]" name="setup" is-config="true" duration-ms="316" started-at="2019-08-31T19:00:18Z" finished-at="2019-08-31T19:00:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="noInputTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="noInputTest" duration-ms="321" started-at="2019-08-31T18:49:41Z" finished-at="2019-08-31T18:49:42Z">
+        <test-method status="PASS" signature="noInputTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="noInputTest" duration-ms="335" started-at="2019-08-31T19:00:18Z" finished-at="2019-08-31T19:00:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- noInputTest -->
-        <test-method status="PASS" signature="refreshAfterTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="refreshAfterTest" is-config="true" duration-ms="24" started-at="2019-08-31T18:49:42Z" finished-at="2019-08-31T18:49:42Z">
+        <test-method status="PASS" signature="refreshAfterTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="refreshAfterTest" is-config="true" duration-ms="8" started-at="2019-08-31T19:00:18Z" finished-at="2019-08-31T19:00:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- refreshAfterTest -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:application.SignUpTest@643b1d11]" name="setup" is-config="true" duration-ms="1761" started-at="2019-08-31T18:49:42Z" finished-at="2019-08-31T18:49:43Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.SignUpTest@643b1d11]" name="setup" is-config="true" duration-ms="1184" started-at="2019-08-31T19:00:18Z" finished-at="2019-08-31T19:00:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="noLastNameTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="noLastNameTest" duration-ms="2234" started-at="2019-08-31T18:49:43Z" finished-at="2019-08-31T18:49:46Z">
+        <test-method status="PASS" signature="noLastNameTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="noLastNameTest" duration-ms="880" started-at="2019-08-31T19:00:19Z" finished-at="2019-08-31T19:00:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- noLastNameTest -->
-        <test-method status="PASS" signature="refreshAfterTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="refreshAfterTest" is-config="true" duration-ms="1822" started-at="2019-08-31T18:49:46Z" finished-at="2019-08-31T18:49:48Z">
+        <test-method status="PASS" signature="refreshAfterTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="refreshAfterTest" is-config="true" duration-ms="875" started-at="2019-08-31T19:00:20Z" finished-at="2019-08-31T19:00:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- refreshAfterTest -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:application.SignUpTest@643b1d11]" name="setup" is-config="true" duration-ms="273" started-at="2019-08-31T18:49:48Z" finished-at="2019-08-31T18:49:48Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.SignUpTest@643b1d11]" name="setup" is-config="true" duration-ms="300" started-at="2019-08-31T19:00:21Z" finished-at="2019-08-31T19:00:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="noPasswordTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="noPasswordTest" duration-ms="880" started-at="2019-08-31T18:49:48Z" finished-at="2019-08-31T18:49:49Z">
+        <test-method status="PASS" signature="noPasswordTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="noPasswordTest" duration-ms="879" started-at="2019-08-31T19:00:21Z" finished-at="2019-08-31T19:00:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- noPasswordTest -->
-        <test-method status="PASS" signature="refreshAfterTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="refreshAfterTest" is-config="true" duration-ms="807" started-at="2019-08-31T18:49:49Z" finished-at="2019-08-31T18:49:50Z">
+        <test-method status="PASS" signature="refreshAfterTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="refreshAfterTest" is-config="true" duration-ms="930" started-at="2019-08-31T19:00:22Z" finished-at="2019-08-31T19:00:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- refreshAfterTest -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:application.SignUpTest@643b1d11]" name="setup" is-config="true" duration-ms="300" started-at="2019-08-31T18:49:50Z" finished-at="2019-08-31T18:49:50Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.SignUpTest@643b1d11]" name="setup" is-config="true" duration-ms="303" started-at="2019-08-31T19:00:23Z" finished-at="2019-08-31T19:00:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="passwordMismathwithConfirmPasswordTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="passwordMismathwithConfirmPasswordTest" duration-ms="941" started-at="2019-08-31T18:49:50Z" finished-at="2019-08-31T18:49:51Z">
+        <test-method status="PASS" signature="passwordMismathwithConfirmPasswordTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="passwordMismathwithConfirmPasswordTest" duration-ms="955" started-at="2019-08-31T19:00:24Z" finished-at="2019-08-31T19:00:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- passwordMismathwithConfirmPasswordTest -->
-        <test-method status="PASS" signature="refreshAfterTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="refreshAfterTest" is-config="true" duration-ms="821" started-at="2019-08-31T18:49:51Z" finished-at="2019-08-31T18:49:52Z">
+        <test-method status="PASS" signature="refreshAfterTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="refreshAfterTest" is-config="true" duration-ms="694" started-at="2019-08-31T19:00:25Z" finished-at="2019-08-31T19:00:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- refreshAfterTest -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:application.SignUpTest@643b1d11]" name="setup" is-config="true" duration-ms="281" started-at="2019-08-31T18:49:52Z" finished-at="2019-08-31T18:49:52Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.SignUpTest@643b1d11]" name="setup" is-config="true" duration-ms="301" started-at="2019-08-31T19:00:25Z" finished-at="2019-08-31T19:00:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="shortPasswordTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="shortPasswordTest" duration-ms="890" started-at="2019-08-31T18:49:52Z" finished-at="2019-08-31T18:49:53Z">
+        <test-method status="PASS" signature="shortPasswordTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="shortPasswordTest" duration-ms="905" started-at="2019-08-31T19:00:26Z" finished-at="2019-08-31T19:00:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shortPasswordTest -->
-        <test-method status="PASS" signature="refreshAfterTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="refreshAfterTest" is-config="true" duration-ms="818" started-at="2019-08-31T18:49:53Z" finished-at="2019-08-31T18:49:54Z">
+        <test-method status="PASS" signature="refreshAfterTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="refreshAfterTest" is-config="true" duration-ms="758" started-at="2019-08-31T19:00:26Z" finished-at="2019-08-31T19:00:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- refreshAfterTest -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:application.SignUpTest@643b1d11]" name="setup" is-config="true" duration-ms="298" started-at="2019-08-31T18:49:54Z" finished-at="2019-08-31T18:49:54Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.SignUpTest@643b1d11]" name="setup" is-config="true" duration-ms="329" started-at="2019-08-31T19:00:27Z" finished-at="2019-08-31T19:00:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="createAccountSuccessTest()[pri:15, instance:application.SignUpTest@643b1d11]" name="createAccountSuccessTest" duration-ms="5839" started-at="2019-08-31T18:49:54Z" finished-at="2019-08-31T18:50:00Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Hi, Sazzad Hossain] but found [[]]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Hi, Sazzad Hossain] but found [[]]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
-	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:190)
-	at org.testng.Assert.assertEquals(Assert.java:200)
-	at application.SignUpTest.createAccountSuccessTest(SignUpTest.java:214)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:746)
-	at org.testng.TestRunner.run(TestRunner.java:600)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
-	at org.testng.TestNG.runSuites(TestNG.java:1104)
-	at org.testng.TestNG.run(TestNG.java:1076)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method status="PASS" signature="createAccountSuccessTest()[pri:15, instance:application.SignUpTest@643b1d11]" name="createAccountSuccessTest" duration-ms="724" started-at="2019-08-31T19:00:28Z" finished-at="2019-08-31T19:00:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createAccountSuccessTest -->
-        <test-method status="PASS" signature="refreshAfterTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="refreshAfterTest" is-config="true" duration-ms="1333" started-at="2019-08-31T18:50:00Z" finished-at="2019-08-31T18:50:01Z">
+        <test-method status="PASS" signature="refreshAfterTest()[pri:0, instance:application.SignUpTest@643b1d11]" name="refreshAfterTest" is-config="true" duration-ms="1164" started-at="2019-08-31T19:00:28Z" finished-at="2019-08-31T19:00:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- refreshAfterTest -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:application.SignUpTest@643b1d11]" name="TearDown" is-config="true" duration-ms="88" started-at="2019-08-31T18:50:01Z" finished-at="2019-08-31T18:50:01Z">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:application.SignUpTest@643b1d11]" name="TearDown" is-config="true" duration-ms="270" started-at="2019-08-31T19:00:29Z" finished-at="2019-08-31T19:00:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
       </class> <!-- application.SignUpTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Sign Up -->
+    <test name="Sign In" duration-ms="19189" started-at="2019-08-31T13:00:30Z" finished-at="2019-08-31T13:00:49Z">
+      <class name="application.SignInTest">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:application.SignInTest@482f8f11]" name="invokeBrowser" is-config="true" duration-ms="13702" started-at="2019-08-31T19:00:30Z" finished-at="2019-08-31T19:00:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.SignInTest@482f8f11]" name="setup" is-config="true" duration-ms="897" started-at="2019-08-31T19:00:43Z" finished-at="2019-08-31T19:00:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="invalidEmailTest()[pri:0, instance:application.SignInTest@482f8f11]" name="invalidEmailTest" duration-ms="726" started-at="2019-08-31T19:00:44Z" finished-at="2019-08-31T19:00:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidEmailTest -->
+        <test-method status="PASS" signature="refreshAfterTest()[pri:0, instance:application.SignInTest@482f8f11]" name="refreshAfterTest" is-config="true" duration-ms="0" started-at="2019-08-31T19:00:45Z" finished-at="2019-08-31T19:00:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refreshAfterTest -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.SignInTest@482f8f11]" name="setup" is-config="true" duration-ms="1818" started-at="2019-08-31T19:00:45Z" finished-at="2019-08-31T19:00:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="invalidPasswordTest()[pri:0, instance:application.SignInTest@482f8f11]" name="invalidPasswordTest" duration-ms="670" started-at="2019-08-31T19:00:47Z" finished-at="2019-08-31T19:00:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidPasswordTest -->
+        <test-method status="PASS" signature="refreshAfterTest()[pri:0, instance:application.SignInTest@482f8f11]" name="refreshAfterTest" is-config="true" duration-ms="0" started-at="2019-08-31T19:00:48Z" finished-at="2019-08-31T19:00:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refreshAfterTest -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.SignInTest@482f8f11]" name="setup" is-config="true" duration-ms="858" started-at="2019-08-31T19:00:48Z" finished-at="2019-08-31T19:00:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validTest()[pri:5, instance:application.SignInTest@482f8f11]" name="validTest" duration-ms="410" started-at="2019-08-31T19:00:48Z" finished-at="2019-08-31T19:00:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validTest -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:application.SignInTest@482f8f11]" name="TearDown" is-config="true" duration-ms="101" started-at="2019-08-31T19:00:49Z" finished-at="2019-08-31T19:00:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="refreshAfterTest()[pri:0, instance:application.SignInTest@482f8f11]" name="refreshAfterTest" is-config="true" duration-ms="0" started-at="2019-08-31T19:00:49Z" finished-at="2019-08-31T19:00:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refreshAfterTest -->
+      </class> <!-- application.SignInTest -->
+    </test> <!-- Sign In -->
+    <test name="Tour Test" duration-ms="77471" started-at="2019-08-31T13:00:49Z" finished-at="2019-08-31T13:02:06Z">
+      <class name="application.TourTest">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:application.TourTest@c038203]" name="invokeBrowser" is-config="true" duration-ms="21525" started-at="2019-08-31T19:00:49Z" finished-at="2019-08-31T19:01:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.TourTest@c038203]" name="setup" is-config="true" duration-ms="4" started-at="2019-08-31T19:01:10Z" finished-at="2019-08-31T19:01:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="searchTourTest()[pri:0, instance:application.TourTest@c038203]" name="searchTourTest" duration-ms="10851" started-at="2019-08-31T19:01:11Z" finished-at="2019-08-31T19:01:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchTourTest -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.TourTest@c038203]" name="setup" is-config="true" duration-ms="4" started-at="2019-08-31T19:01:21Z" finished-at="2019-08-31T19:01:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="reviewTour()[pri:1, instance:application.TourTest@c038203]" name="reviewTour" duration-ms="1897" started-at="2019-08-31T19:01:21Z" finished-at="2019-08-31T19:01:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reviewTour -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.TourTest@c038203]" name="setup" is-config="true" duration-ms="4" started-at="2019-08-31T19:01:23Z" finished-at="2019-08-31T19:01:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="bookTourwithoutFirstNameTest()[pri:2, instance:application.TourTest@c038203]" name="bookTourwithoutFirstNameTest" duration-ms="6380" started-at="2019-08-31T19:01:23Z" finished-at="2019-08-31T19:01:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookTourwithoutFirstNameTest -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.TourTest@c038203]" name="setup" is-config="true" duration-ms="4" started-at="2019-08-31T19:01:30Z" finished-at="2019-08-31T19:01:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="bookTourwithInvalidEmailTest()[pri:3, instance:application.TourTest@c038203]" name="bookTourwithInvalidEmailTest" duration-ms="3878" started-at="2019-08-31T19:01:30Z" finished-at="2019-08-31T19:01:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookTourwithInvalidEmailTest -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.TourTest@c038203]" name="setup" is-config="true" duration-ms="3" started-at="2019-08-31T19:01:34Z" finished-at="2019-08-31T19:01:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="bookTourwithWrongConfirmEmailTest()[pri:3, instance:application.TourTest@c038203]" name="bookTourwithWrongConfirmEmailTest" duration-ms="3684" started-at="2019-08-31T19:01:34Z" finished-at="2019-08-31T19:01:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookTourwithWrongConfirmEmailTest -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.TourTest@c038203]" name="setup" is-config="true" duration-ms="3" started-at="2019-08-31T19:01:37Z" finished-at="2019-08-31T19:01:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="bookTourwithoutConfirmEmailTest()[pri:3, instance:application.TourTest@c038203]" name="bookTourwithoutConfirmEmailTest" duration-ms="3447" started-at="2019-08-31T19:01:37Z" finished-at="2019-08-31T19:01:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookTourwithoutConfirmEmailTest -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.TourTest@c038203]" name="setup" is-config="true" duration-ms="3" started-at="2019-08-31T19:01:41Z" finished-at="2019-08-31T19:01:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="bookTourwithoutEmailTest()[pri:3, instance:application.TourTest@c038203]" name="bookTourwithoutEmailTest" duration-ms="3434" started-at="2019-08-31T19:01:41Z" finished-at="2019-08-31T19:01:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookTourwithoutEmailTest -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.TourTest@c038203]" name="setup" is-config="true" duration-ms="4" started-at="2019-08-31T19:01:44Z" finished-at="2019-08-31T19:01:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="bookTourwithoutLasttNameTest()[pri:3, instance:application.TourTest@c038203]" name="bookTourwithoutLasttNameTest" duration-ms="4525" started-at="2019-08-31T19:01:44Z" finished-at="2019-08-31T19:01:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookTourwithoutLasttNameTest -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.TourTest@c038203]" name="setup" is-config="true" duration-ms="4" started-at="2019-08-31T19:01:49Z" finished-at="2019-08-31T19:01:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="bookTourSuccessfully()[pri:4, instance:application.TourTest@c038203]" name="bookTourSuccessfully" duration-ms="7658" started-at="2019-08-31T19:01:49Z" finished-at="2019-08-31T19:01:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookTourSuccessfully -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:application.TourTest@c038203]" name="TearDown" is-config="true" duration-ms="10147" started-at="2019-08-31T19:01:56Z" finished-at="2019-08-31T19:02:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- application.TourTest -->
+    </test> <!-- Tour Test -->
+    <test name="Hotel Booking Test" duration-ms="67112" started-at="2019-08-31T13:02:06Z" finished-at="2019-08-31T13:03:14Z">
+      <class name="application.HotelBookingTest">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:application.HotelBookingTest@475530b9]" name="invokeBrowser" is-config="true" duration-ms="20570" started-at="2019-08-31T19:02:06Z" finished-at="2019-08-31T19:02:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.HotelBookingTest@475530b9]" name="setup" is-config="true" duration-ms="4" started-at="2019-08-31T19:02:27Z" finished-at="2019-08-31T19:02:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="searchHotel()[pri:0, instance:application.HotelBookingTest@475530b9]" name="searchHotel" duration-ms="37416" started-at="2019-08-31T19:02:27Z" finished-at="2019-08-31T19:03:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchHotel -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.HotelBookingTest@475530b9]" name="setup" is-config="true" duration-ms="6" started-at="2019-08-31T19:03:04Z" finished-at="2019-08-31T19:03:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="selectHotel()[pri:1, instance:application.HotelBookingTest@475530b9]" name="selectHotel" duration-ms="4223" started-at="2019-08-31T19:03:04Z" finished-at="2019-08-31T19:03:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectHotel -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.HotelBookingTest@475530b9]" name="setup" is-config="true" duration-ms="7" started-at="2019-08-31T19:03:09Z" finished-at="2019-08-31T19:03:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="bookHotel()[pri:2, instance:application.HotelBookingTest@475530b9]" name="bookHotel" duration-ms="4794" started-at="2019-08-31T19:03:09Z" finished-at="2019-08-31T19:03:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookHotel -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:application.HotelBookingTest@475530b9]" name="tearDown" is-config="true" duration-ms="85" started-at="2019-08-31T19:03:14Z" finished-at="2019-08-31T19:03:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- application.HotelBookingTest -->
+    </test> <!-- Hotel Booking Test -->
+    <test name="Car Booking Test" duration-ms="77736" started-at="2019-08-31T13:03:14Z" finished-at="2019-08-31T13:04:31Z">
+      <class name="application.CarBookingTest">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:application.CarBookingTest@59fa1d9b]" name="invokeBrowser" is-config="true" duration-ms="20585" started-at="2019-08-31T19:03:14Z" finished-at="2019-08-31T19:03:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.CarBookingTest@59fa1d9b]" name="setup" is-config="true" duration-ms="4" started-at="2019-08-31T19:03:34Z" finished-at="2019-08-31T19:03:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="searchCarTest()[pri:0, instance:application.CarBookingTest@59fa1d9b]" name="searchCarTest" duration-ms="4811" started-at="2019-08-31T19:03:34Z" finished-at="2019-08-31T19:03:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchCarTest -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.CarBookingTest@59fa1d9b]" name="setup" is-config="true" duration-ms="4" started-at="2019-08-31T19:03:39Z" finished-at="2019-08-31T19:03:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="selectCar()[pri:10, instance:application.CarBookingTest@59fa1d9b]" name="selectCar" duration-ms="5920" started-at="2019-08-31T19:03:39Z" finished-at="2019-08-31T19:03:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCar -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.CarBookingTest@59fa1d9b]" name="setup" is-config="true" duration-ms="3" started-at="2019-08-31T19:03:45Z" finished-at="2019-08-31T19:03:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="bookCarwithoutFirstNameTest()[pri:20, instance:application.CarBookingTest@59fa1d9b]" name="bookCarwithoutFirstNameTest" duration-ms="7086" started-at="2019-08-31T19:03:45Z" finished-at="2019-08-31T19:03:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookCarwithoutFirstNameTest -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.CarBookingTest@59fa1d9b]" name="setup" is-config="true" duration-ms="3" started-at="2019-08-31T19:03:52Z" finished-at="2019-08-31T19:03:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="bookCarwithInvalidEmailTest()[pri:30, instance:application.CarBookingTest@59fa1d9b]" name="bookCarwithInvalidEmailTest" duration-ms="3800" started-at="2019-08-31T19:03:52Z" finished-at="2019-08-31T19:03:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookCarwithInvalidEmailTest -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.CarBookingTest@59fa1d9b]" name="setup" is-config="true" duration-ms="4" started-at="2019-08-31T19:03:56Z" finished-at="2019-08-31T19:03:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="bookCarwithWrongConfirmEmailTest()[pri:30, instance:application.CarBookingTest@59fa1d9b]" name="bookCarwithWrongConfirmEmailTest" duration-ms="4240" started-at="2019-08-31T19:03:56Z" finished-at="2019-08-31T19:04:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookCarwithWrongConfirmEmailTest -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.CarBookingTest@59fa1d9b]" name="setup" is-config="true" duration-ms="4" started-at="2019-08-31T19:04:00Z" finished-at="2019-08-31T19:04:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="bookCarwithoutConfirmEmailTest()[pri:30, instance:application.CarBookingTest@59fa1d9b]" name="bookCarwithoutConfirmEmailTest" duration-ms="3839" started-at="2019-08-31T19:04:00Z" finished-at="2019-08-31T19:04:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookCarwithoutConfirmEmailTest -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.CarBookingTest@59fa1d9b]" name="setup" is-config="true" duration-ms="4" started-at="2019-08-31T19:04:04Z" finished-at="2019-08-31T19:04:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="bookCarwithoutEmailTest()[pri:30, instance:application.CarBookingTest@59fa1d9b]" name="bookCarwithoutEmailTest" duration-ms="3898" started-at="2019-08-31T19:04:04Z" finished-at="2019-08-31T19:04:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookCarwithoutEmailTest -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.CarBookingTest@59fa1d9b]" name="setup" is-config="true" duration-ms="2" started-at="2019-08-31T19:04:08Z" finished-at="2019-08-31T19:04:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="bookCarwithoutLasttNameTest()[pri:30, instance:application.CarBookingTest@59fa1d9b]" name="bookCarwithoutLasttNameTest" duration-ms="5313" started-at="2019-08-31T19:04:08Z" finished-at="2019-08-31T19:04:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookCarwithoutLasttNameTest -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:application.CarBookingTest@59fa1d9b]" name="setup" is-config="true" duration-ms="6" started-at="2019-08-31T19:04:13Z" finished-at="2019-08-31T19:04:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="bookCarSuccessfully()[pri:40, instance:application.CarBookingTest@59fa1d9b]" name="bookCarSuccessfully" duration-ms="7984" started-at="2019-08-31T19:04:13Z" finished-at="2019-08-31T19:04:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookCarSuccessfully -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:application.CarBookingTest@59fa1d9b]" name="TearDown" is-config="true" duration-ms="10212" started-at="2019-08-31T19:04:21Z" finished-at="2019-08-31T19:04:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- application.CarBookingTest -->
+    </test> <!-- Car Booking Test -->
+  </suite> <!-- PHP Travels Suite -->
 </testng-results>
