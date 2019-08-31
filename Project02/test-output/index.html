@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-PHP_Travels_Suite">
-              <span class="suite-name border-passed">PHP Travels Suite</span>
+              <span class="suite-name border-failed">PHP Travels Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-PHP_Travels_Suite">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">4 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">12 methods,   12 passed</span>
+                    <span class="method-stats">25 methods, 2 failed,   23 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-PHP_Travels_Suite" class="hide-methods failed suite-PHP_Travels_Suite"> (hide)</a> <!-- hide-methods failed suite-PHP_Travels_Suite -->
+                      <a href="#" panel-name="suite-PHP_Travels_Suite" class="show-methods failed suite-PHP_Travels_Suite"> (show)</a> <!-- show-methods failed suite-PHP_Travels_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-PHP_Travels_Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-PHP_Travels_Suite" title="application.SignInTest" hash-for-method="invalidPasswordTest">invalidPasswordTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-PHP_Travels_Suite" title="application.SignUpTest" hash-for-method="noPhoneTest">noPhoneTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-PHP_Travels_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -142,6 +161,51 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-PHP_Travels_Suite" title="application.SignUpTest" hash-for-method="invalidEmailTest">invalidEmailTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-PHP_Travels_Suite" title="application.SignInTest" hash-for-method="invalidEmailTest">invalidEmailTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-PHP_Travels_Suite" title="application.SignUpTest" hash-for-method="noConfirmPasswordTest">noConfirmPasswordTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-PHP_Travels_Suite" title="application.SignUpTest" hash-for-method="noEmailTest">noEmailTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-PHP_Travels_Suite" title="application.SignUpTest" hash-for-method="noFirstNameTest">noFirstNameTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-PHP_Travels_Suite" title="application.SignUpTest" hash-for-method="noInputTest">noInputTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-PHP_Travels_Suite" title="application.SignUpTest" hash-for-method="noLastNameTest">noLastNameTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-PHP_Travels_Suite" title="application.SignUpTest" hash-for-method="noPasswordTest">noPasswordTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-PHP_Travels_Suite" title="application.SignUpTest" hash-for-method="passwordMismathwithConfirmPasswordTest">passwordMismathwithConfirmPasswordTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-PHP_Travels_Suite" title="application.TourTest" hash-for-method="reviewTour">reviewTour</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -160,6 +224,16 @@
                         <a href="#" class="method navigator-link" panel-name="suite-PHP_Travels_Suite" title="application.HotelBookingTest" hash-for-method="selectHotel">selectHotel</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-PHP_Travels_Suite" title="application.SignUpTest" hash-for-method="shortPasswordTest">shortPasswordTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-PHP_Travels_Suite" title="application.SignInTest" hash-for-method="validTest">validTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-PHP_Travels_Suite -->
                   </li>
                 </ul>
@@ -172,6 +246,85 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-PHP_Travels_Suite" class="panel PHP_Travels_Suite">
+          <div class="suite-PHP_Travels_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">application.SignInTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidPasswordTest">
+                  </a> <!-- invalidPasswordTest -->
+                  <span class="method-name">invalidPasswordTest</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button style=&quot;font-size: 16px;&quot; type=&quot;submit&quot; class=&quot;btn btn-action btn-lg btn-block loginbtn&quot;&gt;...&lt;/button&gt; is not clickable at point (673, 532). Other element would receive the click: &lt;a class=&quot;btn btn-default br25 btn-block form-group&quot; href=&quot;https://www.phptravels.net/register&quot;&gt;...&lt;/a&gt;
+  (Session info: chrome=76.0.3809.132)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-2NB5M8O&apos;, ip: &apos;192.168.0.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:49829}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 89a5dba355ac0e55f542796444ad9096
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at application.SignInTest.invalidPasswordTest(SignInTest.java:59)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-PHP_Travels_Suite-class-failed -->
+          <div class="suite-PHP_Travels_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">application.SignUpTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="noPhoneTest">
+                  </a> <!-- noPhoneTest -->
+                  <span class="method-name">noPhoneTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div.alert.alert-danger p&quot;}
+  (Session info: chrome=76.0.3809.132)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-2NB5M8O&apos;, ip: &apos;192.168.0.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:49789}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 73cb18382d7b0f39a8a552282919e9f6
+*** Element info: {Using=css selector, value=div.alert.alert-danger p}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at application.SignUpTest.scrollUpandGetWarningTextandAssert(SignUpTest.java:50)
+	at application.SignUpTest.noPhoneTest(SignUpTest.java:112)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-PHP_Travels_Suite-class-failed -->
           <div class="suite-PHP_Travels_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -246,6 +399,99 @@
           <div class="suite-PHP_Travels_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">application.SignInTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidEmailTest">
+                  </a> <!-- invalidEmailTest -->
+                  <span class="method-name">invalidEmailTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validTest">
+                  </a> <!-- validTest -->
+                  <span class="method-name">validTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-PHP_Travels_Suite-class-passed -->
+          <div class="suite-PHP_Travels_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">application.SignUpTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidEmailTest">
+                  </a> <!-- invalidEmailTest -->
+                  <span class="method-name">invalidEmailTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="noConfirmPasswordTest">
+                  </a> <!-- noConfirmPasswordTest -->
+                  <span class="method-name">noConfirmPasswordTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="noEmailTest">
+                  </a> <!-- noEmailTest -->
+                  <span class="method-name">noEmailTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="noFirstNameTest">
+                  </a> <!-- noFirstNameTest -->
+                  <span class="method-name">noFirstNameTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="noInputTest">
+                  </a> <!-- noInputTest -->
+                  <span class="method-name">noInputTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="noLastNameTest">
+                  </a> <!-- noLastNameTest -->
+                  <span class="method-name">noLastNameTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="noPasswordTest">
+                  </a> <!-- noPasswordTest -->
+                  <span class="method-name">noPasswordTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="passwordMismathwithConfirmPasswordTest">
+                  </a> <!-- passwordMismathwithConfirmPasswordTest -->
+                  <span class="method-name">passwordMismathwithConfirmPasswordTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shortPasswordTest">
+                  </a> <!-- shortPasswordTest -->
+                  <span class="method-name">shortPasswordTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-PHP_Travels_Suite-class-passed -->
+          <div class="suite-PHP_Travels_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">application.HotelBookingTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -282,16 +528,26 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite thread-count=&quot;1&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;PHP Travels Suite&quot; parallel=&quot;tests&quot;&gt;
-  &lt;test name=&quot;Hotel Booking Test&quot;&gt;
+  &lt;test name=&quot;Sign Up&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;application.HotelBookingTest&quot;/&gt;
+      &lt;class name=&quot;application.SignUpTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Hotel Booking Test --&gt;
+  &lt;/test&gt; &lt;!-- Sign Up --&gt;
+  &lt;test name=&quot;Sign In&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;application.SignInTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Sign In --&gt;
   &lt;test name=&quot;Tour Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;application.TourTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Tour Test --&gt;
+  &lt;test name=&quot;Hotel Booking Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;application.HotelBookingTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Hotel Booking Test --&gt;
 &lt;/suite&gt; &lt;!-- PHP Travels Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -303,10 +559,16 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Hotel Booking Test (1 class)</span>
+                <span class="test-name">Sign Up (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Sign In (1 class)</span>
               </li>
               <li>
                 <span class="test-name">Tour Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Hotel Booking Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -332,60 +594,112 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(12);
+data.addRows(25);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'searchHotel')
 data.setCell(0, 2, 'application.HotelBookingTest')
-data.setCell(0, 3, 44510);
+data.setCell(0, 3, 43105);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'searchTourTest')
 data.setCell(1, 2, 'application.TourTest')
-data.setCell(1, 3, 12133);
+data.setCell(1, 3, 11364);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'bookTourSuccessfully')
 data.setCell(2, 2, 'application.TourTest')
-data.setCell(2, 3, 9464);
+data.setCell(2, 3, 9287);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'bookTourwithoutFirstNameTest')
+data.setCell(3, 1, 'bookTourwithoutEmailTest')
 data.setCell(3, 2, 'application.TourTest')
-data.setCell(3, 3, 7324);
+data.setCell(3, 3, 9238);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'bookTourwithoutLasttNameTest')
+data.setCell(4, 1, 'bookTourwithoutFirstNameTest')
 data.setCell(4, 2, 'application.TourTest')
-data.setCell(4, 3, 5555);
+data.setCell(4, 3, 8131);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'selectHotel')
-data.setCell(5, 2, 'application.HotelBookingTest')
-data.setCell(5, 3, 5134);
+data.setCell(5, 1, 'noPhoneTest')
+data.setCell(5, 2, 'application.SignUpTest')
+data.setCell(5, 3, 5877);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'bookHotel')
-data.setCell(6, 2, 'application.HotelBookingTest')
-data.setCell(6, 3, 5086);
+data.setCell(6, 1, 'bookTourwithoutLasttNameTest')
+data.setCell(6, 2, 'application.TourTest')
+data.setCell(6, 3, 5404);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'bookTourwithoutEmailTest')
-data.setCell(7, 2, 'application.TourTest')
-data.setCell(7, 3, 4577);
+data.setCell(7, 1, 'bookHotel')
+data.setCell(7, 2, 'application.HotelBookingTest')
+data.setCell(7, 3, 5204);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'bookTourwithoutConfirmEmailTest')
 data.setCell(8, 2, 'application.TourTest')
-data.setCell(8, 3, 4480);
+data.setCell(8, 3, 5110);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'bookTourwithInvalidEmailTest')
+data.setCell(9, 1, 'bookTourwithWrongConfirmEmailTest')
 data.setCell(9, 2, 'application.TourTest')
-data.setCell(9, 3, 4388);
+data.setCell(9, 3, 5056);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'bookTourwithWrongConfirmEmailTest')
-data.setCell(10, 2, 'application.TourTest')
-data.setCell(10, 3, 3942);
+data.setCell(10, 1, 'selectHotel')
+data.setCell(10, 2, 'application.HotelBookingTest')
+data.setCell(10, 3, 4889);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'reviewTour')
+data.setCell(11, 1, 'bookTourwithInvalidEmailTest')
 data.setCell(11, 2, 'application.TourTest')
-data.setCell(11, 3, 1907);
+data.setCell(11, 3, 4661);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'reviewTour')
+data.setCell(12, 2, 'application.TourTest')
+data.setCell(12, 3, 2024);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'shortPasswordTest')
+data.setCell(13, 2, 'application.SignUpTest')
+data.setCell(13, 3, 1114);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'passwordMismathwithConfirmPasswordTest')
+data.setCell(14, 2, 'application.SignUpTest')
+data.setCell(14, 3, 1113);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'noLastNameTest')
+data.setCell(15, 2, 'application.SignUpTest')
+data.setCell(15, 3, 1098);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'noPasswordTest')
+data.setCell(16, 2, 'application.SignUpTest')
+data.setCell(16, 3, 1083);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'noConfirmPasswordTest')
+data.setCell(17, 2, 'application.SignUpTest')
+data.setCell(17, 3, 1061);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'invalidEmailTest')
+data.setCell(18, 2, 'application.SignUpTest')
+data.setCell(18, 3, 1036);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'noFirstNameTest')
+data.setCell(19, 2, 'application.SignUpTest')
+data.setCell(19, 3, 1008);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'noEmailTest')
+data.setCell(20, 2, 'application.SignUpTest')
+data.setCell(20, 3, 933);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'invalidEmailTest')
+data.setCell(21, 2, 'application.SignInTest')
+data.setCell(21, 3, 745);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'invalidPasswordTest')
+data.setCell(22, 2, 'application.SignInTest')
+data.setCell(22, 3, 492);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'validTest')
+data.setCell(23, 2, 'application.SignInTest')
+data.setCell(23, 3, 436);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'noInputTest')
+data.setCell(24, 2, 'application.SignUpTest')
+data.setCell(24, 3, 424);
 window.suiteTableData['PHP_Travels_Suite']= { tableData: data, tableDiv: 'times-div-PHP_Travels_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-PHP_Travels_Suite">
               </div> <!-- times-div-PHP_Travels_Suite -->
             </div> <!-- times-div -->
@@ -411,121 +725,299 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">application.HotelBookingTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">application.SignUpTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">invokeBrowser</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">26422 ms</span>
+                <span class="method-start">16715 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">searchHotel</span>
-                <span class="method-start">26432 ms</span>
+                <span class="method-name">invalidEmailTest</span>
+                <span class="method-start">17152 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">refreshAfterTest</span>
+                <span class="method-start">18190 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">70953 ms</span>
+                <span class="method-start">19170 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">selectHotel</span>
-                <span class="method-start">70960 ms</span>
+                <span class="method-name">noConfirmPasswordTest</span>
+                <span class="method-start">19752 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">refreshAfterTest</span>
+                <span class="method-start">20817 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">76102 ms</span>
+                <span class="method-start">21769 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">bookHotel</span>
-                <span class="method-start">76111 ms</span>
+                <span class="method-name">noEmailTest</span>
+                <span class="method-start">22332 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">refreshAfterTest</span>
+                <span class="method-start">23271 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">24183 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">noFirstNameTest</span>
+                <span class="method-start">24705 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">refreshAfterTest</span>
+                <span class="method-start">25716 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">26610 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">noInputTest</span>
+                <span class="method-start">27065 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">refreshAfterTest</span>
+                <span class="method-start">27494 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">28259 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">noLastNameTest</span>
+                <span class="method-start">28797 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">refreshAfterTest</span>
+                <span class="method-start">29902 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">30831 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">noPasswordTest</span>
+                <span class="method-start">31375 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">refreshAfterTest</span>
+                <span class="method-start">32460 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">33278 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">passwordMismathwithConfirmPasswordTest</span>
+                <span class="method-start">33761 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">refreshAfterTest</span>
+                <span class="method-start">34876 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">35755 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">shortPasswordTest</span>
+                <span class="method-start">36189 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">refreshAfterTest</span>
+                <span class="method-start">37304 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">38143 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">noPhoneTest</span>
+                <span class="method-start">38781 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">refreshAfterTest</span>
+                <span class="method-start">44676 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-class after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">81201 ms</span>
+                <span class="method-name">TearDown</span>
+                <span class="method-start">45781 ms</span>
               </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">application.SignInTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">invokeBrowser</span>
+                <span class="method-start">46038 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">61138 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">invalidEmailTest</span>
+                <span class="method-start">62145 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">refreshAfterTest</span>
+                <span class="method-start">62891 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">62892 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">invalidPasswordTest</span>
+                <span class="method-start">63898 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">refreshAfterTest</span>
+                <span class="method-start">64391 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">64391 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validTest</span>
+                <span class="method-start">65367 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">refreshAfterTest</span>
+                <span class="method-start">65804 ms</span>
+              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">application.TourTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">invokeBrowser</span>
-                <span class="method-start">81508 ms</span>
+                <span class="method-start">65955 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">104776 ms</span>
+                <span class="method-start">90957 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">searchTourTest</span>
-                <span class="method-start">104790 ms</span>
+                <span class="method-start">90972 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">116928 ms</span>
+                <span class="method-start">102338 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">reviewTour</span>
-                <span class="method-start">116935 ms</span>
+                <span class="method-start">102351 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">118844 ms</span>
+                <span class="method-start">104377 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">bookTourwithoutFirstNameTest</span>
-                <span class="method-start">118852 ms</span>
+                <span class="method-start">104384 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">126180 ms</span>
+                <span class="method-start">112519 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">bookTourwithInvalidEmailTest</span>
-                <span class="method-start">126186 ms</span>
+                <span class="method-start">112524 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">130577 ms</span>
+                <span class="method-start">117186 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">bookTourwithWrongConfirmEmailTest</span>
-                <span class="method-start">130585 ms</span>
+                <span class="method-start">117191 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">134530 ms</span>
+                <span class="method-start">122248 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">bookTourwithoutConfirmEmailTest</span>
-                <span class="method-start">134536 ms</span>
+                <span class="method-start">122257 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">139017 ms</span>
+                <span class="method-start">127367 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">bookTourwithoutEmailTest</span>
-                <span class="method-start">139021 ms</span>
+                <span class="method-start">127381 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">143600 ms</span>
+                <span class="method-start">136620 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">bookTourwithoutLasttNameTest</span>
-                <span class="method-start">143607 ms</span>
+                <span class="method-start">136622 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">149164 ms</span>
+                <span class="method-start">142027 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">bookTourSuccessfully</span>
-                <span class="method-start">149170 ms</span>
+                <span class="method-start">142032 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">158635 ms</span>
+                <span class="method-start">151319 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">application.HotelBookingTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">invokeBrowser</span>
+                <span class="method-start">161668 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">186503 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">searchHotel</span>
+                <span class="method-start">186508 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">229619 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">selectHotel</span>
+                <span class="method-start">229631 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">234521 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">bookHotel</span>
+                <span class="method-start">234528 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">239734 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

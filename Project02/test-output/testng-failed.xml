@@ -1,22 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [PHP Travels Suite]" parallel="tests">
+  <test name="Sign Up(failed)" parallel="tests">
     <classes>
       <class name="application.TourTest">
         <methods>
-          <include name="bookTourSuccessfully"/>
-          <include name="bookTourwithoutLasttNameTest"/>
-          <include name="bookTourwithWrongConfirmEmailTest"/>
-          <include name="bookTourwithoutConfirmEmailTest"/>
-          <include name="bookTourwithoutEmailTest"/>
+          <include name="TearDown"/>
           <include name="invokeBrowser"/>
-          <include name="bookTourwithoutFirstNameTest"/>
-          <include name="searchTourTest"/>
           <include name="setup"/>
-          <include name="bookTourwithInvalidEmailTest"/>
         </methods>
       </class> <!-- application.TourTest -->
+      <class name="application.SignInTest">
+        <methods>
+          <include name="setup"/>
+          <include name="refreshAfterTest"/>
+          <include name="invokeBrowser"/>
+        </methods>
+      </class> <!-- application.SignInTest -->
+      <class name="application.SignUpTest">
+        <methods>
+          <include name="TearDown"/>
+          <include name="noPhoneTest"/>
+          <include name="setup"/>
+          <include name="refreshAfterTest"/>
+          <include name="invokeBrowser"/>
+        </methods>
+      </class> <!-- application.SignUpTest -->
+      <class name="application.HotelBookingTest">
+        <methods>
+          <include name="setup"/>
+          <include name="invokeBrowser"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- application.HotelBookingTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Sign Up(failed) -->
+  <test name="Sign In(failed)" parallel="tests">
+    <classes>
+      <class name="application.TourTest">
+        <methods>
+          <include name="TearDown"/>
+          <include name="invokeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- application.TourTest -->
+      <class name="application.SignInTest">
+        <methods>
+          <include name="setup"/>
+          <include name="invalidPasswordTest"/>
+          <include name="refreshAfterTest"/>
+          <include name="invokeBrowser"/>
+        </methods>
+      </class> <!-- application.SignInTest -->
+      <class name="application.HotelBookingTest">
+        <methods>
+          <include name="setup"/>
+          <include name="invokeBrowser"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- application.HotelBookingTest -->
+      <class name="application.SignUpTest">
+        <methods>
+          <include name="TearDown"/>
+          <include name="setup"/>
+          <include name="refreshAfterTest"/>
+          <include name="invokeBrowser"/>
+        </methods>
+      </class> <!-- application.SignUpTest -->
+    </classes>
+  </test> <!-- Sign In(failed) -->
+</suite> <!-- Failed suite [PHP Travels Suite] -->

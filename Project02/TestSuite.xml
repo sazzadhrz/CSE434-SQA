@@ -12,7 +12,7 @@
 	
 	<test name="Sign In">
 		<classes>
-			<class name="application.SignIpTest" />
+			<class name="application.SignInTest" />
 		</classes>
 	</test>
 	
@@ -28,9 +28,4 @@
 		</classes>
 	</test>
 
-	<test name="Tour Test">
-		<classes>
-			<class name="application.TourTest" />
-		</classes>
-	</test>
 </suite>
