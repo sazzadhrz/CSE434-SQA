@@ -6,9 +6,9 @@
       <class name="application.CarBookingTest">
         <methods>
           <include name="setup"/>
-          <include name="searchCarTest"/>
           <include name="invokeBrowser"/>
           <include name="TearDown"/>
+          <include name="bookCarwithoutFirstNameTest"/>
         </methods>
       </class> <!-- application.CarBookingTest -->
     </classes>

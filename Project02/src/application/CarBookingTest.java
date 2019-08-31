@@ -8,6 +8,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -61,6 +62,16 @@ public class CarBookingTest {
 		dropoffDate.sendKeys(Keys.ENTER);  
 
 	}
+	
+	@Test (priority = 1)
+	public void selectCar() throws InterruptedException {
+		Thread.sleep(1000);
+		WebElement car = driver.findElement(By.xpath("//*[@id='body-section']/div[6]/div/div[3]/div/table/tbody/tr/td/div[2]/div/h4/a"));
+		System.out.println(car.getText());
+		car.click();
+	}
+	
+	
 	
 	@AfterClass
 	public void TearDown() throws InterruptedException {
