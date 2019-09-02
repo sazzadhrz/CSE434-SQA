@@ -44,7 +44,7 @@ This project is done as a part of Software Quality Assurance and Testing course.
 
 ### Test Explanation
 <p align="center">
-<img src="img/register.jpeg">
+<img src="img/register.JPG">
 </p>
 *Sign Up Test Without First Name*
 
@@ -70,30 +70,30 @@ This project is done as a part of Software Quality Assurance and Testing course.
 
 #### Sign Up Test -
 <p align="center">
-<img src="img/signup.jpeg">
+<img src="img/signup.JPG">
 </p>
 
 #### Sign In Test -
 <p align="center">
-<img src="img/signin.jpeg">
+<img src="img/signin.JPG">
 </p>
 
 #### Car Boooking Test -
 <p align="center">
-<img src="img/car.jpeg">
+<img src="img/car.JPG">
 </p>
 
 #### Hotel Booking Test -
 <p align="center">
-<img src="img/hotel.jpeg">
+<img src="img/hotel.JPG">
 </p>
 
 #### Tour Booking Test -
 <p align="center">
-<img src="img/tour.jpeg">
+<img src="img/tour.JPG">
 </p>
 
 #### Test Suite -
 <p align="center">
-<img src="img/SuiteResult.jpeg">
+<img src="img/SuiteResult.JPG">
 </p>
