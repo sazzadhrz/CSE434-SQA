@@ -43,10 +43,14 @@ This project is done as a part of Software Quality Assurance and Testing course.
 * Java
 
 ### Test Explanation
+
+The following image is a form to create a new user account. Page link [here](https://www.phptravels.net/register). Using selenium library, values have been entered into the form for every field except for the `First Name` to `Test` if it creates an account without any first name.
+ 
 <p align="center">
 <img src="img/register.JPG">
 </p>
-*Sign Up Test Without First Name*
+<p>Sign Up Test Without First Name</p>
+
 
 ##### Code Snippet:
 
