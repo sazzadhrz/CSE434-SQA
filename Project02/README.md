@@ -42,6 +42,7 @@ This project is done as a part of Software Quality Assurance and Testing course.
 #### Programming Language:
 * Java
 
+
 ### Test Explanation
 
 The following image is a form to create a new user account. Page link [here](https://www.phptravels.net/register). Using selenium library, values have been entered into the form for every field except for the `First Name` to `Test` if it creates an account without any first name.
@@ -49,7 +50,7 @@ The following image is a form to create a new user account. Page link [here](htt
 <p align="center">
 <img src="img/register.JPG">
 </p>
-<p>Sign Up Test Without First Name</p>
+<p align="center">Sign Up Test Without First Name</p>
 
 
 ##### Code Snippet:
@@ -65,8 +66,19 @@ The following image is a form to create a new user account. Page link [here](htt
 		
 		driver.findElement(By.className("signupbtn")).click();
 		
-		scrollUpandGetWarningTextandAssert("The First name field is required.");
+		scrollUpandGetWarningTextandAssert("The First name field is required."); //parameter = expected error message
 
+	}
+````
+
+```` java
+	public void scrollUpandGetWarningTextandAssert(String expectedWarning) {
+		js.executeScript("scroll(0, -200);");			//scroll up to check the error message	
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+
+		String warning = driver.findElement(By.cssSelector("div.alert.alert-danger p")).getText();  //finding the error message
+		System.out.println(warning); //print the error message into console
+		Assert.assertEquals(warning, expectedWarning); //comparing the error message with expected message
 	}
 ````
 
