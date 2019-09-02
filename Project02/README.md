@@ -46,17 +46,18 @@ This project is done as a part of Software Quality Assurance and Testing course.
 ##### Code Snippet:
 
 ```` java
-    @Test 
+	@Test 
 	public void noFirstNameTest() {
 		driver.findElement(By.name("lastname")).sendKeys("Hossain");
 		driver.findElement(By.name("phone")).sendKeys("01613645555");
 		driver.findElement(By.name("email")).sendKeys("sazzad.hossian09@northsouth.edu");
 		driver.findElement(By.name("password")).sendKeys("haha123");
 		driver.findElement(By.name("confirmpassword")).sendKeys("haha123");
-	
+		
 		driver.findElement(By.className("signupbtn")).click();
 		
 		scrollUpandGetWarningTextandAssert("The First name field is required.");
+
 	}
 ````
 
