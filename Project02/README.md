@@ -39,3 +39,5 @@ This project is done as a part of Software Quality Assurance and Testing course.
 * Selenium (Version 3.141.59)
 * TestNG (Version 7.0.0)
 
+#### Programming Language:
+* Java
