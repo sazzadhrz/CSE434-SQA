@@ -33,7 +33,7 @@
 
 ### Project Description:
 
-This project is done as a part of Software Quality Assurance and Testing course. In this project the concepts of **Test Automation** have been used. A live website named [PHPTravels](https://www.phptravels.net) has been tested using *Black Box* testing concepts. 
+This project is done as a part of Software Quality Assurance and Testing course. In this project the concepts of **Test Automation** have been used. A live website named [PHPTravels](https://www.phptravels.net) has been tested using *Black Box* testing concepts. The website is travel website where people can search for hotels, flights, cars, even tours. Through this site people can book a tour, rent car, buy plane tickets as well as book hotels as per need by simple form fillup. The user can create an account or can use the features by using guest account. All these features are tested using automation tool and implemented using programming language. 
 
 #### Tools Used:
 * Selenium (Version 3.141.59)
@@ -71,7 +71,7 @@ The following image is a form to create a new user account. Page link [here](htt
 	}
 ````
 
-In this test method the webdriver using `findElement` method to find the desired field. To find the field specifically it uses `By` class. The `By` class uses its method to find the correct element. In this case `name` is used to find the text fields by their name. Later, user input has been entered by using the `sendKeys` method. The values passed as parameter of `sendKeys` method.
+In this test method the webdriver using `findElement` method to find the desired field. To find the field specifically it uses `By` class. The `By` class uses its method to find the correct element. In this case, `name` is used to find the text fields by their name. Later, user input has been entered by using the `sendKeys` method. The values passed as parameter of `sendKeys` method.
 
 When all the input fields are filled up with user input, the driver finds the `Sign Up` button by using its class name and click on it using the `click` method. After then, the following method is called with the parameter of *desired error message*.
 
@@ -93,6 +93,16 @@ When all the input fields are filled up with user input, the driver finds the `S
 This method scrolls the webpage to the very top to access the shown error message. It gets the warning message and saves it in a variable named `warning`. Then the warning is compared with the expectedWarning. If they matches, the `assertEquals` method will return `true`, else it will return `false`. the assertEquals method belong to class named `Assert`.
 
 If `assertEquals` methos returns true then the test case passes, else it fails the test.
+
+
+### Test Classes 
+
+* SignUpTest
+* SignInTest
+* HotelBookingTest
+* TourBookingTest
+* CarBookingTest
+
 
 ### Test Results:
 
