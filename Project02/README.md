@@ -61,11 +61,12 @@ This project is done as a part of Software Quality Assurance and Testing course.
 	}
 ````
 
-#### Test Results:
+### Test Results:
 
-**Sign Up Test**
+### **Sign Up Test**
 ![Sign Up Test](img/signup.JPG)
-**Sign In Test**
+### **Sign In Test**
+![Sign In Test](img/signin.JPG)
 **Car Boooking Test**
 **Hotel Booking Test**
 **Tour Booking Test**
