@@ -42,6 +42,9 @@ This project is done as a part of Software Quality Assurance and Testing course.
 #### Programming Language:
 * Java
 
+### Test Explanation
+![Sign Up](img/register.JPG)
+*Sign Up Test Without First Name*
 
 ##### Code Snippet:
 
@@ -63,20 +66,20 @@ This project is done as a part of Software Quality Assurance and Testing course.
 
 ### Test Results:
 
-#### Sign Up Test
+#### Sign Up Test -
 ![Sign Up Test](img/signup.JPG)
 
-#### Sign In Test
+#### Sign In Test -
 ![Sign In Test](img/signin.JPG)
 
-#### Car Boooking Test
+#### Car Boooking Test -
 ![Car Booking Test](img/car.JPG)
 
-#### Hotel Booking Test
+#### Hotel Booking Test -
 ![Hotel Booking Test](img/hotel.JPG)
 
-#### Tour Booking Test
+#### Tour Booking Test -
 ![Tour Booking Test](img/tour.JPG)
 
-#### Test Suite
+#### Test Suite -
 ![Test Suite](img/SuiteResult.JPG)
