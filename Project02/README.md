@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/sazzadhrz/CSE434/blob/master/Project02/img/nsulogo.jpeg">
+<img src="img/nsulogo.jpeg">
 </p>
 
 <div align="center">
