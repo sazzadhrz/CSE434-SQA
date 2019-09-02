@@ -33,11 +33,28 @@
 
 ### Project Description:
 
-This project is done as a part of Software Quality Assurance and Testing course. In this project the concepts of Testing Automation have been used. A live website named [PHPTravels](https://www.phptravels.net) has been tested using *Black Box* testing concepts. 
+This project is done as a part of Software Quality Assurance and Testing course. In this project the concepts of **Test Automation** have been used. A live website named [PHPTravels](https://www.phptravels.net) has been tested using *Black Box* testing concepts. 
 
-#### Tools:
+#### Tools Used:
 * Selenium (Version 3.141.59)
 * TestNG (Version 7.0.0)
 
 #### Programming Language:
 * Java
+
+
+##### Code Snippet:
+
+	@Test 
+		public void noFirstNameTest() {
+			driver.findElement(By.name("lastname")).sendKeys("Hossain");
+			driver.findElement(By.name("phone")).sendKeys("01613645555");
+			driver.findElement(By.name("email")).sendKeys("sazzad.hossian09@northsouth.edu");
+			driver.findElement(By.name("password")).sendKeys("haha123");
+			driver.findElement(By.name("confirmpassword")).sendKeys("haha123");
+		
+			driver.findElement(By.className("signupbtn")).click();
+		
+			scrollUpandGetWarningTextandAssert("The First name field is required.");
+
+		}
