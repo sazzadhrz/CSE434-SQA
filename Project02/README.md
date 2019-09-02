@@ -66,21 +66,33 @@ The following image is a form to create a new user account. Page link [here](htt
 		
 		driver.findElement(By.className("signupbtn")).click();
 		
-		scrollUpandGetWarningTextandAssert("The First name field is required."); //parameter = expected error message
-
+		//parameter = expected error message
+		scrollUpandGetWarningTextandAssert("The First name field is required."); 
 	}
 ````
+
+In this test method the webdriver using `findElement` method to find the desired field. To find the field specifically it uses `By` class. The `By` class uses its method to find the correct element. In this case `name` is used to find the text fields by their name. Later, user input has been entered by using the `sendKeys` method. The values passed as parameter of `sendKeys` method.
+
+When all the input fields are filled up with user input, the driver finds the `Sign Up` button by using its class name and click on it using the `click` method. After then, the following method is called with the parameter of *desired error message*.
+
 
 ```` java
 	public void scrollUpandGetWarningTextandAssert(String expectedWarning) {
-		js.executeScript("scroll(0, -200);");			//scroll up to check the error message	
+		js.executeScript("scroll(0, -200);");	//scroll up to check the error message	
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
-		String warning = driver.findElement(By.cssSelector("div.alert.alert-danger p")).getText();  //finding the error message
+		//finding the error message
+		String warning = driver.findElement(By.cssSelector("div.alert.alert-danger p")).getText();  
 		System.out.println(warning); //print the error message into console
-		Assert.assertEquals(warning, expectedWarning); //comparing the error message with expected message
+
+		//comparing the error message with expected message
+		Assert.assertEquals(warning, expectedWarning); 
 	}
 ````
+
+This method scrolls the webpage to the very top to access the shown error message. It gets the warning message and saves it in a variable named `warning`. Then the warning is compared with the expectedWarning. If they matches, the `assertEquals` method will return `true`, else it will return `false`. the assertEquals method belong to class named `Assert`.
+
+If `assertEquals` methos returns true then the test case passes, else it fails the test.
 
 ### Test Results:
 
