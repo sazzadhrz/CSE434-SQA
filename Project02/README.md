@@ -29,3 +29,9 @@
 **Github Repository:** [CSE434 (Project 2)](https://github.com/sazzadhrz/CSE434/tree/master/Project02)
 
 </div>
+
+
+### Project Description:
+
+This project is done as a part of Software Quality Assurance and Testing course. In this project the concepts of Testing Automation have been used. A live website named [PHPTravels](https://www.phptravels.net) has been tested using *Black Box* testing concepts. 
+
