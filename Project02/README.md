@@ -43,10 +43,10 @@ This project is done as a part of Software Quality Assurance and Testing course.
 * Java
 
 ### Test Explanation
-<div align="center">
-![Sign Up](img/register.JPG)
-*Sign Up Test Without First*
-</div>
+<p align="center">
+<img src="img/register.jpeg">
+</p>
+*Sign Up Test Without First Name*
 
 ##### Code Snippet:
 
@@ -69,35 +69,31 @@ This project is done as a part of Software Quality Assurance and Testing course.
 ### Test Results:
 
 #### Sign Up Test -
-<div align="center">
-![Sign Up Test](img/signup.JPG)
-</div>
+<p align="center">
+<img src="img/signup.jpeg">
+</p>
 
 #### Sign In Test -
-<div align="center">
-![Sign In Test](img/signin.JPG)
-</div>
+<p align="center">
+<img src="img/signin.jpeg">
+</p>
 
 #### Car Boooking Test -
-<div align="center">
-![Car Booking Test](img/car.JPG)
-</div>
+<p align="center">
+<img src="img/car.jpeg">
+</p>
 
 #### Hotel Booking Test -
-<div align="center">
-![Hotel Booking Test](img/hotel.JPG)
-</div>
+<p align="center">
+<img src="img/hotel.jpeg">
+</p>
 
 #### Tour Booking Test -
-<div align="center">
-![Tour Booking Test](img/tour.JPG)
-</div>
+<p align="center">
+<img src="img/tour.jpeg">
+</p>
 
 #### Test Suite -
-<div align="center">
-![Test Suite](img/SuiteResult.JPG)
-</div>
-
-
-
-
+<p align="center">
+<img src="img/SuiteResult.jpeg">
+</p>
