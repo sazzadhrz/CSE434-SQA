@@ -64,8 +64,9 @@ This project is done as a part of Software Quality Assurance and Testing course.
 #### Test Results:
 
 **Sign Up Test**
+![Sign Up Test](img/signup.JPG)
 **Sign In Test**
-**Car Boooking Test
+**Car Boooking Test**
 **Hotel Booking Test**
 **Tour Booking Test**
 **Test Suite**
